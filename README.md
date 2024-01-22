@@ -4,6 +4,7 @@ Welcome to my personal codespaces. Here you will find the newest projects that I
 
 <h3>These are the projects that I´m currently working on:</h3> 
 <ol>
+    <li>Nutricion application - project </li>
     <li>Flappy bird - my own version</li> 
     <li>Blog about my class</li>
     <li>Web engineering</li>
