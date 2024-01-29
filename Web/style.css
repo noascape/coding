@@ -1,0 +1,23 @@
+h1 {color: blue}
+p { font-family: Arial }
+body { background: white }
+div {
+    background: #CCFECC;
+    display: inline-block;
+    border: 2px solid #ababab;
+    margin: 15px;
+    padding: 20px;
+    width: 150px;
+    height: 50px;
+    visibility: visible;
+}
+* {
+    margin: 0px;
+    padding: 0px;
+  }
+ 
+  div, p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
