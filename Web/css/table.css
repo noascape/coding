@@ -1,0 +1,21 @@
+th, td {
+    border: 1px solid #CCCCCC;
+    padding: 10px;
+}
+th {
+    background: #3498DB;
+    color: #FFFFFF; 
+}
+table {
+    width: 400px;
+    border-collapse: collapse;
+    padding: 1px;
+}
+
+tr:hover {
+    color: grey;
+}
+
+tr:nth-child(odd) {
+    background: #EEEEEE;
+}
