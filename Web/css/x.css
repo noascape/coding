@@ -1,0 +1,13 @@
+li {
+    display: inline-block;
+    background: #F4A261;
+    padding: 5px;
+    margin-right: -4px;
+
+}
+li:hover {
+    background: #E76F51;
+}
+ul {
+    background: #333333; 
+}
