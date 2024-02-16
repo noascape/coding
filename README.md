@@ -6,7 +6,6 @@ Welcome to my personal codespaces. Here you will find the newest projects that I
 <ol>
     <li>Nutricion application - project </li>
     <li>Flappy bird - my own version</li> 
-    <li>Blog about my class</li>
     <li>Web engineering</li>
 </ol>
 
