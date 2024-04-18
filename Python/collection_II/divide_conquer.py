@@ -1,29 +1,20 @@
+import numpy as np
+import math
+
 class MaxFinder:
-    
-    def conquerMax(a, l, m, r):
-        if l < 0 or m < l or r <= m or len(a) <= r:
-            print("Ungültige Eingabe")
-            return
-        
-        if a[l] < a[m + 1]:
-            old = a[l]
+    def conquerMax(self, a, l, m, r):
+        if not (0 <= l <= m < r < len(a)):
+            raise ValueError("Ungültige Eingabe")
+        if(a[m+1] > a[l]):
+            v = a[l]
             a[l] = a[m+1]
-            a[m+1] = old
+            a[m+1] = v
 
-    def moveMaxToFront(a, l, r):
-        if l < 0 or len(a) <= r:
-            print("Ungültige Eingabe")
-            return
-      
+    def moveMaxToFront(self, a, l, r):
         if r > l:
-            print(array)
-            m = l + (r-l)/2
-            MaxFinder.moveMaxToFront(a, l, m)
-            MaxFinder.moveMaxToFront(a, m+1, r)
-            MaxFinder.conquerMax(a,l,m,r)
-            return
+            m = (l + r) // 2
+            self.moveMaxToFront(a, l, m)
+            self.moveMaxToFront(a, m+1, r)
 
-array = {1,3,4}
-
-MaxFinder.moveMaxToFront(array, 0, 2)
-print(array)
+            self.conquerMax(a, l, m, r)
+        print(a)
