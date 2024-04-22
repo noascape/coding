@@ -52,6 +52,24 @@ print(friends[1])                                                               
 #Tuple ()
 coordinates = (4, 5)                                                            #a Tuple ist like a list, but () cannot be modified
 
+#Dictionary {}
+monthConversions = {
+    "Jan": "January",                                                          #on the left a unique key in the dicitionary, on the ride the value
+    "Feb": "February",
+    "Mar": "March",
+    "Apr": "April",
+    "May": "May",
+    "Jun": "June", 
+    "Jul": "July",
+    "Aug": "August",
+    "Sep": "September",
+    "Oct": "October",
+    "Nov": "November", 
+    "Dec": "December",
+}
+print(monthConversions["Nov"])                                                  #will give the associated value of the key
+print(monthConversions.get("Luc", "Not a valid Key"))                           #you can specify a default value in case the key is not faund in the dictinoary
+
 #Functions
 def say_hi(name, age):                                                          #Function definition and naming and the parameters name, age that have to be given when calling this function
     print("Hello", name, "you are", str(age))
@@ -81,16 +99,31 @@ def max_num(num1, num2, num3):                                                  
         return num2
     else: 
         return num3
+    
+#While Loop
+i = 1
+while i <= 10:
+    print(i)
+    i += 1                                                                      #each loop i will get an increment of 1
+print("Done with Loop")
+
+#For Loop
+family = ["Papa", "Mama", "Opa"]                                                #Array
+for letter in "Giraffe Academy":                                                #loops through every single letter 
+    print(letter)
+for index in family:                                                            #loops through every single entry in the array
+    print(index)
+for num in range(3, 10):                                                        #1st one: start, optional 2nd one: length, optional 3rd one: steps
+    print(num)
+for blabla in range(len(family)):                                               #len(family) = 3 so its equal to in range(3) 
+    if blabla == 0:
+        print("First Iteration:", family[blabla])
+    else:
+        print(family[blabla])
+
 #User Input
-#user_input = input("Enter a number: ")                                          #put the user input into a variable 
-#result = age + int(user_input)                                                  #convert the input string into an integer (number without decimals); float (for decimal numbers)
-#print("Hello", result)                                                          #use the information 
+user_input = input("Enter a number: ")                                          #put the user input into a variable 
+result = age + int(user_input)                                                  #convert the input string into an integer (number without decimals); float (for decimal numbers)
+print("Hello", result)                                                          #use the information 
 
-#Mad Lips                                                                               
-#color = input("Enter a color:")
-#plural_noun = input("Enter a Plural Noun:")
-#celebrity = input("Enter a celebrity:")
-#print("Roses are", color)                                                       #now the output of this Mad Lips
-#print(plural_noun, "are blue")
-#print("I love", celebrity)
-
+                                                                              
