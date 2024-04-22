@@ -46,7 +46,7 @@ def start_screen():
 
     pygame.display.flip()
 
-background_image = pygame.image.load("background.png")  
+background_image = pygame.image.load("flappybird/flappybird_v2/background.png")  
 
 def draw_background():
     screen.blit(background_image, (0, 0))

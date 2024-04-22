@@ -36,7 +36,7 @@ print(floor(3.7))                                                               
 print(ceil(3.7))                                                                #round the number up
 print(sqrt(36))                                                                 #square number (of 36: 6*6 -> 6)
 
-#List []
+#Array/List []
 friends = ["Kevin", "Karen", "Jim"]                                             #friend array
 lucky_numbers = [4, 8, 15, 17, 33, 43]                                          #number array
 friends2 = friends.copy()                                                       #copy a list into another list

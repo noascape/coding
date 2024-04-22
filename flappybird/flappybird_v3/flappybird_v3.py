@@ -11,7 +11,7 @@ width, height = 1200, 720
 screen = pygame.display.set_mode((width, height))
 pygame.display.set_caption("Flappy Bird - Definitive Edition")
 pygame.mixer.init()
-music_folder = os.path.abspath("music")
+music_folder = os.path.abspath("flappybird/flappybird_v3/music")
 music_files = [
     os.path.join(music_folder, "song1.mp3"),
     os.path.join(music_folder, "song2.mp3"),
@@ -56,7 +56,7 @@ def start_screen():
 
     pygame.display.flip()
 
-background_image = pygame.image.load(os.path.join("files", "background.png"))
+background_image = pygame.image.load(os.path.join("flappybird", "flappybird_v3", "files", "background.png"))
 
 def draw_background():
     screen.blit(background_image, (0, 0))
