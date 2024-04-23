@@ -1,8 +1,8 @@
 #Imports
 from math import *                                                              #for further math functions
+import useful_tools                                                             #import another python file as a module to get access of its functionality (has to be in the same directory as the file itself); This can save much time: https://docs.python.org/3/py-modindex.html
 
-
-
+print(useful_tools.roll_dice(10))
 #Variables
 name = "John"                                                                   #string
 age = 50.123                                                                    #number
@@ -70,10 +70,65 @@ monthConversions = {
 print(monthConversions["Nov"])                                                  #will give the associated value of the key
 print(monthConversions.get("Luc", "Not a valid Key"))                           #you can specify a default value in case the key is not faund in the dictinoary
 
+#2D List
+number_grid = [
+    [1, 2, 3],                                                                  #4 Elements in a List which are all elements themselves
+    [4, 5, 6],
+    [7, 8, 9],
+    [0]
+]
+print(number_grid[0][0])                                                        #How to access the Elements in this kind of list
+for line in number_grid:
+    for col in line:
+        print(col)
+
 #Functions
 def say_hi(name, age):                                                          #Function definition and naming and the parameters name, age that have to be given when calling this function
     print("Hello", name, "you are", str(age))
+
 say_hi("Mike", 15)                                                              #Execute the function say_hi with the parameters "Mike" and 15
+
+#Classes
+class Student:
+    def __init__(self, name, major, gpa, is_on_probation):                      #initialize function     | self is needed, so that Python knows which specific object within the class is being referred to (which would be student1 and student2 in this case)
+            self.name = name                                                    #the student stores a name, major,... and now this information of all students will be stored alltogether
+            self.major = major
+            self.gpa = gpa
+            self.is_on_probation = is_on_probation
+
+    def on_honor_roll(self):                                                    #another function that checks if the students gpa is good enough to be on honor roll
+        if self.gpa >= 3.5: 
+            return True
+        else:
+            return False
+
+student1 = Student("Jim", "Business", 3.1, False)
+student2 = Student("Anna", "Finance", 1.7, True )
+print(student1.name, student1.gpa)
+print(student1.on_honor_roll())
+
+#Inheritance of classes
+class Chef:
+    def make_chicken(self):
+        print("The chef makes a chicken")
+    def make_salad(self):
+        print("The chef makes a salad")
+    def make_special_dish(self):
+        print("The chef makes bbq ribs")
+
+class ChineseChef(Chef):                                                        #can do everything that the normal Chef can do -> inheritance from Chef
+    def make_fried_rice(self):
+        print("The chef makes fried rice")
+    def make_special_dish(self):                                                #you can overwrite an already existing definition (redefine it with the same name)
+        print("The chef makes orange chicken")
+
+yourChef = ChineseChef()    
+myChef = Chef()
+yourChef.make_special_dish()
+myChef.make_special_dish()
+Chef().make_special_dish()
+
+
 
 #Return keyword
 def cube(num):
@@ -126,4 +181,37 @@ user_input = input("Enter a number: ")                                          
 result = age + int(user_input)                                                  #convert the input string into an integer (number without decimals); float (for decimal numbers)
 print("Hello", result)                                                          #use the information 
 
-                                                                              
+#Calculation
+def raise_to_power(base_num, pow_num):
+    output = 1
+    for i in range(pow_num):                                                    #we loop through it as often as the pow numbers value (2^3)
+        output = output * base_num
+    return output 
+                                                                            
+print(raise_to_power(2, 3))
+
+#Files (Reading)
+employee_file = open("employees.txt", "r")                                      #Relative path / absolute path / name of the file if in the same directory      | r = read; w = write; a = append; r+ = reading and writing
+print(employee_file.read())                                                     #.readable() to get a boolean if its really readable, .readline to only read a line which you can do multiple times, .readlines will put all the lines into an array
+employee_file.close()                                                           #you should always close a file after opening it
+
+#Files (Appending)
+employee_file = open("employees.txt", "a")                                      #w would overwrite the existing file while a is just appending
+employee_file.write("\nToby - Human Resources")                                 #you have to be careful to not execute this multiple times and mess up the file
+employee_file.close()
+
+#Files (Writing)
+employee_file = open("index.html", "w")                                         #this will create another file called index.html with the following content
+employee_file.write("<p> This is HTML </p>")
+employee_file.close()
+
+#Try & Except 
+try:                                                                            #to protect the whole programm 
+    number = int(input("Enter a number: "))
+    print(number)
+except ZeroDivisionError as err:                                                #further specification of the possible errors 
+    print(err)                                                                  #we can store the error as a variable
+except ValueError:
+    print("Invalide Input")
+except:                                                                         #you don´t want to do such a general except
+    print("An error accured")
