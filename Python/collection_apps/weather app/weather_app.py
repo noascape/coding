@@ -48,22 +48,22 @@ while True:
 
         #Bild Anpassung je nach Schlagworten auf website
         if weather in ('Sun', 'Sunny', 'Clear', 'Clear with periodic clouds', 'sonnig', 'Sonne'):
-            window['-IMAGE-'].update('Python/collection_III/weather app/symbols/sun.png')
+            window['-IMAGE-'].update('Python/collection_apps/weather app/symbols/sun.png')
         
         if weather in ('Partly Sunny', 'Mostly Sunny', 'Partly cloudy', 'Mostly cloudy', 'Cloudy', 'Overcast', 'bewölkt'):
-            window['-IMAGE-'].update('Python/collection_III/weather app/symbols/part sun.png')
+            window['-IMAGE-'].update('Python/collection_apps/weather app/symbols/part sun.png')
 
         if weather in ('Rain', 'Chance of Rain', 'Light Rain', 'Showers', 'Scattered Showers', 'Rain and Snow', 'Hail', 'Regen', 'Regen und Schnee', 'Hagel'):
-            window['-IMAGE-'].update('Python/collection_III/weather app/symbols/rain.png')
+            window['-IMAGE-'].update('Python/collection_apps/weather app/symbols/rain.png')
 
         if weather in ('Scattered Thunderstorms', 'Chance of Storm', 'Storm', 'Thunderstorm', 'Chance of TStorm', 'Gewitter', 'Sturm', 'Chance auf Gewitter'): 
-            window['-IMAGE-'].update('Python/collection_III/weather app/symbols/thunder.png')
+            window['-IMAGE-'].update('Python/collection_apps/weather app/symbols/thunder.png')
 
         if weather in ('Mist', 'Dust', 'Fog', 'Smoke', 'Haze', 'Flurries', 'Nebel', 'neblig', 'Dunst', 'Teils bewölkt', 'Überwiegend bewölkt', 'Stark bewölkt'):
-            window['-IMAGE-'].update('Python/collection_III/weather app/symbols/fog.png')
+            window['-IMAGE-'].update('Python/collection_apps/weather app/symbols/fog.png')
 
         if weather in ('Freezing Drizzle', 'Chance of Snow', 'Sleet', 'Snow', 'Icy', 'Snow Showers', 'Schnee', 'Eis'):
-            window['-IMAGE-'].update('Python/collection_III/weather app/symbols/snow.png')
+            window['-IMAGE-'].update('Python/collection_apps/weather app/symbols/snow.png')
 
 
 window.close()

@@ -230,7 +230,7 @@ def main(page: Page):
             for i in range(1, 11):
                 images.controls.append(
                     Image(
-                        src=f"Python/collection_III/gourmet app/pictures/img{i}.jpeg",
+                        src=f"Python/collection_apps/gourmetguide/pictures/img{i}.jpeg",
                         width=150,
                         height=150,
                         fit=ImageFit.NONE,

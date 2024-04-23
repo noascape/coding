@@ -1,15 +1,25 @@
 import pygame
 import sys
 import random
-import time
+#import time
+import os
 
 pygame.init()
-
 
 width, height = 1200, 720
 
 screen = pygame.display.set_mode((width, height))
 pygame.display.set_caption("Flappy Bird - Definitive Edition")
+pygame.mixer.init()
+music_folder = os.path.abspath("Python/collection_apps/flappybird/flappybird_v3/music")
+music_files = [
+    os.path.join(music_folder, "song1.mp3"),
+    os.path.join(music_folder, "song2.mp3"),
+    os.path.join(music_folder, "fail.mp3"),
+    os.path.join(music_folder, "sad.mp3"),
+    os.path.join(music_folder, "oh_yeah.mp3"),
+    os.path.join(music_folder, "lobby.mp3")
+]
 
 white = (255, 255, 255)
 blue = (0, 0, 255)
@@ -46,7 +56,7 @@ def start_screen():
 
     pygame.display.flip()
 
-background_image = pygame.image.load("flappybird/flappybird_v2/background.png")  
+background_image = pygame.image.load(os.path.join("Python", "collection_apps", "flappybird", "flappybird_v3", "files", "background.png"))
 
 def draw_background():
     screen.blit(background_image, (0, 0))
@@ -76,11 +86,15 @@ def draw_obstacle(x, height):
 def draw_bird(x, y):
     pygame.draw.rect(screen, blue, (x, y, bird_width, bird_height))
 
+
 def flappy_bird_game():
     global bird_y, bird_velocity, obstacle_x, obstacle_height, counter, highscore, game_active
     game_active = False
     obstacle_speed = 5
     obstacles_passed = 0
+    #Lobby
+    selected_music = pygame.mixer.music.load(music_files[5])
+    pygame.mixer.music.play(-1)
 
     while True:
         for event in pygame.event.get():
@@ -97,11 +111,30 @@ def flappy_bird_game():
                         bird_velocity = 0
                         obstacle_x = width
                         counter = 0
-
+                        #ingame - normal
+                        if counter < 7:
+                            selected_music = pygame.mixer.music.load(music_files[0])
+                            pygame.mixer.music.play(-1)
+                        
+                        
         if game_active:
             bird_velocity += gravity
             bird_y += bird_velocity
 
+            if bird_y > height - bird_height or bird_y < 0:
+                game_active = False
+                obstacle_speed = 5
+                #sad
+                selected_music = pygame.mixer.music.load(music_files[3])
+                pygame.mixer.music.play()
+                                        
+                #new highscore
+                if counter > highscore:
+                    highscore = counter
+                    selected_music = pygame.mixer.music.load(music_files[4])
+                    pygame.mixer.music.play()
+                    
+                    
             obstacle_x -= obstacle_speed
             if obstacle_x < -obstacle_width:
                 obstacle_x = width
@@ -112,11 +145,24 @@ def flappy_bird_game():
                 if obstacles_passed % 3 == 0:
                     obstacle_speed +=1
 
+                #ingame - high 
+                if counter == 7:               
+                    selected_music = pygame.mixer.music.load(music_files[1])
+                    pygame.mixer.music.play(-1)
+
             if bird_x < obstacle_x + obstacle_width < bird_x + bird_width and \
                not (bird_y > obstacle_height and bird_y + bird_height < obstacle_height + obstacle_gap):
                 game_active = False
+                obstacle_speed = 5
+                #sad
+                selected_music = pygame.mixer.music.load(music_files[2])
+                pygame.mixer.music.play()
+                #new highscore
                 if counter > highscore:
                     highscore = counter
+                    #pygame.mixer.music.stop()
+                    selected_music = pygame.mixer.music.load(music_files[4])
+                    pygame.mixer.music.play()
 
             screen.fill(black)
             draw_background()
