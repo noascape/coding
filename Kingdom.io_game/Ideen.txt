@@ -1,0 +1,53 @@
+-es gibt einen Startbildschirm wo man kurz seinen Namen eingeben kann,eine Farbe wählen, welchen Modus,.. oder so
+-->Shop für bessere skins/Aussehen der Spielerfarbe und iwann auch der Map
+-->Tutorial wie man es spielt
+-->Werbung nur auf Startseite iwann
+-Möglichkeit Online zu spielen oder auch in einer eigenen Lobby
+-Punkteanzeige der Top 10/5/3 rechts unten und noch die eigene Punktzahl
+-Aufstiegsmöglichkeiten so n weng wie in Siedler 6 sollte aber deutlich schneller ablaufen
+-einfache Grafik mit einigermaßen Komplexen Möglichkeiten zu einem schnellen Aufbau
+-Kampfhandlung ist möglich, genauso wie eine Base bauen
+
+-irgendwann unterschiedliche Spielmodi mit Teams usw.
+
+three.js-Bibiliothek einbinden in head:
+	<script src="https://threejs.org/build/three.js"></script>
+canvas Element in body:
+	<section>
+   	 <h2>3D Spiel</h2>
+   	 <canvas id="gameCanvas"></canvas>
+	</section>
+Java-Script-Code für das 3D Spiel:
+	<script>
+  	  // Initialisiere Three.js
+   	 const scene = new THREE.Scene();
+    	const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
+    	const renderer = new THREE.WebGLRenderer();
+    	renderer.setSize(window.innerWidth, window.innerHeight);
+    	document.getElementById("gameCanvas").appendChild(renderer.domElement);
+
+    	// Füge ein einfaches Objekt hinzu (z.B., einen Würfel)
+   	 const geometry = new THREE.BoxGeometry();
+   	 const material = new THREE.MeshBasicMaterial({ color: 0x00ff00 });
+   	 const cube = new THREE.Mesh(geometry, material);
+   	 scene.add(cube);
+
+   	 // Positioniere die Kamera
+   	 camera.position.z = 5;
+
+   	 // Erstelle eine Animationsschleife
+   	 const animate = function () {
+      	  requestAnimationFrame(animate);
+
+       	 // Drehe den Würfel
+       	 	cube.rotation.x += 0.01;
+        	cube.rotation.y += 0.01;
+
+       	 // Rendere die Szene
+      	  renderer.render(scene, camera);
+   	 };
+
+   	 animate();
+	</script>
+
+
