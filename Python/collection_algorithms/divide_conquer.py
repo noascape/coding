@@ -15,6 +15,5 @@ class MaxFinder:
             m = (l + r) // 2
             self.moveMaxToFront(a, l, m)
             self.moveMaxToFront(a, m+1, r)
-
             self.conquerMax(a, l, m, r)
         print(a)
