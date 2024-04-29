@@ -1,0 +1,33 @@
+/* opacity ist sichtbarkeit */
+.logo {
+    opacity: 0;
+    transition: opacity 230ms ease-in-out;
+}
+
+.logo:hover {
+    opacity: 1;
+}
+
+/* custom animation curve:
+.logo {
+    opacity: o;
+    transition: opacity 230ms cubic-bezier(0.1, 0.7, 1.0, 0.1);
+*/
+
+/* you only need to reference you own keyframe in one of your selectors */
+@keyframes myAnimation {
+    from {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(-45deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.spinner {
+    animation: myAnimation 4s;
+    animation-iteration-count: infinte;
+}
