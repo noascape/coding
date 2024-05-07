@@ -1,0 +1,11 @@
+.style1 {
+    text-align: center;
+    color: black;
+    width: 40px;
+    background-color: rgb(170, 157, 157); 
+    border-radius: 8px;
+}
+
+.tooltip1:hover {
+    visibility: visible
+}
