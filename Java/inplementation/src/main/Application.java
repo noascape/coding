@@ -14,7 +14,7 @@ public class Application {
     }
 
     public static void main(String... args) {
-        System.out.println("Welcome | main.Glider");
+        System.out.println("Welcome | Glider");
 
         Glider glider = new Glider();
         FlightManagement flightManagement = new FlightManagement(glider);
