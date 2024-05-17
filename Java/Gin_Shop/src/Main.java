@@ -1,5 +1,9 @@
+import csv.CsvReader;
+
 public class Main {
     public static void main(String... args) {
-        System.out.println("Hello world!");
+
+        CsvReader csvReader = new CsvReader();
+        csvReader.read();
     }
 }
