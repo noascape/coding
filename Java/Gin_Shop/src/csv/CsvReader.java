@@ -12,6 +12,10 @@ public class CsvReader {
     String line = "";
     TreeMap<String, String> treeMap = new TreeMap<>();
 
+    public CsvReader() {
+        treeMap = new TreeMap<>(new StoreComparator());
+    }
+
 
     public void read() {
 
@@ -21,32 +25,26 @@ public class CsvReader {
 
                 String[] row = line.split(";");
 
-                for(String index : row) {
-                    System.out.printf("%-10s", index);
-                }
-
-                System.out.println();
-
-                if(row.length >=2) {
+                if (row.length >= 2) {
                     String store = row[0];
-                    String ginType = row[1];
-                    treeMap.put(store, ginType);
-                } else {
-                    System.err.println("Invalide row: " + line);
+                    String product = row[1];
+                    treeMap.put(store, product);
                 }
             }
         } catch (IOException e) {
-            //noinspection CallToPrintStackTrace
             e.printStackTrace();
-        }
-        for(Map.Entry<String, String> entry: treeMap.entrySet()) {
-            System.out.print("| Key: " + entry.getKey() + " Values: " + entry.getValue());
+        } finally {
+            if (br != null) {
+                try {
+                    br.close();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
             }
         }
-
-
-    public String getline() {
-        return line;
+        //for (Map.Entry<String, String> entry : treeMap.entrySet()) {
+        //    System.out.print("| Key: " + entry.getKey() + " Values: " + entry.getValue());
+        //}
     }
 }
 

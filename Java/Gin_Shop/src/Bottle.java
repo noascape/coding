@@ -8,6 +8,8 @@ public class Bottle {
     int weight = 400;
     boolean isFilled;
     int serialNumber;
+    private Label frontLabel;
+    private Label backLabel;
 
 
 
@@ -15,5 +17,32 @@ public class Bottle {
         isFilled = true;
     }
 
+    public void addFrontLabel(Label label) {
+        label.setPosition(LabelPosition.FRONT);
+        frontLabel = label;
+    }
 
+    public void addBackLabel(Label label) {
+        label.setPosition(LabelPosition.BACK);
+        backLabel = label;
+    }
+
+
+
+    //Getter and Setter
+    public Label getBackLabel() {
+        return backLabel;
+    }
+
+    public void setBackLabel(Label backLabel) {
+        this.backLabel = backLabel;
+    }
+
+    public Label getFrontLabel() {
+        return frontLabel;
+    }
+
+    public void setFrontLabel(Label frontLabel) {
+        this.frontLabel = frontLabel;
+    }
 }
