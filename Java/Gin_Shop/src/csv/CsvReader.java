@@ -1,5 +1,6 @@
 package csv;
 
+import javax.sound.midi.Track;
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
@@ -11,6 +12,9 @@ public class CsvReader {
     BufferedReader br = null;
     String line = "";
     TreeMap<String, String> treeMap = new TreeMap<>();
+
+    //private Track bottleTrack;
+    //private Bottle bottle1;
 
     public CsvReader() {
         treeMap = new TreeMap<>(new StoreComparator());
@@ -42,9 +46,11 @@ public class CsvReader {
                 }
             }
         }
-        //for (Map.Entry<String, String> entry : treeMap.entrySet()) {
-        //    System.out.print("| Key: " + entry.getKey() + " Values: " + entry.getValue());
-        //}
+        for (Map.Entry<String, String> entry : treeMap.entrySet()) {
+            //bottle.addFrontLabel()
+            //bottleTrack.add(new Bottle(identity));
+           System.out.print("| Key: " + entry.getKey() + " Values: " + entry.getValue());
+        }
     }
 }
 

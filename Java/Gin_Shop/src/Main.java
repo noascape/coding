@@ -3,9 +3,6 @@ import csv.CsvReader;
 public class Main {
     public static void main(String... args) {
 
-        CsvReader csvReader = new CsvReader();
-        csvReader.read();
-
         Bottle bottle1 = new Bottle();
         Label frontLabel = new Label();
         frontLabel.header = "Front Label Header";
@@ -18,6 +15,9 @@ public class Main {
         //implementation of the gin bottling plant
         Track bottleTrack = new Track();
         Track boxTrack = new Track();
+
+        CsvReader csvReader = new CsvReader();
+        csvReader.read();
 
         Roboter02 roboter02 = new Roboter02(new StorageArea());
 
