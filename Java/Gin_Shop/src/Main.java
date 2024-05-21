@@ -6,6 +6,7 @@ import machines.Roboter01;
 import machines.Roboter02;
 import track.Track;
 import container.Box;
+import java.util.UUID;
 
 
 public class Main {
@@ -19,7 +20,7 @@ public class Main {
         csvReader.read(bottleTrack);
 
         for (int i = 0; i < 4; i++) {
-            boxTrack.add(new Box());
+            boxTrack.add(new Box(UUID.randomUUID()));
         }
 
         Roboter02 roboter02 = new Roboter02(new StorageArea());

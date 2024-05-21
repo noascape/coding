@@ -5,21 +5,28 @@ import java.util.Random;
 
 public class Identity {
 
-    private final ArrayList<Integer> usedserialNumbers = new ArrayList<Integer>();
+    private final ArrayList<Integer> usedSerialNumbers = new ArrayList<Integer>();
 
-    public String generateSerialNumber() {
+        //return String.valueOf(number);
 
-        Random random = new Random();
-        int number = random.nextInt(900000000) + 1000000000;
-
-        while (usedserialNumbers.contains(number)) {
-            random = new Random();
-            number = random.nextInt(900000000) + 1000000000;
+    public boolean equals (Object object) {
+        if (object == null) {
+            return false;
         }
-
-        usedserialNumbers.add(number);
-
-        return String.valueOf(number);
+        if (this == object) {
+            return true;
+        }
+        if (!(object instanceof final Bottle bottle)) {
+            return false;
+        }
+        if (getClass() != object.getClass()) {
+            return false;
+        }
+        return true;
+        //return serialNumber.equals(bottle.getserialNumber());
     }
-}
+    }
+
+
+
 

@@ -1,5 +1,7 @@
 package bottle;
 
+import java.util.ArrayList;
+
 public class Bottle {
 
     String name = "Lab Gin 2008";
@@ -12,8 +14,8 @@ public class Bottle {
     boolean isFilled;
     int serialNumber;
     private static int serialCounter = 1;
-    private Label frontLabel;
-    private Label backLabel;
+    private FrontLabel frontLabel;
+    private BackLabel backLabel;
 
 
 
@@ -21,12 +23,12 @@ public class Bottle {
         isFilled = true;
     }
 
-    public void addFrontLabel(Label label) {
+    public void addFrontLabel(FrontLabel label) {
         label.setPosition(LabelPosition.FRONT);
         frontLabel = label;
     }
 
-    public void addBackLabel(Label label) {
+    public void addBackLabel(BackLabel label) {
         label.setPosition(LabelPosition.BACK);
         backLabel = label;
     }
@@ -38,4 +40,13 @@ public class Bottle {
     public int getserialNumber() {
         return this.serialNumber;
     }
+
+    //Identity
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj) {return true;}
+        if (obj == null || !(obj instanceof final Bottle bottle) || getClass() != obj.getClass()) {return false;}
+        return serialNumber == bottle.serialNumber;
+    }
+
 }
