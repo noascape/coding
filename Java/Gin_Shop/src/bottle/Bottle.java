@@ -1,4 +1,7 @@
+package bottle;
+
 public class Bottle {
+
     String name = "Lab Gin 2008";
     int content = 500;
     String mouthpiece = "CARNETTE";
@@ -8,6 +11,7 @@ public class Bottle {
     int weight = 400;
     boolean isFilled;
     int serialNumber;
+    private static int serialCounter = 1;
     private Label frontLabel;
     private Label backLabel;
 
@@ -27,22 +31,11 @@ public class Bottle {
         backLabel = label;
     }
 
-
-
-    //Getter and Setter
-    public Label getBackLabel() {
-        return backLabel;
+    public Bottle() {
+        this.serialNumber = serialCounter++;
     }
 
-    public void setBackLabel(Label backLabel) {
-        this.backLabel = backLabel;
-    }
-
-    public Label getFrontLabel() {
-        return frontLabel;
-    }
-
-    public void setFrontLabel(Label frontLabel) {
-        this.frontLabel = frontLabel;
+    public int getserialNumber() {
+        return this.serialNumber;
     }
 }

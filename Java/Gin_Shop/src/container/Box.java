@@ -1,4 +1,8 @@
-class Box {
+package container;
+
+import bottle.Bottle;
+
+public class Box {
     private Bottle[][] storageArea;
     private String boxLabel;
     private String product;

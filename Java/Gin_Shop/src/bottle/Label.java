@@ -1,6 +1,9 @@
+package bottle;
+
 public class Label {
-    String header;
+
     private LabelPosition position;
+
 
     public LabelPosition getPosition() {
         return position;
@@ -9,4 +12,5 @@ public class Label {
     public void setPosition(LabelPosition position) {
         this.position = position;
     }
+
 }

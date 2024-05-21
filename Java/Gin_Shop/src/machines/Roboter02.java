@@ -1,3 +1,7 @@
+package machines;
+
+import container.*;
+
 public class Roboter02 {
     private boolean isOn;
     private Box box;

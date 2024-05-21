@@ -1,23 +1,26 @@
+import container.StorageArea;
+import container.Tank;
 import csv.CsvReader;
+import machines.FillingMachine;
+import machines.Roboter01;
+import machines.Roboter02;
+import track.Track;
+import container.Box;
+
 
 public class Main {
     public static void main(String... args) {
-
-        Bottle bottle1 = new Bottle();
-        Label frontLabel = new Label();
-        frontLabel.header = "Front Label Header";
-        bottle1.addFrontLabel(frontLabel);
-
-        Label backLabel = new Label();
-        backLabel.header = "Back Label Header";
-        bottle1.addBackLabel(backLabel);
 
         //implementation of the gin bottling plant
         Track bottleTrack = new Track();
         Track boxTrack = new Track();
 
         CsvReader csvReader = new CsvReader();
-        csvReader.read();
+        csvReader.read(bottleTrack);
+
+        for (int i = 0; i < 4; i++) {
+            boxTrack.add(new Box());
+        }
 
         Roboter02 roboter02 = new Roboter02(new StorageArea());
 

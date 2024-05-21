@@ -1,3 +1,9 @@
+package machines;
+
+import bottle.Bottle;
+import track.Track;
+import container.Tank;
+
 public class FillingMachine {
     private boolean isOn;
     private final Roboter01 roboter01;
@@ -23,13 +29,13 @@ public class FillingMachine {
     public boolean fillBottle(Bottle bottle) {
 
         if(!tank.drainTankAmount()) {
-            System.out.println("Bottle cant be filled. Tank empty. Machine turning off");
+            System.out.println("Bottle.Bottle cant be filled. container.Tank empty. Machine turning off");
             off();
             return false;
         }
 
         bottle.fill();
-        System.out.println("Bottle " + bottle.hashCode() + " filled!");
+        System.out.println("bottle " + bottle.hashCode() + " filled!");
         return true;
     }
 

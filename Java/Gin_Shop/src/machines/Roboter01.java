@@ -1,3 +1,10 @@
+package machines;
+
+import container.*;
+import bottle.Bottle;
+import track.Track;
+
+
 public class Roboter01 {
 
     private Box currentBox;
@@ -24,17 +31,17 @@ public class Roboter01 {
     }
 
     public void take(Bottle bottle) {
-                if(!isOn) System.out.println("Roboter01 is turned off. Cant perform a take");
+                if(!isOn) System.out.println("machines.Roboter01 is turned off. Cant perform a take");
 
                 if(currentBox.isFull()) {
-                    System.out.println("Box of Roboter01 is Full. Request pickup from Robot 02");
+                    System.out.println("Box of machines.Roboter01 is Full. Request pickup from Robot 02");
                     roboter02.takeBox(currentBox);
 
-                    System.out.println("Roboter01 Trying to get a new Box");
+                    System.out.println("machines.Roboter01 Trying to get a new Box");
                     currentBox = ((Box) boxTrack.getNext());
 
                     if(currentBox == null) {
-                        System.out.println("No Boxes available! Roboter01 is turning off!");
+                        System.out.println("No Boxes available! machines.Roboter01 is turning off!");
                         isOn = false;
                         return;
                     }
@@ -43,11 +50,11 @@ public class Roboter01 {
                 }
 
                 currentBottle = bottle;
-                    System.out.println("Roboter 01 received Bottle " + currentBottle.hashCode());
+                    System.out.println("Roboter 01 received Bottle.Bottle " + currentBottle.hashCode());
 
                 currentBox.addBottle(currentBottle);
 
-                System.out.println("Roboter 01 put Bottle in Box  " + currentBox.hashCode());
+                System.out.println("Roboter 01 put Bottle.Bottle in Box  " + currentBox.hashCode());
 
     }
 }

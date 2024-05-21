@@ -1,27 +1,26 @@
 package csv;
 
-import javax.sound.midi.Track;
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.Map;
 import java.util.TreeMap;
+import bottle.*;
+import track.*;
 
 public class CsvReader {
+
     String file = "../Gin_Shop/src/orders.csv";
     BufferedReader br = null;
     String line = "";
     TreeMap<String, String> treeMap = new TreeMap<>();
-
-    //private Track bottleTrack;
-    //private Bottle bottle1;
 
     public CsvReader() {
         treeMap = new TreeMap<>(new StoreComparator());
     }
 
 
-    public void read() {
+    public void read(Track bottleTrack) {
 
         try {
             br = new BufferedReader(new FileReader(file));
@@ -47,8 +46,20 @@ public class CsvReader {
             }
         }
         for (Map.Entry<String, String> entry : treeMap.entrySet()) {
-            //bottle.addFrontLabel()
-            //bottleTrack.add(new Bottle(identity));
+
+            Bottle bottle = new Bottle();
+
+            FrontLabel frontlabel = new FrontLabel();
+            frontlabel.setHeader(entry.getValue());
+            bottle.addFrontLabel(frontlabel);
+
+            BackLabel backlabel = new BackLabel(System.nanoTime(), bottle.getserialNumber());
+            bottle.addBackLabel(backlabel);
+
+            //.getKey()
+            bottleTrack.add(bottle);
+
+            //bottleTrack.add(new Bottle.Bottle(identity));
            System.out.print("| Key: " + entry.getKey() + " Values: " + entry.getValue());
         }
     }
