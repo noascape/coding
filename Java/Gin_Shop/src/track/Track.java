@@ -1,7 +1,8 @@
 package track;
 
 import bottle.Bottle;
-import container.Box;
+import container.*;
+
 
 import java.util.LinkedList;
 import java.util.Queue;
@@ -20,6 +21,10 @@ public class Track {
 
     public void add(Bottle bottle) {
         queue.add(bottle);
+    }
+
+    public void add(Pallet pallet) {
+        queue.add(pallet);
     }
 
 }

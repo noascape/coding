@@ -1,12 +1,9 @@
-import container.StorageArea;
-import container.Tank;
 import csv.CsvReader;
-import machines.FillingMachine;
-import machines.Roboter01;
-import machines.Roboter02;
+import machines.*;
 import track.Track;
-import container.Box;
+import container.*;
 import java.util.UUID;
+
 
 
 public class Main {
@@ -15,23 +12,24 @@ public class Main {
         //implementation of the gin bottling plant
         Track bottleTrack = new Track();
         Track boxTrack = new Track();
+        Track palletTrack = new Track();
 
         CsvReader csvReader = new CsvReader();
-        csvReader.read(bottleTrack);
+        csvReader.read(bottleTrack, palletTrack);
 
-        for (int i = 0; i < 4; i++) {
+        for (int i = 0; i < 96; i++) {
             boxTrack.add(new Box(UUID.randomUUID()));
         }
 
-        Roboter02 roboter02 = new Roboter02(new StorageArea());
-
-        Roboter01 roboter01 = new Roboter01(roboter02, boxTrack);
-
+        Trailer trailer = new Trailer();
+        AutonomousForklift autonomousForklift = new AutonomousForklift(trailer);
+        Gripper gripper = new Gripper(palletTrack, autonomousForklift);
+        Roboter01 roboter01 = new Roboter01(boxTrack, gripper);
         FillingMachine fillingMachine = new FillingMachine(roboter01, new Tank(), bottleTrack);
 
         fillingMachine.on();
         roboter01.on();
-        roboter02.on();
+        gripper.on();
 
         fillingMachine.execute();
 

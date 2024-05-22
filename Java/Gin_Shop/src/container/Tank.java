@@ -9,8 +9,8 @@ public class Tank {
 
     //Constructor
     public Tank(){
-        content = "g".repeat(13500);
-    }
+        content = "g".repeat(1000000);
+    }      //13500
 
     public boolean drainTankAmount(){
         int drainAmount = content.length()-500;

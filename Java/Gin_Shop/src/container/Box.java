@@ -13,16 +13,9 @@ public class Box {
 
     public Box(UUID boxLabel) {
         storageArea = new Bottle[3][3];
+        this.boxLabel = boxLabel;
+        usedBoxLabels.add(boxLabel);
 
-        //if (){
-        //this.boxLabel = boxLabel;
-        //usedBoxLabels.add(boxLabel);
-           // else {
-                //    this.boxLabel = UUID.randomUUID();
-                 //   usedBoxLabels.add(boxLabel);
-                 //   }
-
-       //}
     }
 
     public boolean addBottle(Bottle bottle) {
@@ -31,6 +24,7 @@ public class Box {
                 if (storageArea[i][j] == null) {
                     storageArea[i][j] = bottle;
                     countBottle++;
+                    product = bottle.getFrontLabelHeader(bottle);
                     return true;
                 }
             }
@@ -49,6 +43,10 @@ public class Box {
         return true;
     }
 
+    //public String getBottleStore(Box box) {
+
+    //}
+
     public Bottle[][] getStorageArea() {
         return storageArea;
     }
@@ -56,4 +54,5 @@ public class Box {
     public void setStorageArea(Bottle[][] storageArea) {
         this.storageArea = storageArea;
     }
+
 }

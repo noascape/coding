@@ -33,6 +33,10 @@ public class Bottle {
         backLabel = label;
     }
 
+    public String getFrontLabelHeader(Bottle bottle){
+        return frontLabel.header;
+    }
+
     public Bottle() {
         this.serialNumber = serialCounter++;
     }

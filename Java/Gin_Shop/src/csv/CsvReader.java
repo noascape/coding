@@ -6,7 +6,9 @@ import java.io.IOException;
 import java.util.Map;
 import java.util.TreeMap;
 import bottle.*;
+import container.*;
 import track.*;
+
 
 public class CsvReader {
 
@@ -20,7 +22,7 @@ public class CsvReader {
     }
 
 
-    public void read(Track bottleTrack) {
+    public void read(Track bottleTrack, Track palletTrack) {
 
         try {
             br = new BufferedReader(new FileReader(file));
@@ -46,21 +48,24 @@ public class CsvReader {
             }
         }
         for (Map.Entry<String, String> entry : treeMap.entrySet()) {
+            for (int i = 0; i < 27; i++) {
+                Bottle bottle = new Bottle();
 
-            Bottle bottle = new Bottle();
+                FrontLabel frontlabel = new FrontLabel();
+                frontlabel.setHeader(entry.getValue());
+                bottle.addFrontLabel(frontlabel);
 
-            FrontLabel frontlabel = new FrontLabel();
-            frontlabel.setHeader(entry.getValue());
-            bottle.addFrontLabel(frontlabel);
+                BackLabel backlabel = new BackLabel(System.nanoTime(), bottle.getserialNumber());
+                bottle.addBackLabel(backlabel);
 
-            BackLabel backlabel = new BackLabel(System.nanoTime(), bottle.getserialNumber());
-            bottle.addBackLabel(backlabel);
+                //.getKey()
+                bottleTrack.add(bottle);
+            }
+            Pallet pallet = new Pallet(entry.getKey());
+            palletTrack.add(pallet);
 
-            //.getKey()
-            bottleTrack.add(bottle);
 
-            //bottleTrack.add(new Bottle.Bottle(identity));
-           System.out.print("| Key: " + entry.getKey() + " Values: " + entry.getValue());
+                //bottleTrack.add(new Bottle.Bottle(identity));
         }
     }
 }

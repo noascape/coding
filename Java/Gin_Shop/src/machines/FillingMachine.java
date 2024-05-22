@@ -7,8 +7,8 @@ import container.Tank;
 public class FillingMachine {
     private boolean isOn;
     private final Roboter01 roboter01;
-    private Tank tank;
-    private Track bottleTrack;
+    private final Tank tank;
+    private final Track bottleTrack;
 
     public FillingMachine(Roboter01 roboter01, Tank tank, Track bottleTrack) {
         this.roboter01 = roboter01;
@@ -29,7 +29,7 @@ public class FillingMachine {
     public boolean fillBottle(Bottle bottle) {
 
         if(!tank.drainTankAmount()) {
-            System.out.println("Bottle.Bottle cant be filled. container.Tank empty. Machine turning off");
+            System.out.println("Bottle cant be filled. Tank empty. Machine turning off!");
             off();
             return false;
         }
@@ -47,10 +47,12 @@ public class FillingMachine {
             if(bottle == null) {
                 System.out.println( "No bottles left. Filling Machine is turning off!");
                 off();
+                roboter01.take(bottle);
                 return;
             }
 
             if(fillBottle(bottle)) roboter01.take(bottle);
+
         }
     }
 }
