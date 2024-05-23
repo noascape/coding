@@ -15,5 +15,4 @@ public interface IAutonomousForklift {
     void moveForksDown();
     void take(Pallet pallet);
     void releasePallet(Pallet pallet);
-
 }

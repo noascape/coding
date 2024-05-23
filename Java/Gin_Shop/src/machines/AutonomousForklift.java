@@ -10,7 +10,7 @@ public class AutonomousForklift implements IAutonomousForklift {
     private final String mast = "Mast";
     private final int fork = 2;
     private boolean isStarted;
-    private double speed = 0;
+    private double speed;
     private Pallet currentPallet;
     private final String engine = "Exchangeable AI enginge in 2 versions (2048/4096 GPU, composition";
 
@@ -19,6 +19,7 @@ public class AutonomousForklift implements IAutonomousForklift {
 
     public AutonomousForklift(Trailer trailer) {
         currentTrailer = trailer;
+        this.speed = 0;
     }
 
     public void drive(Pallet pallet) {
@@ -66,7 +67,7 @@ public class AutonomousForklift implements IAutonomousForklift {
                 emergencyStop();
                 return;
             }
-            this.speed = speed++;
+            this.speed += speed;
             System.out.println("Accelerating Autonomous Forklift. Current speed: " + speed);
         } else {
             System.out.println("Cannot accelerate. Autonomous Forklift is not started.");
@@ -81,7 +82,7 @@ public class AutonomousForklift implements IAutonomousForklift {
                 emergencyStop();
                 return;
             }
-            this.speed--;
+            this.speed -= speed;
             System.out.println("Slowing Autonomous Forklift. Current speed: " + speed);
         } else {
             System.out.println("Cannot slow down. Autonomous Forklift is not started.");
@@ -170,5 +171,13 @@ public class AutonomousForklift implements IAutonomousForklift {
 
     private boolean isObstacleDetected() {
         return random.nextInt(10) == 0;
+    }
+
+    //Testmanagement
+    public boolean isStarted() {
+        return isStarted;
+    }
+    public double getSpeed() {
+        return this.speed;
     }
 }

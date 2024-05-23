@@ -1,7 +1,5 @@
 package bottle;
 
-import java.util.ArrayList;
-
 public class Bottle {
 
     String name = "Lab Gin 2008";
@@ -16,8 +14,6 @@ public class Bottle {
     private static int serialCounter = 1;
     private FrontLabel frontLabel;
     private BackLabel backLabel;
-
-
 
     public void fill(){
         isFilled = true;
@@ -39,18 +35,17 @@ public class Bottle {
 
     public Bottle() {
         this.serialNumber = serialCounter++;
+        if (Identity.isDuplicateSerialNumber(this.serialNumber)) {
+            throw new IllegalStateException("Duplicate serial number" + this.serialNumber);
+        }
     }
 
     public int getserialNumber() {
         return this.serialNumber;
     }
 
-    //Identity
-    @Override
-    public boolean equals(Object obj) {
-        if (this == obj) {return true;}
-        if (obj == null || !(obj instanceof final Bottle bottle) || getClass() != obj.getClass()) {return false;}
-        return serialNumber == bottle.serialNumber;
+    //Testmanagement
+    public boolean isFilled() {
+        return this.isFilled;
     }
-
 }

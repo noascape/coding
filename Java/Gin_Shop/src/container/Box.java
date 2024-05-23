@@ -2,6 +2,7 @@ package container;
 
 import java.util.ArrayList;
 import java.util.UUID;
+import java.util.List;
 import bottle.Bottle;
 
 public class Box {
@@ -10,6 +11,8 @@ public class Box {
     private String product;
     private int countBottle;
     private final ArrayList<UUID> usedBoxLabels = new ArrayList<UUID>();
+
+    private List<Bottle> bottle;
 
     public Box(UUID boxLabel) {
         storageArea = new Bottle[3][3];
@@ -43,16 +46,16 @@ public class Box {
         return true;
     }
 
-    //public String getBottleStore(Box box) {
-
-    //}
-
-    public Bottle[][] getStorageArea() {
-        return storageArea;
+    //Testmanagement
+    public List<Bottle> getBottles() {
+        List<Bottle> bottles = new ArrayList<>();
+        for (int i = 0; i < storageArea.length; i++) {
+            for (int j = 0; j < storageArea[i].length; j++) {
+                if (storageArea[i][j] != null) {
+                    bottles.add(storageArea[i][j]);
+                }
+            }
+        }
+        return bottles;
     }
-
-    public void setStorageArea(Bottle[][] storageArea) {
-        this.storageArea = storageArea;
-    }
-
 }

@@ -9,7 +9,6 @@ import java.util.UUID;
 public class Main {
     public static void main(String... args) {
 
-        //implementation of the gin bottling plant
         Track bottleTrack = new Track();
         Track boxTrack = new Track();
         Track palletTrack = new Track();
@@ -32,7 +31,5 @@ public class Main {
         gripper.on();
 
         fillingMachine.execute();
-
-
     }
 }

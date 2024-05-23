@@ -1,31 +1,15 @@
 package bottle;
 
-import java.util.ArrayList;
-import java.util.Random;
+import java.util.HashSet;
+import java.util.Set;
 
 public class Identity {
+    private static final Set<Integer> usedSerialNumbers = new HashSet<>();
 
-    private final ArrayList<Integer> usedSerialNumbers = new ArrayList<Integer>();
-
-        //return String.valueOf(number);
-
-    public boolean equals (Object object) {
-        if (object == null) {
-            return false;
-        }
-        if (this == object) {
-            return true;
-        }
-        if (!(object instanceof final Bottle bottle)) {
-            return false;
-        }
-        if (getClass() != object.getClass()) {
-            return false;
-        }
-        return true;
-        //return serialNumber.equals(bottle.getserialNumber());
+    public static boolean isDuplicateSerialNumber(int serialNumber) {
+        return !usedSerialNumbers.add(serialNumber);
     }
-    }
+}
 
 
 

@@ -6,8 +6,6 @@ public class Tank {
     private final int width = 25;
     private final int height = 27;
 
-
-    //Constructor
     public Tank(){
         content = "g".repeat(1000000);
     }      //13500
@@ -22,6 +20,4 @@ public class Tank {
         content = content.substring(500);
         return true;
     }
-
-
 }

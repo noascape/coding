@@ -9,5 +9,4 @@ public class BackLabel extends Label{
         this.timestamp = timestamp;
         this.seq = serialNumber;
     }
-
 }

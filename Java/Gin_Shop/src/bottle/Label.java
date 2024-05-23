@@ -12,5 +12,4 @@ public class Label {
     public void setPosition(LabelPosition position) {
         this.position = position;
     }
-
 }

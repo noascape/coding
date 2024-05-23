@@ -58,14 +58,12 @@ public class CsvReader {
                 BackLabel backlabel = new BackLabel(System.nanoTime(), bottle.getserialNumber());
                 bottle.addBackLabel(backlabel);
 
-                //.getKey()
                 bottleTrack.add(bottle);
             }
+
             Pallet pallet = new Pallet(entry.getKey());
             palletTrack.add(pallet);
 
-
-                //bottleTrack.add(new Bottle.Bottle(identity));
         }
     }
 }

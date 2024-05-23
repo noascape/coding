@@ -26,5 +26,4 @@ public class Track {
     public void add(Pallet pallet) {
         queue.add(pallet);
     }
-
 }

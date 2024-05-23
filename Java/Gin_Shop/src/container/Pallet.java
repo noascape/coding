@@ -1,12 +1,8 @@
 package container;
 
-import bottle.Bottle;
-import track.Track;
-
 public class Pallet {
     private Box[] storageArea;
     private String palletLabel;
-    private Track storeTrack;
 
     public Pallet(String palletLabel) {
         storageArea = new Box[3];
@@ -35,4 +31,12 @@ public class Pallet {
         return true;
     }
 
+    //Testmanagement
+    public String getPalletLabel() {
+        return palletLabel;
+    }
+
+    public Box[] getBoxes() {
+        return storageArea;
+    }
 }
