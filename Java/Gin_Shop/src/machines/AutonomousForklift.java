@@ -98,7 +98,7 @@ public class AutonomousForklift implements IAutonomousForklift {
                 return;
             }
             if (degree >= 5.0 && degree <= 30.0) {
-                System.out.println("Turning left by " + degree + "degrees.");
+                System.out.println("Turning left by " + degree + " degrees.");
             } else {
                 System.out.println("Cannot turn left. Autonomous Forklift is not started.");
             }
@@ -114,7 +114,7 @@ public class AutonomousForklift implements IAutonomousForklift {
                 return;
             }
             if (degree >= 5.0 && degree <= 30.0) {
-                System.out.println("Turning right by " + degree + "degrees.");
+                System.out.println("Turning right by " + degree + " degrees.");
             }
         } else {
             System.out.println("Cannot turn right. Autonomous Forklift is not started.");
