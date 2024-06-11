@@ -1,0 +1,72 @@
+[
+    {
+        "tag": "Mo.",
+        "datum": "19.06.2024",
+        "art": "Vorspeise",
+        "beschreibung": "Tomatensuppe",
+        "preis": "2,80\u20ac"
+    },
+    {
+        "tag": "Mo.",
+        "datum": "19.06.2024",
+        "art": "Hauptgericht",
+        "beschreibung": "Lachs-Burger",
+        "preis": "7,20\u20ac"
+    },
+    {
+        "tag": "Di.",
+        "datum": "20.06.2024",
+        "art": "Vorspeise",
+        "beschreibung": "Bruschetta",
+        "preis": "3,50\u20ac"
+    },
+    {
+        "tag": "Di.",
+        "datum": "20.06.2024",
+        "art": "Hauptgericht",
+        "beschreibung": "Spaghetti Bolognese",
+        "preis": "6,50\u20ac"
+    },
+    {
+        "tag": "Mi.",
+        "datum": "21.06.2024",
+        "art": "Vorspeise",
+        "beschreibung": "Caesars Salad",
+        "preis": "3,20\u20ac"
+    },
+    {
+        "tag": "Mi.",
+        "datum": "21.06.2024",
+        "art": "Hauptgericht",
+        "beschreibung": "Schnitzel mit Pommes",
+        "preis": "8,00\u20ac"
+    },
+    {
+        "tag": "Do.",
+        "datum": "22.06.2024",
+        "art": "Vorspeise",
+        "beschreibung": "Linsensuppe",
+        "preis": "3,50\u20ac"
+    },
+    {
+        "tag": "Do.",
+        "datum": "22.06.2024",
+        "art": "Hauptgericht",
+        "beschreibung": "Gulasch",
+        "preis": "7,30\u20ac"
+    },
+    {
+        "tag": "Fr.",
+        "datum": "23.06.2024",
+        "art": "Vorspeise",
+        "beschreibung": "Fr\u00fchlingsrollen",
+        "preis": "3,10\u20ac"
+    },
+    {
+        "tag": "Fr.",
+        "datum": "23.06.2024",
+        "art": "Hauptgericht",
+        "beschreibung": "Nudelpfanne",
+        "preis": "6,70\u20ac"
+    }
+]

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>Anmeldung</title>
+    <link rel="icon" href="favicon.png">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <form action="login.php" method="post">
+            <input type="text" name="username" placeholder="Nutzername" required>
+            <input type="password" name="password" placeholder="Passwort" required>
+            <button type="submit">Anmelden</button>
+            <p id="error-message"><?php if(isset($_GET['error'])) echo 'Falsches Passwort/Benutzername, oder die Session ist ausgelaufen'; ?></p>
+        </form>
+    </div>
+</body>
+</html>
