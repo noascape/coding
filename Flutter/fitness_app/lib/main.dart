@@ -4,6 +4,7 @@ void main() {
   runApp(const MyApp());
 }
 
+//StatelessWidget wenn sich nichts am Inhalt verändern soll, sonst StatefulWidget
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
