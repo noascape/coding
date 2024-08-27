@@ -11,7 +11,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Bosch Essen-App',
-      theme: ThemeData(scaffoldBackgroundColor: Colors.brown),
+      theme: ThemeData(scaffoldBackgroundColor: Color(0xFF361D11)),
       home: const AuthCheck(),
     );
   }
@@ -89,16 +89,15 @@ class DetailPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsetsDirectional.fromSTEB(0.0, 48, 0.0, 32.0),
-      child: Column(
-        children: [
-          Text(
-            headline,
-            style: const TextStyle(fontSize: 48.0, color: Colors.white),
-          ),
-        ],
-      ),
-    );
-  }
-}
+    return Column(
+            children: [
+              Align(
+                alignment: Alignment.topRight, child: Image.asset('lib/assets/images/Logo.png', width: 100.0, height: 100.0, fit: BoxFit.contain)),
+              //SizedBox(height: 20.0),
+              Center(child: Text(headline, style: const TextStyle(fontSize: 48.0, color: Colors.white))),
+              //Spacer(),
+
+                      ],
+                );
+            }
+        }

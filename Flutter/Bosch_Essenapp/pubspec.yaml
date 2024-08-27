@@ -30,6 +30,10 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  firebase_core: ^2.7.0  # Überprüfe auf die neueste Version
+  cloud_firestore: ^5.3.0 # Überprüfe auf die neueste Version, falls du Firestore verwendest
+  firebase_auth: ^5.2.0   # Überprüfe auf die neueste Version, falls du Authentifizierung verwendest
+
 
 
   # The following adds the Cupertino Icons font to your application.
@@ -88,3 +92,7 @@ flutter:
   #
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/to/font-from-package
+
+  #Wichtig wenn man Bilder drin haben will
+  assets:
+    - lib/assets/images/Logo.png
