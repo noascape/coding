@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body id="body" style="background: yellow">
+    <button id="btn">change color</button>
+    <script>
+        document.getElementById("btn").onclick = () =>{
+            const body = document.getElementById("body");
+            if (body.style.background === "yellow") {body.style.background="grey";}
+            else {body.style.background="yellow";}
+        }
+    </script>
+</body>
+</html>
