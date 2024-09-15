@@ -45,7 +45,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Registrierung</title>
-    <link rel="stylesheet" href="style.css"></link>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <form action="index.php" method="POST">              <!--  alle Eingabefelder(<input/select/textarea/usw.>) mit einem name-Tag in form werden mit der Methode POST an die Datei index.php gesendet (wenn {zb. Button mit dem} type="submit" gedrückt wurde ) -->

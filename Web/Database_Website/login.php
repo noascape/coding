@@ -32,7 +32,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Login</title>
-    <link rel="stylesheet" href="style.css"></link>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <form action="login.php" method="POST">             <!-- wichtig darauf achten, dass hier die richtige Empfangs-Datei ausgewählt wurde -->
