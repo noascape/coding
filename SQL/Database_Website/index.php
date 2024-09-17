@@ -7,9 +7,9 @@
     require("connection.php");              #connection.php importieren
 
     if(isset($_POST["submit"])) {           #abfragen ob es submitted wurde
-        var_dump($_POST)
+        var_dump($_POST);
 
-        $username = $_POST["username"];     #Variable username,..
+        $username = $_POST["username"];          #Variable username,..
         $email = $_POST["email"];
         $password = PASSWORD_HASH($_POST["password"], PASSWORD_DEFAULT);       #verschlüsselt das pw in der db
 
