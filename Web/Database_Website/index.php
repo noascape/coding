@@ -7,20 +7,20 @@
     require("connection.php");              #connection.php importieren
                                             #  Funktion isset() überprüft, ob Variable existiert und ob sie nicht null ist. Wenn beides zutrifft wird true zurückgegeben
     if(isset($_POST["submit"])) {           #  $_POST ist ein globales Array, das alle Daten erhält, die mit der Methode Post an diese Datei gesandt wurden. Hier wird überprüft, ob das Formular mit dem name-Tag "submit" abgeschickt wurde
-        var_dump($_POST);
+        //var_dump($_POST);                 #gibt Struktur und Inhalt des $_POST Arrays aus (für Debugging-Zwecke)
 
         $username = $_POST["username"];     #Variablen username, email und password bekommen ihre Werte unten bei der Benutzereingabe (jeweils gekennzeichnet durch name="")
         $email = $_POST["email"];
         $password = PASSWORD_HASH($_POST["password"], PASSWORD_DEFAULT);       #verschlüsselt das pw in der db
 
-        $stmt = $con->prepare("SELECT * FROM users WHERE username=:username OR email=:email");           #SQL-Befehl mit prepare vorbereiten, um ihn später mit execute auszuführen       ":username" ist ein Platzhalter, welcher mit bindParam ersetzt werden kann
+        $stmt = $con->prepare("SELECT * FROM users WHERE username=:username OR email=:email");      #SQL-Befehl mit prepare vorbereiten, um ihn später mit execute auszuführen   ":username" ist ein Platzhalter, welcher mit bindParam den Wert einer Variablen erhält
         $stmt->bindParam(":username", $username);                  #users muss wie in der db geschrieben werden
         $stmt->bindParam(":email", $email);
         $stmt->execute();
 
-        $userAlreadyExists = $stmt->fetchColumn();               #um die Anzahl der gleichen Benutzer zu zählen, bei 0 = false  
+        $userAlreadyExists = $stmt->fetchColumn();               #fetchColumn() gibt die erste Zeile von $stmt aus. Gab es keine Benutzer bei dem SELECT-Befehl, erhält $userAlreadyExists den Boolean false (es gibt noch keinen solchen User)
 
-        if(!$userAlreadyExists) {
+        if(!$userAlreadyExists) {                                #wenn (nicht-falsch(=true)) --> es gibt keinen solchen Benutzer, dann registrie diesen User
             //Registrieren
             registerUser($username, $email, $password);
         }
