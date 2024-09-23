@@ -1,42 +1,29 @@
-<!-- 
-     Apache und SQL in XAMPP starten, Datei in htdocs
-     index.html -> index.php
-     unter XAMPP - SQL - Admin eine neue Datenbank anlegen "CREATE DATABASE userdb" darin ein Tabelle anlegen-> "CREATE TABLE users(id int AUTO_INCREMENT PRIMARY KEY, username varchar(255), email varchar(255), password varchar(255))"
--->
-<?php
-    require("connection.php");              #connection.php importieren
-                                            #  Funktion isset() überprüft, ob Variable existiert und ob sie nicht null ist. Wenn beides zutrifft wird true zurückgegeben
-    if(isset($_POST["submit"])) {           #  $_POST ist ein globales Array, das alle Daten erhält, die mit der Methode Post an diese Datei gesandt wurden. Hier wird überprüft, ob das Formular mit dem name-Tag "submit" abgeschickt wurde
-        //var_dump($_POST);                 #gibt Struktur und Inhalt des $_POST Arrays aus (für Debugging-Zwecke)
+<?php 
+    require("connection.php");
+                                                    #  Funktion isset() überprüft, ob Variable existiert und ob sie nicht null ist. Wenn beides zutrifft wird true zurückgegeben
+    if(isset($_POST["submit"])) {                   #  $_POST ist ein globales Array, das alle Daten erhält, die mit der Methode Post an diese Datei gesandt wurden. Hier wird überprüft, ob das Formular mit dem name-Tag "submit" abgeschickt wurde
 
-        $username = $_POST["username"];     #Variablen username, email und password bekommen ihre Werte unten bei der Benutzereingabe (jeweils gekennzeichnet durch name="")
-        $email = $_POST["email"];
-        $password = PASSWORD_HASH($_POST["password"], PASSWORD_DEFAULT);       #verschlüsselt das pw in der db
+        $username = $_POST["username"];                                 #hier ist alles was eingegeben wurde
+        $password = $_POST["password"];
 
-        $stmt = $con->prepare("SELECT * FROM users WHERE username=:username OR email=:email");      #SQL-Befehl mit prepare vorbereiten, um ihn später mit execute auszuführen   ":username" ist ein Platzhalter, welcher mit bindParam den Wert einer Variablen erhält
-        $stmt->bindParam(":username", $username);                  #users muss wie in der db geschrieben werden
-        $stmt->bindParam(":email", $email);
+        $stmt = $con->prepare("SELECT * FROM users WHERE username=:username");         #alle Zeilen eines gleichen username´s werden aus der DB geholt
+        $stmt->bindParam(":username", $username);
         $stmt->execute();
+        $userExists = $stmt->fetchAll();
+        var_dump($userExists);
 
-        $userAlreadyExists = $stmt->fetchColumn();               #fetchColumn() gibt die erste Zeile von $stmt aus. Gab es keine Benutzer bei dem SELECT-Befehl, erhält $userAlreadyExists den Boolean false (es gibt noch keinen solchen User)
+        $passwordHashed = $userExists[0]["password"];                  #unkenntlich gemachtes Passwort wird wieder entschlüsselt und in passwordHahsed gespeichert
+        $checkPassword = password_verify($password, $passwordHashed);  #Abgleich der Passwörter: Je nachdem wird True oder False zurückgegeben
 
-        if(!$userAlreadyExists) {                                #wenn (nicht-falsch(=true)) --> es gibt keinen solchen Benutzer, dann registrie diesen User
-            //Registrieren
-            registerUser($username, $email, $password);
+        if($checkPassword === false) {
+            echo "Login fehlgeschlagen, Passwort stimmt nicht überein";
         }
-        else{
-            //User existiert bereits
-        }
-    }
+        if($checkPassword === true) {
+            session_start();
+            $_SESSION["username"] = $userExists[0]["username"];       #username ist in der SESSION-Variable global gespeichert
 
-    function registerUser($username, $email, $password){
-        global $con;
-        $stmt = $con->prepare("INSERT INTO users(username, email, password) VALUES(:username, :email, :password)");
-        $stmt->bindParam(":username", $username);                  #users muss wie in der db geschrieben werden
-        $stmt->bindParam(":email", $email);
-        $stmt->bindParam(":password", $password);                  
-        $stmt->execute();
-        header("Location: homepage.php");                         #damit user, die sich registrieren direkt auf die Homepage weitergeleitet werden  
+            header("Location: homepage.php");
+        }
     }
 ?>
 
@@ -44,18 +31,18 @@
 <html lang="de">
 <head>
     <meta charset="UTF-8">
-    <title>Registrierung</title>
+    <title>Login</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <form action="index.php" method="POST">              <!--  alle Eingabefelder(<input/select/textarea/usw.>) mit einem name-Tag in form werden mit der Methode POST an die Datei index.php gesendet (wenn {zb. Button mit dem} type="submit" gedrückt wurde ) -->
-        <h1>Account Erstellen</h1>
+    <form action="index.php" method="POST">             <!-- wichtig darauf achten, dass hier die richtige Empfangs-Datei ausgewählt wurde -->
+        <h1>Login</h1>
         <div class="inputs_container">    
             <input type="text" placeholder="Benutzername" name="username" autocomplete="off">
-            <input type="text" placeholder="Email" name="email" autocomplete="off">
             <input type="password" placeholder="Passwort" name="password" autocomplete="off">
         </div>
-        <button name="submit">Erstellen</button>
+        <button name="submit">Login</button>
     </form>  
+    <a href="registry.php">Ich habe noch keinen Account</a>
 </body>
 </html>
