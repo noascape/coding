@@ -48,6 +48,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div>
     <form action="registry.php" method="POST">              <!--  alle Eingabefelder(<input/select/textarea/usw.>) mit einem name-Tag in form werden mit der Methode POST an die Datei index.php gesendet (wenn {zb. Button mit dem} type="submit" gedrückt wurde ) -->
         <h1>Account Erstellen</h1>
         <div class="inputs_container">    
@@ -60,5 +61,7 @@
     <form action="homepage.php" method="POST">
         <button name="logout">Zurück</button>
     </form>
+    </div>
+    
 </body>
 </html>

@@ -22,6 +22,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Homepage</title>
+    <link rel="stylesheet" href="style1.css">
 </head>
 <body>
     <h1>Willkommen  

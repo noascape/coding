@@ -35,6 +35,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div>
     <form action="index.php" method="POST">             <!-- wichtig darauf achten, dass hier die richtige Empfangs-Datei ausgewählt wurde -->
         <h1>Login</h1>
         <div class="inputs_container">    
@@ -44,5 +45,6 @@
         <button name="submit">Login</button>
     </form>  
     <a href="registry.php">Ich habe noch keinen Account</a>
+    </div>
 </body>
 </html>

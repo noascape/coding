@@ -1,7 +1,6 @@
 <?php
     require("connection.php");
     session_start();
-    echo $_SESSION["username"];
 
     if(isset($_GET["submit"])) {
         global $con;
@@ -57,6 +56,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Einkaufswagen</title>
+    <link rel="stylesheet" href="style2.css">
 </head>
 <body>
     <h1>Das ist der Einkaufswagen</h1>
@@ -83,9 +83,10 @@
             if($tableAlreadyExists) {
                 $table = showCart();
                 foreach($table as $row) {
-                    echo "<tr><td>" . htmlspecialchars($row["Produkt"]) . "</td><td>" . htmlspecialchars($row["Produktnummer"]) . "</td><td>" . htmlspecialchars($row["Anzahl"]). "</td><td>" . htmlspecialchars($row["Farbe"]). "</table>";
-                }
-            } else {
+                    echo "<tr><td>" . htmlspecialchars($row["Produkt"]) . "</td><td>" . htmlspecialchars($row["Produktnummer"]) . "</td><td>" . htmlspecialchars($row["Anzahl"]). "</td><td>" . htmlspecialchars($row["Farbe"]) . "</td>" ;
+                };
+                echo "</table>";
+                } else {
                 echo "</table><br>Der Warenkorb ist aktuell leer";
             }
         ?>

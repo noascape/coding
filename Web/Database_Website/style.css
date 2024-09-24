@@ -1,0 +1,71 @@
+body {
+    background-color: aliceblue;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div {
+    background-color: burlywood;
+    padding: 20px 5px 40px 5px;  /* Mehr Padding, um das Formular größer zu machen */
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  /* Leichterer Schatten */
+    width: 400px;  /* Schmaleres Formular */
+    text-align: center;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.inputs_container {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    margin-bottom: 1.5em; /* Abstand nach unten für den Button */
+}
+
+input {
+    padding: 0.8em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 0.8em;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 1em;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+button[name="logout"]{
+    background-color: #ff4d4d;
+    margin-top: 10px;
+}
+
+button[name="logout"]:hover {
+    background-color: #ff1a1a;
+}
+
+a {
+    color: #007BFF;
+    margin-top: 1em;
+    display: block;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
