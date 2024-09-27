@@ -1,8 +1,10 @@
+package Automat;
+
 public class Ticket {
     private String type;
     private double price;
 
-    Ticket(String type, double price) {
+    public Ticket(String type, double price) {
         this.type = type;
         this.price = price;
     }
