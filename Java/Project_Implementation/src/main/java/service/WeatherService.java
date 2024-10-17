@@ -4,7 +4,7 @@ import api.*;
 import java.time.LocalDateTime;
 
 public class WeatherService implements IWeatherService {
-    private WeatherAPI weatherAPI;
+    private final WeatherAPI weatherAPI;
 
     public WeatherService(WeatherAPI weatherAPI) {
         this.weatherAPI = weatherAPI;

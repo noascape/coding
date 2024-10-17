@@ -10,7 +10,7 @@ public class WeatherState {
     protected float clouds;
     protected LocalDateTime time;
 
-    // Konstruktor
+
     public WeatherState(Location location, float temperature, float rainfall, float windspeed, float clouds, LocalDateTime time) {
         this.location = location;
         this.temperature = temperature;
@@ -69,3 +69,4 @@ public class WeatherState {
         this.time = time;
     }
 }
+

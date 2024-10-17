@@ -1,14 +1,13 @@
 package model;
 
+import lombok.Getter;
+
+@Getter
 public class DaysForecast {
-    private DayState[] dailyForecasts;
+    private final DayState[] dailyForecasts;
 
     public DaysForecast(DayState[] dailyForecasts) {
         this.dailyForecasts = dailyForecasts;
-    }
-
-    public DayState[] getDailyForecasts() {
-        return dailyForecasts;
     }
 
 }

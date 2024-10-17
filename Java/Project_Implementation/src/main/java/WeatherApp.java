@@ -9,15 +9,13 @@ import service.WeatherService;
 
 public class WeatherApp {
 
-    private final WeatherAPI weatherAPI;
     private final WeatherService weatherService;
     private final DisplayService displayService;
 
     public WeatherApp() {
-        this.weatherAPI = new WeatherAPI("API_Key");
+        WeatherAPI weatherAPI = new WeatherAPI("API_Key");
         this.weatherService = new WeatherService(weatherAPI);
         this.displayService = new DisplayService();
-
     }
 
     public void createWeather(Location location) {
@@ -30,6 +28,4 @@ public class WeatherApp {
         displayService.printDailyForecast();
         displayService.printHourForecast();
     }
-
-
 }

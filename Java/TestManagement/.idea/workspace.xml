@@ -4,7 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fe0ae691-b52f-45d6-88d8-da13d5f57d41" name="Changes" comment="" />
+    <list default="true" id="fe0ae691-b52f-45d6-88d8-da13d5f57d41" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../Project_Implementation/src/test/java/cucumber/WeatherSteps.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Project_Implementation/src/test/java/jgiven/WeatherServiceScenarioTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Project_Implementation/src/test/java/junit/WeatherAPITest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Project_Implementation/src/test/java/mockito/WeatherServiceTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Projekt_Implementation/.idea/.name" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Projekt_Implementation/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Projekt_Implementation/src/test/java/junit/WeatherAppTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../[X24]DataAnalytics/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../[X24]DataAnalytics/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -56,40 +66,40 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "Gradle.CargoAirplaneScenarioTest.executor": "Run",
-    "Gradle.Junit.executor": "Run",
-    "Gradle.TestApplication (1).executor": "Run",
-    "Gradle.TestApplication.executor": "Run",
-    "Gradle.TestApplication.startAllEngines.executor": "Run",
-    "Gradle.TestApplication.startEngineWithSufficientFuel.executor": "Run",
-    "Gradle.cucumber.executor": "Run",
-    "Gradle.jgiven.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "dart.analysis.tool.window.visible": "false",
-    "git-widget-placeholder": "codespace-turbo-dollop-g44r7gjqjqj93wgw6",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/Noah/Documents/GitHub/coding/Java/TestManagement",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "onboarding.tips.debug.path": "C:/Users/nheim/Documents/GitHub/implementation1/src/main/java/org/example/Main.java",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.45402297",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;Gradle.CargoAirplaneScenarioTest.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Junit.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.TestApplication (1).executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.TestApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.TestApplication.startAllEngines.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.TestApplication.startEngineWithSufficientFuel.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.cucumber.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.jgiven.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;codespace-turbo-dollop-g44r7gjqjqj93wgw6&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Noah/Documents/GitHub/coding/Java/Projekt_Implementation&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/nheim/Documents/GitHub/implementation1/src/main/java/org/example/Main.java&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.45402297&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "kotlin-gradle-user-dirs": [
-      "C:\\Users\\nheim\\.gradle"
+  &quot;keyToStringList&quot;: {
+    &quot;kotlin-gradle-user-dirs&quot;: [
+      &quot;C:\\Users\\nheim\\.gradle&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Gradle.cucumber">
     <configuration name="Junit" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
@@ -164,9 +174,9 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Gradle.jgiven" />
       <item itemvalue="Gradle.Junit" />
       <item itemvalue="Gradle.cucumber" />
+      <item itemvalue="Gradle.jgiven" />
     </list>
     <recent_temporary>
       <list>
@@ -207,6 +217,8 @@
       <workItem from="1728299646036" duration="612000" />
       <workItem from="1728913284883" duration="30000" />
       <workItem from="1729166257716" duration="59000" />
+      <workItem from="1729174092703" duration="941000" />
+      <workItem from="1729178208827" duration="4000" />
     </task>
     <servers />
   </component>

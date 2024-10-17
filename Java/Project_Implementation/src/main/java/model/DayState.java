@@ -6,14 +6,14 @@ public class DayState extends WeatherState {
     private LocalDateTime sunrise;
     private LocalDateTime sunfall;
 
-    // Konstruktor
+
     public DayState(Location location, float temperature, float rainfall, float windspeed, float clouds, LocalDateTime time, LocalDateTime sunrise, LocalDateTime sunfall) {
-        super(location, temperature, rainfall, windspeed, clouds, time);  // Aufruf des Konstruktors der Superklasse
+        super(location, temperature, rainfall, windspeed, clouds, time);
         this.sunrise = sunrise;
         this.sunfall = sunfall;
     }
 
-    // Getter und Setter für sunrise und sunfall
+
     public LocalDateTime getSunrise() {
         return sunrise;
     }

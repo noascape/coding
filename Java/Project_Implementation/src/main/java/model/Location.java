@@ -1,8 +1,8 @@
 package model;
 
 public class Location {
-    private float longitude;
-    private float latitude;
+    private final float longitude;
+    private final float latitude;
 
     public Location(float longitude, float latitude) {
         this.longitude = longitude;

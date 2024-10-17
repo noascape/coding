@@ -1,15 +1,13 @@
 package model;
 
+import lombok.Getter;
+
+@Getter
 public class HoursForecast {
-    private HourState[] hourForecasts;
+    private final HourState[] hourForecasts;
 
     public HoursForecast(HourState[] hourForecasts) {
         this.hourForecasts = hourForecasts;
     }
 
-    public HourState[] getHourForecasts() {
-        return hourForecasts;
-    }
-
-    // Getter und Setter
 }
