@@ -5,6 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fe0ae691-b52f-45d6-88d8-da13d5f57d41" name="Changes" comment="">
+<<<<<<< Updated upstream
       <change afterPath="$PROJECT_DIR$/../Project_Implementation/src/test/java/cucumber/WeatherSteps.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../Project_Implementation/src/test/java/jgiven/WeatherServiceScenarioTest.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../Project_Implementation/src/test/java/junit/WeatherAPITest.java" afterDir="false" />
@@ -14,6 +15,10 @@
       <change afterPath="$PROJECT_DIR$/../Projekt_Implementation/src/test/java/junit/WeatherAppTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../[X24]DataAnalytics/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../[X24]DataAnalytics/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+=======
+      <change afterPath="$PROJECT_DIR$/../02_Test/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_Test/logs/data_analytics.log" beforeDir="false" afterPath="$PROJECT_DIR$/../02_Test/logs/data_analytics.log" afterDir="false" />
+>>>>>>> Stashed changes
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,7 +87,11 @@
     &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
     &quot;git-widget-placeholder&quot;: &quot;codespace-turbo-dollop-g44r7gjqjqj93wgw6&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+<<<<<<< Updated upstream
     &quot;last_opened_file_path&quot;: &quot;C:/Users/Noah/Documents/GitHub/coding/Java/Projekt_Implementation&quot;,
+=======
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/nheim/Documents/Uni/Software Engineering/implementation&quot;,
+>>>>>>> Stashed changes
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -216,9 +225,13 @@
       <workItem from="1727874956535" duration="13000" />
       <workItem from="1728299646036" duration="612000" />
       <workItem from="1728913284883" duration="30000" />
+<<<<<<< Updated upstream
       <workItem from="1729166257716" duration="59000" />
       <workItem from="1729174092703" duration="941000" />
       <workItem from="1729178208827" duration="4000" />
+=======
+      <workItem from="1729166480164" duration="472000" />
+>>>>>>> Stashed changes
     </task>
     <servers />
   </component>
