@@ -1,0 +1,90 @@
+{
+  "className": "jgiven.WeatherServiceScenarioTest",
+  "name": "Weather Service Scenario",
+  "scenarios": [
+    {
+      "className": "jgiven.WeatherServiceScenarioTest",
+      "testMethodName": "userRequestsWeatherForecast",
+      "description": "User requests weather forecast",
+      "tagIds": [],
+      "explicitParameters": [],
+      "derivedParameters": [],
+      "scenarioCases": [
+        {
+          "caseNr": 1,
+          "steps": [
+            {
+              "name": "a user at location",
+              "words": [
+                {
+                  "value": "Given",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "a user at location"
+                },
+                {
+                  "value": "52.52",
+                  "argumentInfo": {
+                    "argumentName": "latitude",
+                    "formattedValue": "52.52"
+                  }
+                },
+                {
+                  "value": "13.405",
+                  "argumentInfo": {
+                    "argumentName": "longitude",
+                    "formattedValue": "13.405"
+                  }
+                }
+              ],
+              "status": "PASSED",
+              "durationInNanos": 13678100,
+              "depth": 0,
+              "parentFailed": false
+            },
+            {
+              "name": "the user requests the weather forecast",
+              "words": [
+                {
+                  "value": "When",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "the user requests the weather forecast"
+                }
+              ],
+              "status": "PASSED",
+              "durationInNanos": 8817200,
+              "depth": 0,
+              "parentFailed": false
+            },
+            {
+              "name": "the weather information is displayed",
+              "words": [
+                {
+                  "value": "Then",
+                  "isIntroWord": true
+                },
+                {
+                  "value": "the weather information is displayed"
+                }
+              ],
+              "status": "PASSED",
+              "durationInNanos": 1462300,
+              "depth": 0,
+              "parentFailed": false
+            }
+          ],
+          "explicitArguments": [],
+          "derivedArguments": [],
+          "status": "SUCCESS",
+          "durationInNanos": 67055100
+        }
+      ],
+      "casesAsTable": false,
+      "durationInNanos": 67055100
+    }
+  ],
+  "tagMap": {}
+}
