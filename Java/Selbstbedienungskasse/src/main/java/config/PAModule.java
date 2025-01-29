@@ -4,7 +4,6 @@ import com.google.common.eventbus.AsyncEventBus;
 import com.google.inject.AbstractModule;
 import com.google.inject.Provides;
 import com.google.inject.Singleton;
-import facade.*;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import services.payment.*;
@@ -21,14 +20,14 @@ public class PAModule extends AbstractModule {
 
     @Override
     protected void configure() {
-        bind(ISBFacade.class).to(SBFacade.class);
-
         bind(IPaymentService.class).annotatedWith(named("CARD_PAYMENT")).to(CardPaymentService.class);
         bind(IPaymentService.class).annotatedWith(named("CASH_PAYMENT")).to(CashPaymentService.class);
         bind(IPaymentService.class).annotatedWith(named("MOBILE_PAYMENT")).to(MobilePaymentService.class);
 
         bind(ScanService.class).asEagerSingleton();
         bind(PaymentService.class).asEagerSingleton();
+
+        bind(IScanService.class).to(ScanService.class);
     }
 
     @Provides
@@ -42,7 +41,6 @@ public class PAModule extends AbstractModule {
     public AsyncEventBus provideAsyncEventBus(ExecutorService executorService) {
         return new AsyncEventBus(executorService);
     }
-
 
     public synchronized void shutdown() {
         log.info("Shutting down AsyncEventBus");

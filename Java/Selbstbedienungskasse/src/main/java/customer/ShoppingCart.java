@@ -1,25 +1,17 @@
 package customer;
 
-import visitor.*;
+import lombok.Getter;
+
 import java.util.ArrayList;
 import java.util.List;
 
+@Getter
 public class ShoppingCart {
-    private final List<Item> items = new ArrayList<>();
+    private final List<ShoppingCartItem> items = new ArrayList<>();
 
-    public void addItem(Item item) {
+    public void addItem(ShoppingCartItem item) {
         items.add(item);
     }
 
-    public List<Item> getItems() {
-        return items;
-    }
-
-    public float calculateTotalPrice(IVisitor visitor) {
-        for (Item item : items) {
-            item.accept(visitor);
-        }
-        return ((PricingVisitor) visitor).getTotalPrice();
-    }
 }
 

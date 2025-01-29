@@ -1,11 +1,13 @@
 package customer;
 
+import enums.ItemType;
 import visitor.IVisitor;
+import java.time.LocalDateTime;
 
 public class WeightBasedItem extends Item {
-
-    public WeightBasedItem(String itemName, String barcode, float price, float weight) {
-        super(itemName, barcode, price, weight, 0);
+    public WeightBasedItem(String name, String barcode, float price, float weight, float discount, int ageRestriction, LocalDateTime discountEnd, int quantity) {
+        super(name, barcode, price, weight, discount, ageRestriction, discountEnd, quantity);
+        this.type = ItemType.WEIGHT_BASED;
     }
 
     @Override

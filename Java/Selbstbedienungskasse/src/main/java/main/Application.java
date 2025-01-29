@@ -1,44 +1,33 @@
 package main;
 
+import SB.SB;
 import com.google.inject.Guice;
 import com.google.inject.Injector;
 import config.PAModule;
 import customer.*;
-import database.DatabaseService;
 import enums.PaymentType;
-import facade.ISBFacade;
 import lombok.extern.slf4j.Slf4j;
-import visitor.PricingVisitor;
 
 @Slf4j
 public class Application {
-    public static void main(String... args) {
-        DatabaseService dbService = new DatabaseService();
-        ShoppingCart cart = new ShoppingCart();
-
-        Item milk = dbService.getItemByBarcode("1001");
-        Item apple = dbService.getItemByBarcode("1002");
-        Item pen  = dbService.getItemByBarcode("1020");
-
-        cart.addItem(milk);
-        cart.addItem(apple);
-        cart.addItem(pen);
-
-        PricingVisitor visitor = new PricingVisitor();
-        float totalPrice = cart.calculateTotalPrice(visitor);
-
-        log.info("Total price of cart: {} €", totalPrice);
-
-
-
+    public static void main(String[] args) {
         PAModule module = new PAModule();
         Injector injector = Guice.createInjector(module);
-        ISBFacade facade = injector.getInstance(ISBFacade.class);
 
-        //simulate the system operations
-        facade.scanItem("1001", 2);
-        facade.processPayment(PaymentType.CARD_PAYMENT);
+        SB sb = injector.getInstance(SB.class);
 
+        ShoppingCart cart = new ShoppingCart();
+        cart.addItem(new ShoppingCartItem("Milk", "1001", 2, 2f));    //normal 2€
+        cart.addItem(new ShoppingCartItem("Apple", "1002", 4, 0.6f));   //weight_based 3€
+        cart.addItem(new ShoppingCartItem("Chips", "1004", 1, 0.3f));   //discounted 1,08€
+        cart.addItem(new ShoppingCartItem("Vodka", "1006", 1, 0.7f));   //age restricted --> 0€  insgesamt: 6,08€
+
+        IDCard id = new IDCard(16);
+        Customer john = new Customer(id, cart, sb);
+
+        //john.touch(sb);
+        john.scanItems(sb);
+        john.pay(PaymentType.CASH_PAYMENT);
 
         module.shutdown();
     }

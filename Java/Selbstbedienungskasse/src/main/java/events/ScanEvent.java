@@ -1,15 +1,20 @@
 package events;
 
+import enums.ItemType;
 import lombok.AllArgsConstructor;
 import lombok.Data;
+import java.time.LocalDateTime;
 
 @Data
 @AllArgsConstructor
 public class ScanEvent {
-    //soll ich die alle drin lassen oder kommen diese Informationen dann erst beim ScanEvent aus der Datenbank
-    //private String itemName;
-    //private float price;
-    //private int quantity;
-    private String barcode;
+    private String name;
+    private float basePrice;
     private int quantity;
+    //Optional
+    private float customWeight;
+    private ItemType itemType;
+    private float discount;
+    private LocalDateTime discountEnd;
+    private int ageRestriction;
 }

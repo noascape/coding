@@ -1,7 +1,5 @@
 package services.scan;
 
-import events.ScanEvent;
-
 public interface IScanService {
-    void handleScanEvent(ScanEvent scanEvent);
+    boolean scanItem(String barcode, int quantity, float customWeight, int customerAge);
 }

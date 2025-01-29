@@ -1,29 +1,48 @@
 package SB;
 
-import SB.barcodeScanner.BarcodeScanner;
-import SB.weightPlatform.WeightPlatform;
+import com.google.common.eventbus.AsyncEventBus;
+import database.DatabaseService;
 import enums.State;
+import jakarta.inject.Inject;
+import lombok.Data;
+import lombok.extern.slf4j.Slf4j;
+import events.*;
+import services.scan.IScanService;
 
+@Slf4j
+@Data
 public class SB {
-    private final BarcodeScanner barcodeScanner;
-    private final WeightPlatform weightPlatform;
-    private final Touchscreen touchscreen;
-    private final Display display;
-    private State state;
+    private final AsyncEventBus eventBus;
+    public final BarcodeScanner barcodeScanner;
+    public final WeightPlatform weightPlatform;
+    public final Touchscreen touchscreen;
+    public final Display display;
+    private final IScanService scanService;
+    private State state = State.INACTIVE;
 
-    public SB(BarcodeScanner barcodeScanner, WeightPlatform weightPlatform, Touchscreen touchscreen, Display display) {
-        this.barcodeScanner = barcodeScanner;
-        this.weightPlatform = weightPlatform;
-        this.touchscreen = touchscreen;
-        this.display = display;
-        this.state = State.INACTIVE;
+    @Inject
+    public SB(AsyncEventBus eventBus, IScanService scanService, DatabaseService databaseService) {
+        this.scanService = scanService;
+        this.barcodeScanner = new BarcodeScanner(scanService, databaseService, this);
+        this.weightPlatform = new WeightPlatform(databaseService);
+        this.touchscreen = new Touchscreen(this);
+        this.display = new Display();
+        this.eventBus = eventBus;
     }
 
     public void start() {
-        this.state = State.ACTIVE;
-        barcodeScanner.activate();
-        weightPlatform.calibrate();
-        display.show("Kasse bereit");
+        if (this.state == State.INACTIVE) {
+            barcodeScanner.activate();
+            weightPlatform.calibrate();
+            display.show("Checkout ready. Please scan or lay down the Item.");
+            this.state = State.ACTIVE;
+        }
     }
 
+    public void postPaymentEvent(PaymentEvent event) {
+        log.info("SB: posting PaymentEvent => {}", event);
+        eventBus.post(event);
+        weightPlatform.reset();
+    }
 }
+
