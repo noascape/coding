@@ -1,0 +1,34 @@
+version: "3.9"
+
+services:
+  webshop:
+    build: .                  # Baut das Image aus Dockerfile im aktuellen Ordner
+    container_name: "webshop"
+    ports:
+      - "3000:3000"           # Lokaler Port 3000 → Container-Port 3000
+    depends_on:
+      - products              # Warte, bis 'products' Container gestartet ist
+    # environment:
+    #   - PRODUCT_SERVICE_URL=http://products:4000
+    # Falls du Umgebungsvariablen brauchst, z. B. um den zweiten Container zu erreichen
+
+  products:
+    image: node:16-alpine     # Beispiel: Stell dir vor, du hast eine zweite Node-App
+    container_name: "products"
+    # Hier könntest du in realen Projekten via volume/folder deine eigene Produkt-App mounten
+    # Oder ein separates Dockerfile angeben, falls du einen Produkt-Service entwickelt hast
+    # z.B.:
+    # build: ./products-service
+    # ports:
+    #   - "4000:4000"
+    # ...
+
+    # Oder (falls du eine Datenbank verwendest), z. B.:
+    # image: mysql:5.7
+    # environment:
+    #   - MYSQL_ROOT_PASSWORD=secret
+    #   - MYSQL_DATABASE=productsdb
+    #   ...
+    # ports:
+    #   - "3306:3306"
+
