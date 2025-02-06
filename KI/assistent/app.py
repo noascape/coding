@@ -35,4 +35,6 @@ render_api_key_input()
 render_input_for_greeting_card()
 
 
-# run the app via entering in the shell: streamlit run app.py
+#1. an die Stelle ../KI/assistent navigieren (Terminal)
+#2. .\.venv\Scripts\Activate.ps1             (um die virtuelle Umgebung zu aktivieren)
+# streamlit run app.py                       (um die App zu starten)
