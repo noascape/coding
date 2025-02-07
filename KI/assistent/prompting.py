@@ -19,7 +19,7 @@ def get_llm(openai_api_key: str, model: str) -> ChatOpenAI:
     os.environ["OPENAI_API_KEY"] = openai_api_key
     return ChatOpenAI(model=model)
 
-def get_greeting_card_text(addressee: str, occasion: str, style: str, llm: ChatOpenAI) -> str:
+def get_greeting_card_text(addressee: str, occasion: str, style: str, truth:str, llm: ChatOpenAI) -> str:
     """
     Generate a custom greeting card text using a language model.
 
@@ -40,13 +40,13 @@ def get_greeting_card_text(addressee: str, occasion: str, style: str, llm: ChatO
     template = """Du bist professioneller Kreativschreiber 
                 und hast dich auf das Schreiben von Texten für Grußkarten spezialisiert. 
                 Deine Aufgabe ist es, basierend auf einem Adressaten, 
-                einem Anlass und einem Schreibstil einen Text für eine Grußkarte zu schreiben. 
-                Der Adressat ist {addressee}. Der Anlass ist {occasion}. Der Schreibstil ist {style}."""
+                einem Anlass und einem Schreibstil und einem Wahrheitsgehalt einen Text für eine Grußkarte zu schreiben. 
+                Der Adressat ist {addressee}. Der Anlass ist {occasion}. Der Schreibstil ist {style}. Die Grußkarte ist die reinste {truth}."""      #neu
     prompt_template = PromptTemplate(
-        input_variables=["addressee","occasion","style"],
+        input_variables=["addressee","occasion","style","truth"],
         template=template
     )
-    prompt = prompt_template.invoke({"addressee":addressee, "occasion": occasion, "style": style})
+    prompt = prompt_template.invoke({"addressee":addressee, "occasion": occasion, "style": style, "truth": truth})
     response = llm.invoke(prompt)
     return response.content
 

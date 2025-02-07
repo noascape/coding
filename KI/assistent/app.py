@@ -22,11 +22,12 @@ def render_input_for_greeting_card() -> None:
     addressee = st.text_input("Adressat*in", key="addressee")
     occasion = st.text_input("Anlass", key="occasion")
     style = st.text_input("Schreibstil", key="style")
+    truth = st.text_input("Wahrheitsgehalt",key="truth")      #neu
 
     if st.button("Erstelle Grußkartentext"):
         with st.chat_message("ai"):
             st.write("Hallo 👋 Ich habe folgenden Text für Dich erstellt:")
-            st.write(prompting.get_greeting_card_text(addressee=addressee, occasion=occasion, style=style, llm=st.session_state["llm"]))
+            st.write(prompting.get_greeting_card_text(addressee=addressee, occasion=occasion, style=style, truth=truth, llm=st.session_state["llm"]))      #truth neu
     
     st.divider()
 
