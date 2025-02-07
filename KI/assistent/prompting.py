@@ -31,7 +31,6 @@ def get_greeting_card_text(addressee: str, occasion: str, style: str, llm: ChatO
         addressee (str): The recipient of the greeting card (e.g., "John", "Mom").
         occasion (str): The occasion for the greeting card (e.g., "birthday", "anniversary").
         style (str): The desired writing style for the card (e.g., "friendly", "formal").
-        your_name (str): The name of the 
         llm (AzureChatOpenAI): An instance of the AzureChatOpenAI language model used to generate the text.
 
     Returns:
