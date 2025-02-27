@@ -57,7 +57,8 @@ class Person {
 
 //Zeiger
 int a = 10;
-int* ptr = &a;
+int* ptr = &a;           // Zeiger (*) speichert die Adresse einer Variablen (&)
+*ptr = 15;         // ändert den Wert von a auf 15
 cout << "Wert von a: " << *ptr << endl;
 
 //Referenzen
