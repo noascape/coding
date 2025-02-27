@@ -61,6 +61,11 @@ int* ptr = &a;           // Zeiger (*) speichert die Adresse einer Variablen (&)
 *ptr = 15;         // ändert den Wert von a auf 15
 cout << "Wert von a: " << *ptr << endl;
 
+int* ip = new int;        //Speicher reservieren
+if(!ip) { return -1 }   //Prüfen ob erfolgreich
+*ip = 5;                //Speicher verwenden
+delete ip;           //Speicher freigeben
+
 //Referenzen
 int b = 20;
 int& ref = b;      //Referenzen (&) sind Aliasnamen für Variablen und müssen beim Deklarieren initialisiert werden
