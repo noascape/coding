@@ -1,0 +1,204 @@
+0
+Summe: 0
+1
+Summe: 1
+2
+Summe: 3
+3
+Summe: 6
+4
+Summe: 10
+5
+Summe: 15
+6
+Summe: 21
+7
+Summe: 28
+8
+Summe: 36
+9
+Summe: 45
+10
+Summe: 55
+11
+Summe: 66
+12
+Summe: 78
+13
+Summe: 91
+14
+Summe: 105
+15
+Summe: 120
+16
+Summe: 136
+17
+Summe: 153
+18
+Summe: 171
+19
+Summe: 190
+20
+Summe: 210
+21
+Summe: 231
+22
+Summe: 253
+23
+Summe: 276
+24
+Summe: 300
+25
+Summe: 325
+26
+Summe: 351
+27
+Summe: 378
+28
+Summe: 406
+29
+Summe: 435
+30
+Summe: 465
+31
+Summe: 496
+32
+Summe: 528
+33
+Summe: 561
+34
+Summe: 595
+35
+Summe: 630
+36
+Summe: 666
+37
+Summe: 703
+38
+Summe: 741
+39
+Summe: 780
+40
+Summe: 820
+41
+Summe: 861
+42
+Summe: 903
+43
+Summe: 946
+44
+Summe: 990
+45
+Summe: 1035
+46
+Summe: 1081
+47
+Summe: 1128
+48
+Summe: 1176
+49
+Summe: 1225
+50
+Summe: 1275
+51
+Summe: 1326
+52
+Summe: 1378
+53
+Summe: 1431
+54
+Summe: 1485
+55
+Summe: 1540
+56
+Summe: 1596
+57
+Summe: 1653
+58
+Summe: 1711
+59
+Summe: 1770
+60
+Summe: 1830
+61
+Summe: 1891
+62
+Summe: 1953
+63
+Summe: 2016
+64
+Summe: 2080
+65
+Summe: 2145
+66
+Summe: 2211
+67
+Summe: 2278
+68
+Summe: 2346
+69
+Summe: 2415
+70
+Summe: 2485
+71
+Summe: 2556
+72
+Summe: 2628
+73
+Summe: 2701
+74
+Summe: 2775
+75
+Summe: 2850
+76
+Summe: 2926
+77
+Summe: 3003
+78
+Summe: 3081
+79
+Summe: 3160
+80
+Summe: 3240
+81
+Summe: 3321
+82
+Summe: 3403
+83
+Summe: 3486
+84
+Summe: 3570
+85
+Summe: 3655
+86
+Summe: 3741
+87
+Summe: 3828
+88
+Summe: 3916
+89
+Summe: 4005
+90
+Summe: 4095
+91
+Summe: 4186
+92
+Summe: 4278
+93
+Summe: 4371
+94
+Summe: 4465
+95
+Summe: 4560
+96
+Summe: 4656
+97
+Summe: 4753
+98
+Summe: 4851
+99
+Summe: 4950
+100
+Summe: 5050
+
+ Manuelle Summe: 12
