@@ -3,9 +3,10 @@ import pandas as pd
 import tkinter as tk
 from tkinter import filedialog
 from openpyxl import load_workbook
+from openpyxl.utils import get_column_letter
 
-# Terminal: python3.13 -m pip install pandas openpyxl Jinja2
-# Exe bauen: python3.13 -m pip install pyinstaller;     cd /pfad/zum/Projektcode;      python3.13 -m PyInstaller --onefile --noconsole --name MergerApp app.py
+#Terminal: pyhton3.13 -m pip install pandas openpyxl Jinja2
+#Exe bauen: python3.13 -m pip install pyinstaller;  cd /pfad/zum/Projektcode;   python3.13 -m PyInstaller --onefile --noconsole --name MergerApp app.py
 
 desired_columns= ["Material", "ID", "Stückpreis_23", "Stückpreis_24", "Preisveränderung", "Stückzahl_23", "Stückzahl_24", "Stückzahlveränderung", "Gesamtkosten_23", "Gesamtkosten_24", "Kostendifferenz"]
 
@@ -23,15 +24,16 @@ def select_excel_file(prompt: str) -> str:
 
 def merge_excels(file1: str, file2:str, output_path:str):
     # Einlesen und zusammenführen
-    cols1 = ["Material", "ID", "Stückpreis_23", "Stückzahl_23", "Gesamtkosten_23"]
-    cols2 = ["Material", "ID", "Stückpreis_24", "Stückzahl_24", "Gesamtkosten_24"]
+    cols1 = ["Material_23", "ID", "Stückpreis_23", "Stückzahl_23", "Gesamtkosten_23"]
+    cols2 = ["Material_24", "ID", "Stückpreis_24", "Stückzahl_24", "Gesamtkosten_24"]
     ds1 = pd.read_excel(file1, skiprows=2, header=None, names=cols1)
     ds2 = pd.read_excel(file2, skiprows=2, header=None, names=cols2)
-    df = pd.merge(ds1, ds2, on=["ID", "Material"], how="outer")
+    df = pd.merge(ds1, ds2, on="ID", how="outer")
+    df["Material"] = df["Material_23"].combine_first(df["Material_24"])
+    df = df.drop(columns=["Material_23", "Material_24"])
 
     # Neue Custom-Spalten anlegen
     df["Preisveränderung"]      = df["Stückpreis_24"]       - df["Stückpreis_23"]
-    df["Preisveränderung_%"]    = (df["Stückpreis_24"] - df["Stückpreis_23"]) / df["Stückpreis_23"]
     df["Stückzahlveränderung"]  = df["Stückzahl_24"]        - df["Stückzahl_23"]
     df["Kostendifferenz"]       = df["Gesamtkosten_24"]     - df["Gesamtkosten_23"]
 
@@ -41,12 +43,13 @@ def merge_excels(file1: str, file2:str, output_path:str):
 
     # Färbung
     def highlight_row(row):
-        # Rot, wenn Preisveränderung > 10%; Gelb, wenn < 10%; sonst keine Färbung
-        if row["Preisveränderung_%"] > 10:
-            return["background-color: red"] * len(row)
-        elif row["Preisveränderung_%"] < -10:
-            return["background-color: yellow"] * len(row)
-        else:
+        # Rot, wenn Preisveränderung > 50; Gelb, wenn < 50; sonst keine Färbung
+         pct = (row["Stückpreis_24"] - row["Stückpreis_23"]) / row["Stückpreis_23"]
+         if pct > 0.10:
+            return ["background-color: red"] * len(row)
+         elif pct < -0.10:
+            return ["background-color: yellow"] * len(row)
+         else:
             return [""] * len(row)
 
     style = df.style.apply(highlight_row, axis=1)
@@ -54,7 +57,6 @@ def merge_excels(file1: str, file2:str, output_path:str):
     # Excel mit Styling schreiben
     with pd.ExcelWriter(output_path, engine="openpyxl") as writer:
         style.to_excel(writer, index=False, sheet_name="Zusammengeführt")   #startrow=1, um erst ab Zeile 2 zu beginnen
-        writer.book["Zusammengeführt"].sheet_state = 'visible'
 
     #Spaltenbreite anhand der Kopfzeile anpassen ("Autofit")
     wb = load_workbook(output_path)
