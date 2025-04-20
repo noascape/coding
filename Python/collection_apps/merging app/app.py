@@ -8,7 +8,7 @@ from openpyxl.utils import get_column_letter
 #Terminal: pyhton3.13 -m pip install pandas openpyxl Jinja2
 #Exe bauen: python3.13 -m pip install pyinstaller;  cd /pfad/zum/Projektcode;   python3.13 -m PyInstaller --onefile --noconsole --name MergerApp app.py
 
-desired_columns= ["Material", "ID", "Stückpreis_23", "Stückpreis_24", "Preisveränderung", "Stückzahl_23", "Stückzahl_24", "Stückzahlveränderung", "Gesamtkosten_23", "Gesamtkosten_24", "Kostendifferenz"]
+desired_columns= ["Nr", "Beschreibung", "Beschreibung2", "Produktgruppencode", "Inventurgruppencode", "Lagerort", "Bestand Datum_23", "Bestand_Datum_24", "Bestandsveränderung", "Basiseinheit", "Nettogewicht kg/ Einheit_23", "Nettogewicht kg/ Einheit_24", "Nettogewicht kg_23", "Nettogewicht kg_24", "Bewertungspreis € / Einheit_23", "Bewertungspreis € / Einheit_24", "Relative Bewertungspreisveränderung", "Bewertungspreis €_23", "Bewertungspreis €_24", "Absolute Bewertungspreisveränderung"]
 
 def select_excel_file(prompt: str) -> str:
     root = tk.Tk()
@@ -24,27 +24,36 @@ def select_excel_file(prompt: str) -> str:
 
 def merge_excels(file1: str, file2:str, output_path:str):
     # Einlesen und zusammenführen
-    cols1 = ["Material_23", "ID", "Stückpreis_23", "Stückzahl_23", "Gesamtkosten_23"]
-    cols2 = ["Material_24", "ID", "Stückpreis_24", "Stückzahl_24", "Gesamtkosten_24"]
-    ds1 = pd.read_excel(file1, skiprows=2, header=None, names=cols1)
-    ds2 = pd.read_excel(file2, skiprows=2, header=None, names=cols2)
-    df = pd.merge(ds1, ds2, on="ID", how="outer")
-    df["Material"] = df["Material_23"].combine_first(df["Material_24"])
-    df = df.drop(columns=["Material_23", "Material_24"])
+    cols1 = ["Nr", "Beschreibung_23", "Beschreibung2_23", "Produktgruppencode_23", "Inventurgruppencode_23", "Lagerort_23", "Bestand Datum_23", "Basiseinheit_23", "Nettogewicht kg/ Einheit_23", "Nettogewicht kg_23", "Bewertungspreis € / Einheit_23", "Bewertungspreis €_23"]
+    cols2 = ["Nr", "Beschreibung_24", "Beschreibung2_24", "Produktgruppencode_24", "Inventurgruppencode_24", "Lagerort_24", "Bestand Datum_24", "Basiseinheit_24", "Nettogewicht kg/ Einheit_24", "Nettogewicht kg_24", "Bewertungspreis € / Einheit_24", "Bewertungspreis €_24"]
+    ds1 = pd.read_excel(file1, sheet_name=0, skiprows=4, header=None, names=cols1)
+    ds2 = pd.read_excel(file2, sheet_name=0, skiprows=3, header=None, names=cols2)
+    df = pd.merge(ds1, ds2, on="Nr", how="outer")
+
+    df["Beschreibung"] = df["Beschreibung_23"].combine_first(df["Beschreibung_24"])
+    df = df.drop(columns=["Beschreibung_23", "Beschreibung_24"])
+    df["Beschreibung2"] = df["Beschreibung2_23"].combine_first(df["Beschreibung2_24"])
+    df = df.drop(columns=["Beschreibung2_23", "Beschreibung2_24"])
+    df["Produktgruppencode"] = df["Produktgruppencode_23"].combine_first(df["Produktgruppencode_24"])
+    df = df.drop(columns=["Produktgruppencode_23", "Produktgruppencode_24"])
+    df["Inventurgruppencode"] = df["Inventurgruppencode_23"].combine_first(df["Inventurgruppencode_24"])
+    df = df.drop(columns=["Inventurgruppencode_23", "Inventurgruppencode_24"])
+    df["Lagerort"] = df["Lagerort_23"].combine_first(df["Lagerort_24"])
+    df = df.drop(columns=["Lagerort_23", "Lagerort_24"])
 
     # Neue Custom-Spalten anlegen
-    df["Preisveränderung"]      = df["Stückpreis_24"]       - df["Stückpreis_23"]
-    df["Stückzahlveränderung"]  = df["Stückzahl_24"]        - df["Stückzahl_23"]
-    df["Kostendifferenz"]       = df["Gesamtkosten_24"]     - df["Gesamtkosten_23"]
+    df["Relative Bewertungspreisveränderung"]= df["Bewertungspreis € / Einheit_24"] - df["Bewertungspreis € / Einheit_23"]
+    df["Bestandveränderung"]= df["Bestand Datum_24"] - df["Bestand Datum_23"]
+    df["Absolute Bewertungspreisveränderung"]= df["Bewertungspreis €_24"]- df["Bewertungspreis €_23"]
 
     # Sortieren und Ordnen
-    df = df.sort_values("Kostendifferenz", ascending=False)
+    df = df.sort_values("Absolute Bewertungspreisveränderung", ascending=False)
     df = df[desired_columns]
 
     # Färbung
     def highlight_row(row):
         # Rot, wenn Preisveränderung > 50; Gelb, wenn < 50; sonst keine Färbung
-         pct = (row["Stückpreis_24"] - row["Stückpreis_23"]) / row["Stückpreis_23"]
+         pct = (row["Bewertungspreis € / Einheit_24"] - row["Bewertungspreis € / Einheit_23"]) / row["Bewertungspreis € / Einheit_23"]
          if pct > 0.10:
             return ["background-color: red"] * len(row)
          elif pct < -0.10:
