@@ -9,4 +9,4 @@ Welcome to my personal codespaces. Here you will find the newest projects that I
     <li>Python self learning</li>
 </ol>
 
-Feel free to explore my latest projects. Your curiosity and feedback are always welcome as we embark on this codnig yourney together 🙌
+Feel free to explore my latest projects. Your curiosity and feedback are always welcome as we embark on this coding yourney together 🙌
