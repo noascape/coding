@@ -142,3 +142,7 @@ if __name__ == "__main__":
         print(f"Datei gespeichert unter: {out}")
     except Exception as e:
         print(f"Abbruch: {e}")
+
+
+#es braucht noch den Suffix automatisch und dann muss die Endung _23 oder _24 von 2 Variablen übernommen werden. Diese müssen beim Einlesen der Excel direkt extrahiert werden aus A1 wenn es ein 2 oder 4 stellen langes Datum gibt. 
+#dann müsste man schauen, ob es ab 25 immer das Feld Lagerort gibt und ab wann die eigentliche Tabelle anfängt
