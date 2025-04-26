@@ -40,10 +40,21 @@ def merge_excels(file1: str, file2: str, output_path: str):
     df["Basiseinheit"] = df["Basiseinheit_24"].combine_first(df["Basiseinheit_23"])
     df.drop(columns=["Beschreibung_23","Beschreibung_24", "Beschreibung2_23","Beschreibung2_24", "Produktgruppencode_23","Produktgruppencode_24", "Inventurgruppencode_23","Inventurgruppencode_24", "Basiseinheit_23","Basiseinheit_24"], inplace=True)
 
-    # Custom Spalten 
-    df["Relative Bewertungspreisveränderung"] = (df["Bewertungspreis € / Einheit_24"] - df["Bewertungspreis € / Einheit_23"]) / df["Bewertungspreis € / Einheit_23"]
-    df["Absolute Bewertungspreisveränderung"] = (df["Bewertungspreis €_24"] - df["Bewertungspreis €_23"])
-    df["Bestandsveränderung"] = (df["Bestand Datum_24"] - df["Bestand Datum_23"])
+    # Custom Spalten (nach Nr gruppiert für die korrekten Berechnungen) 
+    sum_23 = df.groupby("Nr")[[
+        "Bewertungspreis € / Einheit_23",
+        "Bewertungspreis €_23",
+        "Bestand Datum_23"
+    ]].transform(lambda x: x.sum(min_count=1))
+    sum_24 = df.groupby("Nr")[[
+        "Bewertungspreis € / Einheit_24",
+        "Bewertungspreis €_24",
+        "Bestand Datum_24"
+    ]].transform(lambda x: x.sum(min_count=1))
+
+    df["Relative Bewertungspreisveränderung"] = (sum_24["Bewertungspreis € / Einheit_24"] - sum_23["Bewertungspreis € / Einheit_23"]) / sum_23["Bewertungspreis € / Einheit_23"]
+    df["Absolute Bewertungspreisveränderung"] = (sum_24["Bewertungspreis €_24"] - sum_23["Bewertungspreis €_23"])
+    df["Bestandsveränderung"] = (sum_24["Bestand Datum_24"] - sum_23["Bestand Datum_23"])
 
     # Unendlichkeiten und NaNs ersetzen ohne inplace chaining
     rel = df["Relative Bewertungspreisveränderung"].replace([np.inf, -np.inf], np.nan)
@@ -62,7 +73,7 @@ def merge_excels(file1: str, file2: str, output_path: str):
         ws.insert_rows(1)
         ws.merge_cells(start_row=1, start_column=1, end_row=1, end_column=ws.max_column)
         legend = (
-            "Legende: Relative Bewertungspreisveränderung: Rot > 30% | Orange > 20% | Blau = Fehler (Division durch 0)"
+            "Legende: Relative Bewertungspreisveränderung: Rot > 30% | Orange > 20% | Blau = Fehler (Keine Vergleichsdaten vorhanden oder Bewertungspreis pro Einheit = 0)"
         )
         cell = ws.cell(row=1, column=1, value=legend)
         cell.alignment = Alignment(horizontal="center")
@@ -71,14 +82,34 @@ def merge_excels(file1: str, file2: str, output_path: str):
         for sheet in wb.worksheets:
             sheet.sheet_state = 'visible'
 
-        # AutoFit aller Spalten
+        # alles oberhalb von A3 freezen
+        ws.freeze_panes = 'A3'
+
+        # Breite aller Spalten manuell festlegen (müsste für 24 Zoll passen)
+        ws.column_dimensions['A'].width = 10
+        ws.column_dimensions['B'].width = 45
+        ws.column_dimensions['C'].width = 35
+        ws.column_dimensions['D'].width = 6
+        ws.column_dimensions['E'].width = 15
+        ws.column_dimensions['F'].width = 12
+        ws.column_dimensions['G'].width = 15
+        ws.column_dimensions['H'].width = 15
+        ws.column_dimensions['I'].width = 15
+        ws.column_dimensions['J'].width = 8
+        ws.column_dimensions['K'].width = 8
+        ws.column_dimensions['L'].width = 8
+        ws.column_dimensions['M'].width = 15
+        ws.column_dimensions['N'].width = 15
+        ws.column_dimensions['O'].width = 15
+        ws.column_dimensions['P'].width = 15
+        ws.column_dimensions['Q'].width = 15
+        ws.column_dimensions['R'].width = 15
+        ws.column_dimensions['S'].width = 15
+        ws.column_dimensions['T'].width = 15
+
+        # Richtige Formatierung in 0.00%
         max_col = ws.max_column
         max_row = ws.max_row
-        for idx, col_cells in enumerate(ws.columns, start=2):
-            ws.column_dimensions[get_column_letter(idx)].width = (
-                max(len(str(cell.value)) for cell in col_cells) + 2
-            )
-
         pct_col_idx = None
         for idx_cell, cell in enumerate(ws[2], start=1):
             if cell.value == "Relative Bewertungspreisveränderung":
@@ -88,7 +119,7 @@ def merge_excels(file1: str, file2: str, output_path: str):
             for row in range(3, max_row+1):
                 ws[f"{get_column_letter(pct_col_idx)}{row}"].number_format = '0.00%'
 
-        # Conditional Formatting nach angepasster Logik
+        # Zeilenfärbung
         rel_col = next(
             (c.column_letter for c in ws[2] if c.value == "Relative Bewertungspreisveränderung"),
             None
@@ -102,7 +133,7 @@ def merge_excels(file1: str, file2: str, output_path: str):
             # >30% rot
             ws.conditional_formatting.add(
                 rng,
-                FormulaRule(formula=[f"${rel_col}3>0.30"], fill=red_fill)
+                FormulaRule(formula=[f"${rel_col}3>0.30"], fill=red_fill)             # Excel-Formel: gültig für Zeile 3, Excel zieht das automatisch nach unten und passt die Formel entsprechend an
             )
             # >20% orange
             ws.conditional_formatting.add(
@@ -124,6 +155,9 @@ def merge_excels(file1: str, file2: str, output_path: str):
                 rng,
                 FormulaRule(formula=[f"ISBLANK(${rel_col}3)"], fill=blue_fill)
             )
+
+        # Autofilter für Headerzeile
+        ws.auto_filter.ref = f"A2:{get_column_letter(max_col)}{max_row}"
 
     return df
 
