@@ -36,113 +36,14 @@ print(floor(3.7))                                                               
 print(ceil(3.7))                                                                #round the number up
 print(sqrt(36))                                                                 #square number (of 36: 6*6 -> 6)
 
-#Array/List []
-friends = ["Kevin", "Karen", "Jim"]                                             #friend array
-lucky_numbers = [4, 8, 15, 17, 33, 43]                                          #number array
-friends2 = friends.copy()                                                       #copy a list into another list
-friends[0] = "Mike"                                                             #modify the list
-friends.extend(lucky_numbers)                                                   #extend one list with another one
-friends.append("Luke")                                                          #append a value to the end of the list
-lucky_numbers.insert(1, "Kelly")                                                #insert a value to a position and the other values will be pushed to the right
-lucky_numbers.pop()                                                             #to remove the last value, you can also do .clear or .remove and some more
-friends.count("Jim")                                                            #count the amount of Jim`s in the list                                                          
-lucky_numbers.reverse()                                                         #reverse the order of the list
-print(friends[1])                                                               #list output of the element with the array 1 (=Karen), you could also do it from the right side of the list [-1] = Jim
-
-#Tuple ()
-coordinates = (4, 5)                                                            #a Tuple ist like a list, but () cannot be modified
-
-#Dictionary {}
-monthConversions = {
-    "Jan": "January",                                                          #on the left a unique key in the dicitionary, on the ride the value
-    "Feb": "February",
-    "Mar": "March",
-    "Apr": "April",
-    "May": "May",
-    "Jun": "June", 
-    "Jul": "July",
-    "Aug": "August",
-    "Sep": "September",
-    "Oct": "October",
-    "Nov": "November", 
-    "Dec": "December",
-}
-print(monthConversions["Nov"])                                                  #will give the associated value of the key
-print(monthConversions.get("Luc", "Not a valid Key"))                           #you can specify a default value in case the key is not faund in the dictinoary
-
-#2D List
-number_grid = [
-    [1, 2, 3],                                                                  #4 Elements in a List which are all elements themselves
-    [4, 5, 6],
-    [7, 8, 9],
-    [0]
-]
-print(number_grid[0][0])                                                        #How to access the Elements in this kind of list
-for line in number_grid:
-    for col in line:
-        print(col)
-
-#Functions
-def say_hi(name, age):                                                          #Function definition and naming and the parameters name, age that have to be given when calling this function
-    print("Hello", name, "you are", str(age))
-
-say_hi("Mike", 15)                                                              #Execute the function say_hi with the parameters "Mike" and 15
-
-#Classes
-class Student:
-    def __init__(self, name, major, gpa, is_on_probation):                      #initialize function     | self is needed, so that Python knows which specific object within the class is being referred to (which would be student1 and student2 in this case)
-            self.name = name                                                    #the student stores a name, major,... and now this information of all students will be stored alltogether
-            self.major = major
-            self.gpa = gpa
-            self.is_on_probation = is_on_probation
-
-    def on_honor_roll(self):                                                    #another function that checks if the students gpa is good enough to be on honor roll
-        if self.gpa >= 3.5: 
-            return True
-        else:
-            return False
-
-student1 = Student("Jim", "Business", 3.1, False)
-student2 = Student("Anna", "Finance", 1.7, True )
-print(student1.name, student1.gpa)
-print(student1.on_honor_roll())
-
-#Inheritance of classes
-class Chef:
-    def make_chicken(self):
-        print("The chef makes a chicken")
-    def make_salad(self):
-        print("The chef makes a salad")
-    def make_special_dish(self):
-        print("The chef makes bbq ribs")
-
-class ChineseChef(Chef):                                                        #can do everything that the normal Chef can do -> inheritance from Chef
-    def make_fried_rice(self):
-        print("The chef makes fried rice")
-    def make_special_dish(self):                                                #you can overwrite an already existing definition (redefine it with the same name)
-        print("The chef makes orange chicken")
-
-yourChef = ChineseChef()    
-myChef = Chef()
-yourChef.make_special_dish()
-myChef.make_special_dish()
-Chef().make_special_dish()
-
-
-
-#Return keyword
-def cube(num):
-    return num*num*num                                                          #will give back the value to whatever called the function, which is the print statement below, return breaks the function (so you cannot put code below it)
-print(cube(3))
-
 #If statements
 is_tall = False
 is_not_male = True
 if is_male or is_not_male and is_tall:                                          #the is_male boolean is already defined 
     print("You are a tall male")
-elif is_male and not(is_tall):
+elif is_male and not is_tall:
     print("You are a short male")
-elif not(is_male) and is_tall:
+elif not is_male and is_tall:
     print("You are a tall female")
 else: 
     print("You are neither a male nor tall")
@@ -213,5 +114,5 @@ except ZeroDivisionError as err:                                                
     print(err)                                                                  #we can store the error as a variable
 except ValueError:
     print("Invalide Input")
-except:                                                                         #you don´t want to do such a general except
-    print("An error accured")
+except Exception as e:                                                          #general except
+    print(f"An error accured: {e}")
