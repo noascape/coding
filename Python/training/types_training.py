@@ -17,6 +17,7 @@ friends.index("Karen")
 lucky_numbers.sort()
 friends2.clear()
 sorted(friends)
+letzes_element = friends[-1]
 umgekehrt = friends[::-1]                                                       #gibt eine umgekehrte Kopie der Liste
 len(umgekehrt)
 #in                                                                             #prüft, ob ein Element enthalten ist: if "Jim" in friends:
@@ -27,7 +28,7 @@ len(umgekehrt)
 coordinates = (4, 5)                                                            #a Tuple ist like a list, but (), cannot be modified
 
 
-#Dictionary {} (dict)
+#Dictionary {} (dict) (= Hash-Map)
 monthConversions = {
     "Jan": "January",                                                          #on the left a unique key in the dicitionary, on the ride the value
     "Feb": "February",
@@ -52,9 +53,15 @@ monthConversions.update(Dec="December")
 del monthConversions["Dec"]
 
 
-# SET                                                                          #Verwendbar für Mengenoperationen (union, intersection, difference), Duplikat-Erkennung oder -Entfernung
+# SET                                                                          #Verwendbar für Mengenoperationen (union, intersection, difference), Duplikat-Erkennung oder -Entfernung, enthält keine Duplikate
+set1 = set()
 my_set = {1, 2, 3, 2}
 print(my_set)
+my_set.add(5)
+my_set.remove(5)
+my_set.discard(4)                                                               #Entfernt ein Element (Kein Fehler bei Nichtvorhandensein)
+my_set.pop()                                                                    #Entfernt ein beliebiges Element
+my_set.clear()                                                                  #Löscht alle Elemente
 
 #2D List
 number_grid = [
