@@ -1,5 +1,7 @@
 from concurrent.futures import ThreadPoolExecutor, as_completed     # es gibt auch den ProcessPoolExecutor (Prozesse statt Threads), dieser nutzt wirklich mehrere Kerne simultan für Berechnungen
 import threading
+from typing import Any, Tuple
+
 import requests
 #import asyncio      # Voll asynchron, ohne Thread-Overhead  (z.B.: aiohttp)
 import time
@@ -34,7 +36,7 @@ print("Alle Threads beendet.")
 
 ##----------------------------ThreadPoolExecutor-----------------------------##
 
-def worker_function(number): 
+def worker_function(number: int) -> int:
     print(f"Calculating the result for number {number}")
     time.sleep(2)
     return number ** 2
@@ -78,7 +80,7 @@ URLS = [
     "https://api.example.com/enpoint2"
 ]
 
-def fetch_url(url):
+def fetch_url(url: str) -> Tuple[str, Any]:
     try:
         response = requests.get(url, timeout=5)
         response.raise_for_status()
