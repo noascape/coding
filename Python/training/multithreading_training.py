@@ -1,16 +1,19 @@
 from concurrent.futures import ThreadPoolExecutor, as_completed     # es gibt auch den ProcessPoolExecutor (Prozesse statt Threads), dieser nutzt wirklich mehrere Kerne simultan für Berechnungen
 import threading
 import requests
-import asyncio      # Voll asynchron, ohne Thread-Overhead
-import aiohttp
+#import asyncio      # Voll asynchron, ohne Thread-Overhead  (z.B.: aiohttp)
 import time
 import os
 
+##--------------------------------------------------------------------------------------------Inforamtionen:---------------------------------------------------------------------------------##
+# Mehrere Threads mit parallelem Scheduling, Gleichzeitigkeit durch echte Thread-Ausführung (limitiert durch GIL), Parallelität bei I/O bei CPU aber wegen GIl eingeschränkt, höherer Ressourcenbrauch (mehr Kontextwechsel, mehr RAM)
+# geeignet für blockierende I/O- oder einfach gleichzeitige Tasks, ein paar Hundert Threads möglich (Skalierbarkeit), bei wenigen Tasks einfache Komplexität, Fehleranfällig bei Race Conditions und Deadlocks
+# Bsp.: viele kurze API-Anfragen mit requests (synchron), wenn asynchrone Bibliothek wie aiohttp genutzt wird, Ziel: maximale Kompatibilität
 
 def arbeite(name):
-    #print(f"{name} startet")
-    #time.sleep(2)
-    #print(f"{name} beendet")
+    print(f"{name} startet")
+    time.sleep(2)
+    print(f"{name} beendet")
     return 1
 
 # Threads starten
@@ -75,23 +78,26 @@ URLS = [
     "https://api.example.com/enpoint2"
 ]
 
-async def fetch_url(url):
-    async with session.get(url, timeout=5) as resp:
-        resp.raise_for_status()
-        return await resp.json()
+def fetch_url(url):
+    try:
+        response = requests.get(url, timeout=5)
+        response.raise_for_status()
+        return url, response.json()
+    except Exception as e:
+        return url, e
 
 
-async def main(): 
-    async with aiohttp.ClientSession() as session: 
-        tasks = [ fetch_url(session, url) for url in URLS ]
-        # startet alle gleichzeitig und wartet, bis alle fertig sind
-        results = await asyncio.gather(*tasks, return_exceptions=True)
-        for url, result in zip(URLS, results): 
+
+def main():
+    with ThreadPoolExecutor() as executor:
+        futures = [executor.submit(fetch_url, url) for url in URLS]
+        for future in as_completed(futures):
+            url, result = future.result()
             if isinstance(result, Exception):
                 print(f"Fehler bei {url}: {result}")
-            else: 
+            else:
                 print(f"{url} -> {result}")
 
 
 if __name__ == "__main__":
-    asyncio.run(main())
+    main()

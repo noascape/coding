@@ -1,7 +1,32 @@
 import asyncio
 from concurrent.futures import ThreadPoolExecutor
 import requests
-import time
+
+##--------------------------------------------------------------------------------------------Inforamtionen:---------------------------------------------------------------------------------##
+# Ein Thread mit Event Loop, Gleichzeitigkeit durch Task-Scheduling, nicht parallel, aber effizient durch nicht blockieren, geringer Ressourcenverbrauch (nur ein Thread, leichter Kontextwechsel)
+# geeignet für viele kleine I/O-bound Tasks, Tausende Tasks durch Event Loop möglich (Skalierung), Code komplexer durch async/await aber skalierbarer, Fehleranfällig bei await aber deterministisch
+
+
+
+
+##-----------------------------Mehrere Tasks gleichzeitig------------------------------------------##
+async def task(name, seconds):
+    print(f"{name} startet")
+    await asyncio.sleep(seconds)
+    print(f"{name} endet nach {seconds}s")
+
+
+async def main():
+    t1= asyncio.create_task(task("Task A", 2))         # beide Aufgaben laufen parallel
+    t2 = asyncio.create_task(task("Task B", 3))        # startet Funktion: task(...) sofort im Hintergrund (nicht blockierend)
+    await t1                    # der Code danach wird erst ausgeführt, wenn t1 abgeschlossen ist
+    await t2
+    await asyncio.gather(t1, t2) # wenn man direkt auf beide wartet und nicht einzeln unterscheidet
+
+asyncio.run(main())
+
+
+##-----------------------------------+ ThreadPoolExecutor----------------------------------------------##
 
 # Normale (blockierende) API-Anfrage mit requests
 def fetch_url(url):
@@ -17,7 +42,7 @@ async def async_fetch(url, executor):
     return result
 
 # Main-Eventloop
-async def main():
+async def main2():
     urls = [
         "https://httpbin.org/delay/2",
         "https://httpbin.org/delay/3",
@@ -29,4 +54,4 @@ async def main():
         print(f"Statuscodes: {results}")
 
 # Start
-asyncio.run(main())
+#asyncio.run(main2())
