@@ -1,4 +1,6 @@
 #Array/List [] (list)
+from typing import Tuple
+
 friends = ["Kevin", "Karen", "Jim"]                                             #friend array
 friends_extention = ["Rob", "Will"]
 lucky_numbers = [4, 8, 15, 17, 33, 43]                                          #number array
@@ -25,7 +27,10 @@ len(umgekehrt)
 
 
 #Tuple ()
-coordinates = (4, 5)                                                            #a Tuple ist like a list, but (), cannot be modified
+coordinates = (4, "Anna", 5)                                                #a Tuple ist like a list(Array), but (), cannot be modified, can have elements of different types  --> return num1, name, num2
+
+def tuple_function() -> Tuple[int, str, int]:
+    return coordinates
 
 
 #Dictionary {} (dict) (= Hash-Map)
@@ -62,6 +67,7 @@ my_set.remove(5)
 my_set.discard(4)                                                               #Entfernt ein Element (Kein Fehler bei Nichtvorhandensein)
 my_set.pop()                                                                    #Entfernt ein beliebiges Element
 my_set.clear()                                                                  #Löscht alle Elemente
+
 
 #2D List
 number_grid = [
