@@ -88,7 +88,7 @@ print("Hello", result)                                                          
 #Calculation
 def raise_to_power(base_num, pow_num):
     output = 1
-    for i in range(pow_num):                                                    #we loop through it as often as the pow numbers value (2^3)
+    for y in range(pow_num):                                                    #we loop through it as often as the pow numbers value (2^3)
         output = output * base_num
     return output 
                                                                             
