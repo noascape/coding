@@ -30,7 +30,7 @@ len(umgekehrt)
 coordinates = (4, "Anna", 5)                                                #a Tuple ist like a list(Array), but (), cannot be modified, can have elements of different types  --> return num1, name, num2
 
 def tuple_function() -> Tuple[int, str, int]:
-    return coordinates
+    return coordinates                                                      #the position will always remain the same -> coordinates[1] is always the name in this case
 
 
 #Dictionary {} (dict) (= Hash-Map)
@@ -60,7 +60,7 @@ del monthConversions["Dec"]
 
 # SET                                                                          #Verwendbar für Mengenoperationen (union, intersection, difference), Duplikat-Erkennung oder -Entfernung, enthält keine Duplikate
 set1 = set()
-my_set = {1, 2, 3, 2}
+my_set = {1, 2, 3, 2}                                                           #the position of the elements can vary
 print(my_set)
 my_set.add(5)
 my_set.remove(5)
