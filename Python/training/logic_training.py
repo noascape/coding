@@ -55,7 +55,10 @@ def max_num(num1, num2, num3):                                                  
         return num2
     else: 
         return num3
-    
+
+if (diff := max_num(1, 2, 3)) == 3:
+    print(f"Zuweisung von diff = 3 und if-Abfrage in einer Zeile")
+
 #While Loop
 i = 1
 while i <= 10:
