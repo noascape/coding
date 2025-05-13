@@ -11,6 +11,7 @@ import os
 # Mehrere Threads mit parallelem Scheduling, Gleichzeitigkeit durch echte Thread-Ausführung (limitiert durch GIL), Parallelität bei I/O bei CPU aber wegen GIl eingeschränkt, höherer Ressourcenbrauch (mehr Kontextwechsel, mehr RAM)
 # geeignet für blockierende I/O- oder einfach gleichzeitige Tasks, ein paar Hundert Threads möglich (Skalierbarkeit), bei wenigen Tasks einfache Komplexität, Fehleranfällig bei Race Conditions und Deadlocks
 # Bsp.: viele kurze API-Anfragen mit requests (synchron), wenn asynchrone Bibliothek wie aiohttp genutzt wird, Ziel: maximale Kompatibilität
+# max_workers=?  CPU-lastig: os.cpu_count() (+1) [eher weniger]    - I/O-lastig: 10-100  --> allgemein aber Testen
 
 def arbeite(name):
     print(f"{name} startet")
@@ -50,7 +51,7 @@ work3 = pool.submit(worker_function, 3)
 
 # nach diesen sumit-Zeilen wird der weitere Code direkt weiter ausgeführt
 print("Es geht direkt weiter")
-#print(work3.result())            # wartet darauf, dass die Aufgabe abgeschlossen ist und macht dann weiter (um dieses Warten zu umgehen, kann )
+print(work3.result())            # .result() wartet darauf, dass die Aufgabe abgeschlossen ist (blockiert solange) und macht dann weiter
 print(work3.done())              # gibt mit einem Boolean aus, ob die Aufgabe bereits abgeschlossen ist, oder noch nicht
 
 
@@ -93,7 +94,7 @@ def fetch_url(url: str) -> Tuple[str, Any]:
 def main():
     with ThreadPoolExecutor() as executor:
         futures = [executor.submit(fetch_url, url) for url in URLS]
-        for future in as_completed(futures):
+        for future in as_completed(futures):                          # as_completed(iterable of futures) gibt einen Iterator zurück, der jedes Future sofort liefert, sobald es fertig ist (Ergebnisreihenfolge != Eingabereihenfolge!)
             url, result = future.result()
             if isinstance(result, Exception):
                 print(f"Fehler bei {url}: {result}")
