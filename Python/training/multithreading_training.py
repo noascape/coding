@@ -94,6 +94,10 @@ def fetch_url(url: str) -> Tuple[str, Any]:
 def main():
     with ThreadPoolExecutor() as executor:
         futures = [executor.submit(fetch_url, url) for url in URLS]
+        #futures = []
+        #for url in URLS:
+            #future = executor.submit(fetch_url, url)
+            #futures.append(future)
         for future in as_completed(futures):                          # as_completed(iterable of futures) gibt einen Iterator zurück, der jedes Future sofort liefert, sobald es fertig ist (Ergebnisreihenfolge != Eingabereihenfolge!)
             url, result = future.result()
             if isinstance(result, Exception):
