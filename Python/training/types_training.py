@@ -99,13 +99,10 @@ vereinheitlicht_list = []
 for eintrag in jsonresponse_list:  # Informatinoen aus der Liste
     vereinheitlicht_list.append({"name": eintrag.get("name")})
 
-vereinheitlicht_list.append({
-    "name": infos.get("Name"),
-    "anzahl": infos.get("Anzahl")
-})
+vereinheitlicht_list.append({"name": infos.get("Name")})
 print(f"Vereinheitlicht [List]: {vereinheitlicht_list}")
 
-vereinheitlicht_dict = {eintrag["name"]: eintrag for eintrag in vereinheitlicht_list}
+vereinheitlicht_dict = {eintrag["name"]: eintrag for eintrag in vereinheitlicht_list}    #eintrag["name"] = Key (z.B.: Anna)  & eintrag selbst ist das Value (z.B.: {'name': 'Anna'})
 print(f"Vereinheitlicht [Dict]: {vereinheitlicht_dict}")
 
 
