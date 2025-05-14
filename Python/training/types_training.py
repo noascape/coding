@@ -14,7 +14,7 @@ lucky_numbers.pop()                                                             
 friends.count("Jim")                                                            #count the amount of Jim`s in the list
 lucky_numbers.reverse()                                                         #reverse the order of the list
 print(friends[1])                                                               #list output of the element with the array 1 (=Karen), you could also do it from the right side of the list [-1] = Jim
-friends.remove("Kevin")
+friends.remove("Mike")
 friends.index("Karen")
 lucky_numbers.sort()
 friends2.clear()
@@ -56,6 +56,57 @@ monthConversions.items()
 monthConversions.update({"Dec": "Dezember"})
 monthConversions.update(Dec="December")
 del monthConversions["Dec"]
+
+
+# Beispiele: JSON-Datein:
+jsonresponse_list = [
+    {
+        "id": 1,
+        "name": "Anna"
+    },
+    {
+        "id": 2,
+        "name": "Beate"
+    },
+    {
+        "id": 3,
+        "name": "Horst"
+    }
+]
+namen = [eintrag.get("name") for eintrag in jsonresponse_list ]
+print(f"Namen [List]: {namen}")
+
+jsonresponse_dict = {
+    "hausDaten": {
+        "Hausnummer": 7,
+        "Straße": "Waldwiese",
+        "Farbe": "Schwarz"
+    },
+    "inhaberDaten": {
+        "Name": "Müller",
+        "Anzahl": 5,
+        "Tiere": True
+    }
+}
+infos = {
+    "Name": jsonresponse_dict.get("inhaberDaten", {}).get("Name"),
+    "Anzahl": jsonresponse_dict.get("inhaberDaten", {}).get("Anzahl")
+}
+print(f"Infos [Dict]: {infos}")
+
+# Vereinheitlichung beide in Liste von Dictionaries:
+vereinheitlicht_list = []
+for eintrag in jsonresponse_list:  # Informatinoen aus der Liste
+    vereinheitlicht_list.append({"name": eintrag.get("name")})
+
+vereinheitlicht_list.append({
+    "name": infos.get("Name"),
+    "anzahl": infos.get("Anzahl")
+})
+print(f"Vereinheitlicht [List]: {vereinheitlicht_list}")
+
+vereinheitlicht_dict = {eintrag["name"]: eintrag for eintrag in vereinheitlicht_list}
+print(f"Vereinheitlicht [Dict]: {vereinheitlicht_dict}")
 
 
 # SET                                                                          #Verwendbar für Mengenoperationen (union, intersection, difference), Duplikat-Erkennung oder -Entfernung, enthält keine Duplikate
