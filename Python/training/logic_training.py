@@ -83,16 +83,24 @@ for blabla in range(len(family)):                                               
 #User Input
 user_input = input("Enter a number: ")                                          #put the user input into a variable 
 result = age + int(user_input)                                                  #convert the input string into an integer (number without decimals); float (for decimal numbers)
-print("Hello", result)                                                          #use the information 
+print("Hello", result)                                                          #use the information
 
 #Calculation
 def raise_to_power(base_num, pow_num):
     output = 1
     for y in range(pow_num):                                                    #we loop through it as often as the pow numbers value (2^3)
         output = output * base_num
-    return output 
-                                                                            
+    return output
+
 print(raise_to_power(2, 3))
+
+#File (Creating)
+with open("Filename.txt", "w") as f:
+    for i in range(5):                                                          #0 - 4 (if you want 1-5: do in range(1,6))
+        print(f"Durchlauf: {i}", file=f)
+
+with open("employees.txt", "a") as f:
+    f.write("John - Educator")
 
 #Files (Reading)
 employee_file = open("employees.txt", "r")                                      #Relative path / absolute path / name of the file if in the same directory      | r = read; w = write; a = append; r+ = reading and writing
