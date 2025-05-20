@@ -1,5 +1,5 @@
-from concurrent.futures import ThreadPoolExecutor, as_completed     # es gibt auch den ProcessPoolExecutor (Prozesse statt Threads), dieser nutzt wirklich mehrere Kerne simultan für Berechnungen
-import threading
+from concurrent.futures import ThreadPoolExecutor, ProcessPoolExecutor, as_completed     # es gibt auch den ProcessPoolExecutor (Prozesse statt Threads), dieser nutzt wirklich mehrere Kerne simultan für Berechnungen
+import threading, queue
 from typing import Any, Tuple
 
 import requests
@@ -7,7 +7,10 @@ import requests
 import time
 import os
 
-##--------------------------------------------------------------------------------------------Inforamtionen:---------------------------------------------------------------------------------##
+
+"""
+--------------------------------------------------------------------------------------------Inforamtionen:---------------------------------------------------------------------------------
+"""
 # Mehrere Threads mit parallelem Scheduling, Gleichzeitigkeit durch echte Thread-Ausführung (limitiert durch GIL), Parallelität bei I/O bei CPU aber wegen GIl eingeschränkt, höherer Ressourcenbrauch (mehr Kontextwechsel, mehr RAM)
 # geeignet für blockierende I/O- oder einfach gleichzeitige Tasks, ein paar Hundert Threads möglich (Skalierbarkeit), bei wenigen Tasks einfache Komplexität, Fehleranfällig bei Race Conditions und Deadlocks
 # Bsp.: viele kurze API-Anfragen mit requests (synchron), wenn asynchrone Bibliothek wie aiohttp genutzt wird, Ziel: maximale Kompatibilität
@@ -34,8 +37,11 @@ print("Alle Threads beendet.")
 
 
 
-
-##----------------------------ThreadPoolExecutor-----------------------------##
+"""
+----------------------------ThreadPoolExecutor-----------------------------
+"""
+#Thread-Safety & Synchronisation: threading.lock()     threading.Event()    queue.Queue()
+#Cancellation & Timeouts: f.cancel()  f.result(timeout=5)
 
 def worker_function(number: int) -> int:
     print(f"Calculating the result for number {number}")
@@ -55,16 +61,35 @@ print(work3.result())            # .result() wartet darauf, dass die Aufgabe abg
 print(work3.done())              # gibt mit einem Boolean aus, ob die Aufgabe bereits abgeschlossen ist, oder noch nicht
 
 
+# executor.map(), um Reihenfolge der Ergebnisse zu erhalten
+def worker(n: int) -> int:
+    return n * n
 
-if work3.done():
-    print(work3.result())
-else: 
-    print("No Results yet")
+with ThreadPoolExecutor(max_workers=4) as pool:
+    inputs = range(10)
+    for result in pool.map(worker, inputs):
+        print(result)
 
-time.sleep(2)
 
-if work3.done():
-    print(work3.result())
+# Thread-Safety & Synchronisation
+q = queue.Queue()
+
+def producer():
+    for i in range(10):
+        q.put(i)
+    q.put(None)  # Stop-Signal
+
+def consumer():
+    while True:
+        item = q.get()
+        if item is None:
+            break
+        print("Got", item)
+
+t1 = threading.Thread(target=producer)
+t2 = threading.Thread(target=consumer)
+t1.start(); t2.start()
+t1.join(); t2.join()
 
 
 pool.shutdown()           # alles was aktuell noch läuft wird noch fertiggestellt, aber es können keine neuen Aufgaben in den Pool aufgenommen werden
@@ -74,8 +99,9 @@ print(f"Maximal verfügbare Prozessor-Treads: {cores}")         # es können nat
 
 
 
-##------------------API (requests + ThreadPoolExecutor + as_completed )----------------------##
-
+"""
+------------------API (requests + ThreadPoolExecutor + as_completed ) - I/O-Bound (Netzwerk, Disk)----------------------
+"""
 URLS = [
     "https://api.example.com/endpoint1"
     "https://api.example.com/enpoint2"
@@ -108,3 +134,17 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+
+
+"""
+------------------ProcessPoolExecutor (um den GIL zu umgehen) - CPU-Bound (Rechenintensiv)----------------------
+"""
+def cpu_heavy(n):
+    # z.B. große Zahl faktorisieren
+    return sum(i*i for i in range(n))
+
+with ProcessPoolExecutor() as pool:
+    results = pool.map(cpu_heavy, [10_000_000, 20_000_000])
+    for r in results:
+        print(r)
