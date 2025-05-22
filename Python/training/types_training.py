@@ -15,15 +15,15 @@ friends.append("Luke")          # Einzelwert
 friends.extend(friends_ext)     # Iterable („aufklappen“)
 friends.insert(1, "Olaf")       # an Index 1
 
+# Suchen & Zählen
+idx = friends.index("Karen")    # Position oder ValueError
+cnt = friends.count("Jim")      # Anzahl Vorkommen
+
 # Entfernen
 friends.pop()                   # letztes Element
 friends.pop(1)                  # Element an Index 1
 friends.remove("Jim")           # erstes Vorkommen eines Werts
 friends.clear()                 # alle Elemente löschen
-
-# Suchen & Zählen
-idx = friends.index("Karen")    # Position oder ValueError
-cnt = friends.count("Jim")      # Anzahl Vorkommen
 
 # Sortieren & Umkehren
 friends.sort()                  # in-place sortieren
@@ -100,7 +100,15 @@ x = monthConversions.setdefault("Aug", "August")
 full_months = ["January","February","March"]
 abbreviation = { m[:3]: m for m in full_months }
 
-
+# Slicing-Syntax:  seq[start:stop:step]  start = Index, wo Slice beginnt | stop = Index, wo Slice endet | step = Schrittweise, überspringt jeweils step-1 Elemente | - = von hinten
+value = "HalloWelt"
+print(value[:5]) # "Hallo"
+value1 = "0000ff453"
+print(value1[4:]) # "ff453"
+value2 = "abcdefg"
+print(value2[0:7:2]) # "aceg"
+value3 = "145 mm"
+print(value3[:-3]) # "145"
 
 
 """
