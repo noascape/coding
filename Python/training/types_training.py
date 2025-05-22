@@ -56,6 +56,10 @@ cnt1 = coordinates.count(5)  # 5 kommt "1"mal vor
 def tuple_function() -> Tuple[int, str, int]:
     return coordinates                 #immer gleiche Position -> coordinates[1] ist immer der name in diesem Fall
 
+# Nach Typ filtern
+if isinstance(coordinates[0], int):
+    print("Die erste Stelle des Tuple`s ist ein Integer")
+print(type(x))
 
 
 
