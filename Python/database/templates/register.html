@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="de">
+<head><meta charset="UTF-8"><title>Registrierung</title></head>
+<body>
+    <form action="{{ url_for('register') }}" method="POST">
+        <h1>Account Erstellen</h1>
+        <input type="text" name="username" placeholder="Benutzername" autocomplete="off"><br>
+        <input type="email" name="email" placeholder="E-Mail" autocomplete="off"><br>
+        <input type="password" name="password" placeholder="Passwort" autocomplete="off"><br>
+        <button type="submit">Erstellen</button>
+    </form>
+</body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="de">
+<head><meta charset="UTF-8"><title>Homepage</title></head>
+<body>
+    <h1>Willkommen {{ current_user }} auf der Homepage</h1>
+    <h2>Benutzerliste:</h2>
+    <table>
+        <tr><th>Benutzername</th><th>E-Mail</th></tr>
+        {% for u in users %}
+            <tr>
+                <td>{{ u.Benutzername }}</td>
+                <td>{{ u.Email }}</td>
+            </tr>
+        {% endfor %}
+    </table>
+    <form action="{{ url_for('logout') }}" method="POST">
+        <button type="submit">Abmelden</button>
+    </form>
+</body>
+</html>
