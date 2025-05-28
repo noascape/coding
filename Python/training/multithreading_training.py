@@ -125,11 +125,11 @@ def main():
             #future = executor.submit(fetch_url, url)
             #futures.append(future)
         for future in as_completed(futures):                          # as_completed(iterable of futures) gibt einen Iterator zurück, der jedes Future sofort liefert, sobald es fertig ist (Ergebnisreihenfolge != Eingabereihenfolge!)
-            url, result = future.result()
-            if isinstance(result, Exception):
-                print(f"Fehler bei {url}: {result}")
+            url, res = future.result()                                #future.result() liefert (url, response.json()) zurück, weil das die Rückgabe von fetch_url ist
+            if isinstance(res, Exception):
+                print(f"Fehler bei {url}: {res}")
             else:
-                print(f"{url} -> {result}")
+                print(f"{url} -> {res}")
 
 
 if __name__ == "__main__":

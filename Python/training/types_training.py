@@ -114,6 +114,13 @@ print(value2[0:7:2]) # "aceg"
 value3 = "145 mm"
 print(value3[:-3]) # "145"
 
+# String extrahieren:
+text = "Das ist ein Beispiel (extrahierter Inhalt) Ende"
+start = text.find("(")
+end = text.find(")", start)   #sucht ab dem "("-Index nach ")" - Index
+inhalt = text[start+1 : end]
+print(inhalt)
+
 
 """
  ----- Mengen / set() -----
