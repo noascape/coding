@@ -1,6 +1,5 @@
 from typing import Tuple
 
-
 """
  ----- Array/List [] (list) -----
 """
@@ -37,7 +36,6 @@ schritte = friends[::2]         # jedes zweite Element
 nums = [1, 2, 3, 4, 5]
 squares = [x*x for x in nums if x % 2 == 1]  # [1,9,25]
 new_friends = ["Will" if x == "Kevin" else x for x in friends]
-
 
 
 
@@ -105,22 +103,6 @@ x = monthConversions.setdefault("Aug", "August")
 full_months = ["January","February","March"]
 abbreviation = { m[:3]: m for m in full_months }
 
-# Slicing-Syntax:  seq[start:stop:step]  start = Index, wo Slice beginnt | stop = Index, wo Slice endet | step = Schrittweise, überspringt jeweils step-1 Elemente | - = von hinten
-value = "HalloWelt"
-print(value[:5]) # "Hallo"
-value1 = "0000ff453"
-print(value1[4:]) # "ff453"
-value2 = "abcdefg"
-print(value2[0:7:2]) # "aceg"
-value3 = "145 mm"
-print(value3[:-3]) # "145"
-
-# String extrahieren:
-text = "Das ist ein Beispiel (extrahierter Inhalt) Ende"
-start = text.find("(")
-end = text.find(")", start)   #sucht ab dem "("-Index nach ")" - Index
-inhalt = text[start+1 : end]
-print(inhalt)
 
 
 """
@@ -148,7 +130,6 @@ s.clear()
 
 
 
-
 """
  ----- Zweidimensionale Listen & Matrix-Zugriff -----
 """
@@ -166,7 +147,6 @@ flat = [val for row in grid for val in row]
 
 # Matrix-Operationen (z.B. Transponieren)
 transpose = list(zip(*grid))  # [(1,4,7),(2,5,8),(3,6,9)]
-
 
 
 
