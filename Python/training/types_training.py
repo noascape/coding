@@ -106,7 +106,7 @@ abbreviation = { m[:3]: m for m in full_months }
 
 
 """
- ----- Mengen / set() -----
+ ----- Mengen / set()/{} -----
 """
 s = {1, 2, 3, 2}    # Duplikate werden automatisch entfernt
 

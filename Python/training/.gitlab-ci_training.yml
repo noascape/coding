@@ -1,0 +1,64 @@
+#Eine GitLab CI/CD-Konfigurationsdatei ".gitlab-ci.yml" besteht aus folgenden Kernelementen:
+#1. include (ermöglicht das Einbinden externer Templates oder Basis-Skripte
+#2. variables (definiert projektweite Umgebungsvariablen)
+#3. stages [optional] explizite Reihenfolge von Pipeline-Stufen. Falls nicht definiert, nutzt GitLab die in den Jobs referenzierten Stages
+#4. Jobs [einzelne Aufgaben, die ausgeführt werden]
+      # image: Docker-Image, in dem der Job läuft
+      # stage: Zu welcher Stage der Job gehört
+      # rules/only/except: Wann der Job ausgeführt wird
+      # before_script: Befehle, die vor dem Hauptskript laufen
+      # script: Die Hauptbefehle für den Job
+      # artifacts: Dateien, die nach Ausführung gespeichert werden (z.B. Testreports)
+      # after_script [optional]: Befehle nach Ende, z.B. Cleanup
+
+include:
+  - project: 'it./...'
+    file: '.gitlab-ci-base.yml'
+  - template: Security/Secret-Detection.gitlab-ci.yml
+
+variables:
+  BASE_IMAGE: ${HARBOR_URL}/${HARBOR_PROJECT_URL}/base-images/python:3.12-slim
+  DEPLOY_IMAGE: 'test_yaml'
+
+
+  INGRESS_HOST_PREFIX: ${INGRESS_PREFIX_NAMESPACE}-test_yaml
+  INGRESS_HOST_SUFFIX: api
+
+
+  VARIABLES_FILE: ./variables.txt
+  # "." is required for image that have sh not bash
+  UNIT_TEST: "true"
+  DEBUG_STAGE: "false"
+
+  ORACLE_INSTANTCLIENT_VERSION: "21.9.0.0.0"
+  ORACLE_INSTANTCLIENT_DIR: "/opt/oracle/instantclient_${ORACLE_INSTANTCLIENT_VERSION}"
+
+unit-test:
+  image: ${BASE_IMAGE}
+
+  stage: test
+  only:
+    variables:
+      - $UNIT_TEST == "true"
+
+  script:
+    - pipenv --version
+    - pipenv install --dev
+    - pipenv run python -m  pytest --showlocals --junitxml=report.xml
+  artifacts:
+    when: always
+    reports:
+      junit: report.xml
+
+# dev/qa/prod-Stage temporär deaktivieren
+dev:
+  rules:
+    - when: never
+
+qa:
+  rules:
+    - when: never
+
+prod:
+  rules:
+    - when: never

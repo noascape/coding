@@ -1,0 +1,8 @@
+name: dart_training
+description: A simple Dart training project
+
+environment:
+  sdk: '^3.9.0'
+
+dependencies:
+  http: ^0.13.6  #newest version probably

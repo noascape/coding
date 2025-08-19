@@ -54,6 +54,11 @@ class Config:
         self.env = env
         self.debug = debug
 
+    # Anpassung der Darstellung des Objekts beim Ausgeben
+    def __repr__(self):
+        return f"<BRKPF(brNo={self.env}, brMotorO{self.debug!r})>"
+
+
 
 # 2) Testbare Einheiten für Funktionen                                             #exterme API-Logik isolieren und testen --> unittest.mock
 class WeatherService:
