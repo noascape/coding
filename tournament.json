@@ -1,0 +1,55 @@
+{
+    "teams": [
+        "Mein Superteam",
+        "Team B",
+        "Team C",
+        "Team D",
+        "Team E",
+        "Team F",
+        "Team G",
+        "Team H",
+        "Team I",
+        "Team J",
+        "Team K",
+        "Team L",
+        "Team M",
+        "Team N",
+        "Team O",
+        "Team P"
+    ],
+    "my_team": "Mein Superteam",
+    "groups": {
+        "A": [
+            "Mein Superteam",
+            "Team B",
+            "Team C",
+            "Team D"
+        ],
+        "B": [
+            "Team E",
+            "Team F",
+            "Team G",
+            "Team H"
+        ],
+        "C": [
+            "Team I",
+            "Team J",
+            "Team K",
+            "Team L"
+        ],
+        "D": [
+            "Team M",
+            "Team N",
+            "Team O",
+            "Team P"
+        ]
+    },
+    "group_results": {},
+    "my_group_results": {},
+    "knockout": {
+        "round_of_8": [],
+        "semifinal": [],
+        "final": [],
+        "winner": null
+    }
+}
