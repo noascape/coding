@@ -2,7 +2,7 @@ name: dart_training
 description: A simple Dart training project
 
 environment:
-  sdk: '^3.9.0'
+  sdk: '>=3.0.0 <4.0.0'  #area of versions
 
 dependencies:
-  http: ^0.13.6  #newest version probably
+  http: ^1.5.0  #newest version probably
