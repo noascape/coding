@@ -1,0 +1,513 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Noah\\Documents\\GitHub\\coding\\C#\\Uni\\Toll_Vending\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{C7DEB26B-BFAB-4023-906B-D432B57E6A56}|Toll_Vending\\Toll_Vending.csproj|c:\\users\\noah\\documents\\github\\coding\\c#\\uni\\toll_vending\\toll_vending\\pricing\\rules\\capsrule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C7DEB26B-BFAB-4023-906B-D432B57E6A56}|Toll_Vending\\Toll_Vending.csproj|solutionrelative:toll_vending\\pricing\\rules\\capsrule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C7DEB26B-BFAB-4023-906B-D432B57E6A56}|Toll_Vending\\Toll_Vending.csproj|c:\\users\\noah\\documents\\github\\coding\\c#\\uni\\toll_vending\\toll_vending\\pricing\\rules\\subscriptionrule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C7DEB26B-BFAB-4023-906B-D432B57E6A56}|Toll_Vending\\Toll_Vending.csproj|solutionrelative:toll_vending\\pricing\\rules\\subscriptionrule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C7DEB26B-BFAB-4023-906B-D432B57E6A56}|Toll_Vending\\Toll_Vending.csproj|c:\\users\\noah\\documents\\github\\coding\\c#\\uni\\toll_vending\\toll_vending\\services\\penaltyservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C7DEB26B-BFAB-4023-906B-D432B57E6A56}|Toll_Vending\\Toll_Vending.csproj|solutionrelative:toll_vending\\services\\penaltyservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C7DEB26B-BFAB-4023-906B-D432B57E6A56}|Toll_Vending\\Toll_Vending.csproj|c:\\users\\noah\\documents\\github\\coding\\c#\\uni\\toll_vending\\toll_vending\\utils\\pretty.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C7DEB26B-BFAB-4023-906B-D432B57E6A56}|Toll_Vending\\Toll_Vending.csproj|solutionrelative:toll_vending\\utils\\pretty.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C7DEB26B-BFAB-4023-906B-D432B57E6A56}|Toll_Vending\\Toll_Vending.csproj|c:\\users\\noah\\documents\\github\\coding\\c#\\uni\\toll_vending\\toll_vending\\pricing\\rules\\timebandrule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C7DEB26B-BFAB-4023-906B-D432B57E6A56}|Toll_Vending\\Toll_Vending.csproj|solutionrelative:toll_vending\\pricing\\rules\\timebandrule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C7DEB26B-BFAB-4023-906B-D432B57E6A56}|Toll_Vending\\Toll_Vending.csproj|c:\\users\\noah\\documents\\github\\coding\\c#\\uni\\toll_vending\\toll_vending\\pricing\\rules\\basepricerule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C7DEB26B-BFAB-4023-906B-D432B57E6A56}|Toll_Vending\\Toll_Vending.csproj|solutionrelative:toll_vending\\pricing\\rules\\basepricerule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C7DEB26B-BFAB-4023-906B-D432B57E6A56}|Toll_Vending\\Toll_Vending.csproj|c:\\users\\noah\\documents\\github\\coding\\c#\\uni\\toll_vending\\toll_vending\\pricing\\rules\\vehiclemultiplierrule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C7DEB26B-BFAB-4023-906B-D432B57E6A56}|Toll_Vending\\Toll_Vending.csproj|solutionrelative:toll_vending\\pricing\\rules\\vehiclemultiplierrule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C7DEB26B-BFAB-4023-906B-D432B57E6A56}|Toll_Vending\\Toll_Vending.csproj|c:\\users\\noah\\documents\\github\\coding\\c#\\uni\\toll_vending\\toll_vending\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C7DEB26B-BFAB-4023-906B-D432B57E6A56}|Toll_Vending\\Toll_Vending.csproj|solutionrelative:toll_vending\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C7DEB26B-BFAB-4023-906B-D432B57E6A56}|Toll_Vending\\Toll_Vending.csproj|c:\\users\\noah\\documents\\github\\coding\\c#\\uni\\toll_vending\\toll_vending\\domain\\models\\vehicleinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C7DEB26B-BFAB-4023-906B-D432B57E6A56}|Toll_Vending\\Toll_Vending.csproj|solutionrelative:toll_vending\\domain\\models\\vehicleinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C7DEB26B-BFAB-4023-906B-D432B57E6A56}|Toll_Vending\\Toll_Vending.csproj|c:\\users\\noah\\documents\\github\\coding\\c#\\uni\\toll_vending\\toll_vending\\pricing\\itollrule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C7DEB26B-BFAB-4023-906B-D432B57E6A56}|Toll_Vending\\Toll_Vending.csproj|solutionrelative:toll_vending\\pricing\\itollrule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C7DEB26B-BFAB-4023-906B-D432B57E6A56}|Toll_Vending\\Toll_Vending.csproj|c:\\users\\noah\\documents\\github\\coding\\c#\\uni\\toll_vending\\toll_vending\\utils\\moneyextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C7DEB26B-BFAB-4023-906B-D432B57E6A56}|Toll_Vending\\Toll_Vending.csproj|solutionrelative:toll_vending\\utils\\moneyextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C7DEB26B-BFAB-4023-906B-D432B57E6A56}|Toll_Vending\\Toll_Vending.csproj|c:\\users\\noah\\documents\\github\\coding\\c#\\uni\\toll_vending\\toll_vending\\pricing\\tollcalculator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C7DEB26B-BFAB-4023-906B-D432B57E6A56}|Toll_Vending\\Toll_Vending.csproj|solutionrelative:toll_vending\\pricing\\tollcalculator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C7DEB26B-BFAB-4023-906B-D432B57E6A56}|Toll_Vending\\Toll_Vending.csproj|c:\\users\\noah\\documents\\github\\coding\\c#\\uni\\toll_vending\\toll_vending\\pricing\\rules\\vignetterule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C7DEB26B-BFAB-4023-906B-D432B57E6A56}|Toll_Vending\\Toll_Vending.csproj|solutionrelative:toll_vending\\pricing\\rules\\vignetterule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C7DEB26B-BFAB-4023-906B-D432B57E6A56}|Toll_Vending\\Toll_Vending.csproj|c:\\users\\noah\\documents\\github\\coding\\c#\\uni\\toll_vending\\toll_vending\\pricing\\rules\\paymentrule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C7DEB26B-BFAB-4023-906B-D432B57E6A56}|Toll_Vending\\Toll_Vending.csproj|solutionrelative:toll_vending\\pricing\\rules\\paymentrule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C7DEB26B-BFAB-4023-906B-D432B57E6A56}|Toll_Vending\\Toll_Vending.csproj|c:\\users\\noah\\documents\\github\\coding\\c#\\uni\\toll_vending\\toll_vending\\pricing\\rules\\loyaltyandexemptionsrule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C7DEB26B-BFAB-4023-906B-D432B57E6A56}|Toll_Vending\\Toll_Vending.csproj|solutionrelative:toll_vending\\pricing\\rules\\loyaltyandexemptionsrule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C7DEB26B-BFAB-4023-906B-D432B57E6A56}|Toll_Vending\\Toll_Vending.csproj|c:\\users\\noah\\documents\\github\\coding\\c#\\uni\\toll_vending\\toll_vending\\pricing\\rules\\emissionsrule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C7DEB26B-BFAB-4023-906B-D432B57E6A56}|Toll_Vending\\Toll_Vending.csproj|solutionrelative:toll_vending\\pricing\\rules\\emissionsrule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C7DEB26B-BFAB-4023-906B-D432B57E6A56}|Toll_Vending\\Toll_Vending.csproj|c:\\users\\noah\\documents\\github\\coding\\c#\\uni\\toll_vending\\toll_vending\\pricing\\rules\\cityaccessrules.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C7DEB26B-BFAB-4023-906B-D432B57E6A56}|Toll_Vending\\Toll_Vending.csproj|solutionrelative:toll_vending\\pricing\\rules\\cityaccessrules.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C7DEB26B-BFAB-4023-906B-D432B57E6A56}|Toll_Vending\\Toll_Vending.csproj|c:\\users\\noah\\documents\\github\\coding\\c#\\uni\\toll_vending\\toll_vending\\domain\\catalog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C7DEB26B-BFAB-4023-906B-D432B57E6A56}|Toll_Vending\\Toll_Vending.csproj|solutionrelative:toll_vending\\domain\\catalog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C7DEB26B-BFAB-4023-906B-D432B57E6A56}|Toll_Vending\\Toll_Vending.csproj|c:\\users\\noah\\documents\\github\\coding\\c#\\uni\\toll_vending\\toll_vending\\domain\\models\\segment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C7DEB26B-BFAB-4023-906B-D432B57E6A56}|Toll_Vending\\Toll_Vending.csproj|solutionrelative:toll_vending\\domain\\models\\segment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C7DEB26B-BFAB-4023-906B-D432B57E6A56}|Toll_Vending\\Toll_Vending.csproj|c:\\users\\noah\\documents\\github\\coding\\c#\\uni\\toll_vending\\toll_vending\\domain\\models\\receipt.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C7DEB26B-BFAB-4023-906B-D432B57E6A56}|Toll_Vending\\Toll_Vending.csproj|solutionrelative:toll_vending\\domain\\models\\receipt.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C7DEB26B-BFAB-4023-906B-D432B57E6A56}|Toll_Vending\\Toll_Vending.csproj|c:\\users\\noah\\documents\\github\\coding\\c#\\uni\\toll_vending\\toll_vending\\domain\\models\\accountstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C7DEB26B-BFAB-4023-906B-D432B57E6A56}|Toll_Vending\\Toll_Vending.csproj|solutionrelative:toll_vending\\domain\\models\\accountstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C7DEB26B-BFAB-4023-906B-D432B57E6A56}|Toll_Vending\\Toll_Vending.csproj|c:\\users\\noah\\documents\\github\\coding\\c#\\uni\\toll_vending\\toll_vending\\domain\\enums\\violationtype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C7DEB26B-BFAB-4023-906B-D432B57E6A56}|Toll_Vending\\Toll_Vending.csproj|solutionrelative:toll_vending\\domain\\enums\\violationtype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C7DEB26B-BFAB-4023-906B-D432B57E6A56}|Toll_Vending\\Toll_Vending.csproj|c:\\users\\noah\\documents\\github\\coding\\c#\\uni\\toll_vending\\toll_vending\\domain\\enums\\vignettetype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C7DEB26B-BFAB-4023-906B-D432B57E6A56}|Toll_Vending\\Toll_Vending.csproj|solutionrelative:toll_vending\\domain\\enums\\vignettetype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C7DEB26B-BFAB-4023-906B-D432B57E6A56}|Toll_Vending\\Toll_Vending.csproj|c:\\users\\noah\\documents\\github\\coding\\c#\\uni\\toll_vending\\toll_vending\\domain\\enums\\vehicleclass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C7DEB26B-BFAB-4023-906B-D432B57E6A56}|Toll_Vending\\Toll_Vending.csproj|solutionrelative:toll_vending\\domain\\enums\\vehicleclass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C7DEB26B-BFAB-4023-906B-D432B57E6A56}|Toll_Vending\\Toll_Vending.csproj|c:\\users\\noah\\documents\\github\\coding\\c#\\uni\\toll_vending\\toll_vending\\domain\\enums\\timeband.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C7DEB26B-BFAB-4023-906B-D432B57E6A56}|Toll_Vending\\Toll_Vending.csproj|solutionrelative:toll_vending\\domain\\enums\\timeband.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C7DEB26B-BFAB-4023-906B-D432B57E6A56}|Toll_Vending\\Toll_Vending.csproj|c:\\users\\noah\\documents\\github\\coding\\c#\\uni\\toll_vending\\toll_vending\\domain\\enums\\subscriptiontype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C7DEB26B-BFAB-4023-906B-D432B57E6A56}|Toll_Vending\\Toll_Vending.csproj|solutionrelative:toll_vending\\domain\\enums\\subscriptiontype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C7DEB26B-BFAB-4023-906B-D432B57E6A56}|Toll_Vending\\Toll_Vending.csproj|c:\\users\\noah\\documents\\github\\coding\\c#\\uni\\toll_vending\\toll_vending\\domain\\enums\\roadcategory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C7DEB26B-BFAB-4023-906B-D432B57E6A56}|Toll_Vending\\Toll_Vending.csproj|solutionrelative:toll_vending\\domain\\enums\\roadcategory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C7DEB26B-BFAB-4023-906B-D432B57E6A56}|Toll_Vending\\Toll_Vending.csproj|c:\\users\\noah\\documents\\github\\coding\\c#\\uni\\toll_vending\\toll_vending\\domain\\enums\\paymentmethod.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C7DEB26B-BFAB-4023-906B-D432B57E6A56}|Toll_Vending\\Toll_Vending.csproj|solutionrelative:toll_vending\\domain\\enums\\paymentmethod.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C7DEB26B-BFAB-4023-906B-D432B57E6A56}|Toll_Vending\\Toll_Vending.csproj|c:\\users\\noah\\documents\\github\\coding\\c#\\uni\\toll_vending\\toll_vending\\domain\\enums\\emissionstandard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C7DEB26B-BFAB-4023-906B-D432B57E6A56}|Toll_Vending\\Toll_Vending.csproj|solutionrelative:toll_vending\\domain\\enums\\emissionstandard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 12,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "PaymentRule.cs",
+              "DocumentMoniker": "C:\\Users\\Noah\\Documents\\GitHub\\coding\\C#\\Uni\\Toll_Vending\\Toll_Vending\\Pricing\\Rules\\PaymentRule.cs",
+              "RelativeDocumentMoniker": "Toll_Vending\\Pricing\\Rules\\PaymentRule.cs",
+              "ToolTip": "C:\\Users\\Noah\\Documents\\GitHub\\coding\\C#\\Uni\\Toll_Vending\\Toll_Vending\\Pricing\\Rules\\PaymentRule.cs",
+              "RelativeToolTip": "Toll_Vending\\Pricing\\Rules\\PaymentRule.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-03T14:49:21.392Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "SubscriptionRule.cs",
+              "DocumentMoniker": "C:\\Users\\Noah\\Documents\\GitHub\\coding\\C#\\Uni\\Toll_Vending\\Toll_Vending\\Pricing\\Rules\\SubscriptionRule.cs",
+              "RelativeDocumentMoniker": "Toll_Vending\\Pricing\\Rules\\SubscriptionRule.cs",
+              "ToolTip": "C:\\Users\\Noah\\Documents\\GitHub\\coding\\C#\\Uni\\Toll_Vending\\Toll_Vending\\Pricing\\Rules\\SubscriptionRule.cs",
+              "RelativeToolTip": "Toll_Vending\\Pricing\\Rules\\SubscriptionRule.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-03T14:49:04.735Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "TimeBandRule.cs",
+              "DocumentMoniker": "C:\\Users\\Noah\\Documents\\GitHub\\coding\\C#\\Uni\\Toll_Vending\\Toll_Vending\\Pricing\\Rules\\TimeBandRule.cs",
+              "RelativeDocumentMoniker": "Toll_Vending\\Pricing\\Rules\\TimeBandRule.cs",
+              "ToolTip": "C:\\Users\\Noah\\Documents\\GitHub\\coding\\C#\\Uni\\Toll_Vending\\Toll_Vending\\Pricing\\Rules\\TimeBandRule.cs",
+              "RelativeToolTip": "Toll_Vending\\Pricing\\Rules\\TimeBandRule.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-03T14:47:41.303Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "VehicleMultiplierRule.cs",
+              "DocumentMoniker": "C:\\Users\\Noah\\Documents\\GitHub\\coding\\C#\\Uni\\Toll_Vending\\Toll_Vending\\Pricing\\Rules\\VehicleMultiplierRule.cs",
+              "RelativeDocumentMoniker": "Toll_Vending\\Pricing\\Rules\\VehicleMultiplierRule.cs",
+              "ToolTip": "C:\\Users\\Noah\\Documents\\GitHub\\coding\\C#\\Uni\\Toll_Vending\\Toll_Vending\\Pricing\\Rules\\VehicleMultiplierRule.cs",
+              "RelativeToolTip": "Toll_Vending\\Pricing\\Rules\\VehicleMultiplierRule.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-03T14:48:01.757Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "VignetteRule.cs",
+              "DocumentMoniker": "C:\\Users\\Noah\\Documents\\GitHub\\coding\\C#\\Uni\\Toll_Vending\\Toll_Vending\\Pricing\\Rules\\VignetteRule.cs",
+              "RelativeDocumentMoniker": "Toll_Vending\\Pricing\\Rules\\VignetteRule.cs",
+              "ToolTip": "C:\\Users\\Noah\\Documents\\GitHub\\coding\\C#\\Uni\\Toll_Vending\\Toll_Vending\\Pricing\\Rules\\VignetteRule.cs",
+              "RelativeToolTip": "Toll_Vending\\Pricing\\Rules\\VignetteRule.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-03T14:48:49.449Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ITollRule.cs",
+              "DocumentMoniker": "C:\\Users\\Noah\\Documents\\GitHub\\coding\\C#\\Uni\\Toll_Vending\\Toll_Vending\\Pricing\\ITollRule.cs",
+              "RelativeDocumentMoniker": "Toll_Vending\\Pricing\\ITollRule.cs",
+              "ToolTip": "C:\\Users\\Noah\\Documents\\GitHub\\coding\\C#\\Uni\\Toll_Vending\\Toll_Vending\\Pricing\\ITollRule.cs",
+              "RelativeToolTip": "Toll_Vending\\Pricing\\ITollRule.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-03T14:47:01.343Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "TollCalculator.cs",
+              "DocumentMoniker": "C:\\Users\\Noah\\Documents\\GitHub\\coding\\C#\\Uni\\Toll_Vending\\Toll_Vending\\Pricing\\TollCalculator.cs",
+              "RelativeDocumentMoniker": "Toll_Vending\\Pricing\\TollCalculator.cs",
+              "ToolTip": "C:\\Users\\Noah\\Documents\\GitHub\\coding\\C#\\Uni\\Toll_Vending\\Toll_Vending\\Pricing\\TollCalculator.cs",
+              "RelativeToolTip": "Toll_Vending\\Pricing\\TollCalculator.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-03T14:50:40.767Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "PenaltyService.cs",
+              "DocumentMoniker": "C:\\Users\\Noah\\Documents\\GitHub\\coding\\C#\\Uni\\Toll_Vending\\Toll_Vending\\Services\\PenaltyService.cs",
+              "RelativeDocumentMoniker": "Toll_Vending\\Services\\PenaltyService.cs",
+              "ToolTip": "C:\\Users\\Noah\\Documents\\GitHub\\coding\\C#\\Uni\\Toll_Vending\\Toll_Vending\\Services\\PenaltyService.cs",
+              "RelativeToolTip": "Toll_Vending\\Services\\PenaltyService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-03T14:51:06.16Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "MoneyExtensions.cs",
+              "DocumentMoniker": "C:\\Users\\Noah\\Documents\\GitHub\\coding\\C#\\Uni\\Toll_Vending\\Toll_Vending\\Utils\\MoneyExtensions.cs",
+              "RelativeDocumentMoniker": "Toll_Vending\\Utils\\MoneyExtensions.cs",
+              "ToolTip": "C:\\Users\\Noah\\Documents\\GitHub\\coding\\C#\\Uni\\Toll_Vending\\Toll_Vending\\Utils\\MoneyExtensions.cs",
+              "RelativeToolTip": "Toll_Vending\\Utils\\MoneyExtensions.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-03T14:46:10.846Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Pretty.cs",
+              "DocumentMoniker": "C:\\Users\\Noah\\Documents\\GitHub\\coding\\C#\\Uni\\Toll_Vending\\Toll_Vending\\Utils\\Pretty.cs",
+              "RelativeDocumentMoniker": "Toll_Vending\\Utils\\Pretty.cs",
+              "ToolTip": "C:\\Users\\Noah\\Documents\\GitHub\\coding\\C#\\Uni\\Toll_Vending\\Toll_Vending\\Utils\\Pretty.cs",
+              "RelativeToolTip": "Toll_Vending\\Utils\\Pretty.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-03T14:46:37.324Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Noah\\Documents\\GitHub\\coding\\C#\\Uni\\Toll_Vending\\Toll_Vending\\Program.cs",
+              "RelativeDocumentMoniker": "Toll_Vending\\Program.cs",
+              "ToolTip": "C:\\Users\\Noah\\Documents\\GitHub\\coding\\C#\\Uni\\Toll_Vending\\Toll_Vending\\Program.cs",
+              "RelativeToolTip": "Toll_Vending\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-03T14:36:28.459Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "VehicleInfo.cs",
+              "DocumentMoniker": "C:\\Users\\Noah\\Documents\\GitHub\\coding\\C#\\Uni\\Toll_Vending\\Toll_Vending\\Domain\\Models\\VehicleInfo.cs",
+              "RelativeDocumentMoniker": "Toll_Vending\\Domain\\Models\\VehicleInfo.cs",
+              "ToolTip": "C:\\Users\\Noah\\Documents\\GitHub\\coding\\C#\\Uni\\Toll_Vending\\Toll_Vending\\Domain\\Models\\VehicleInfo.cs",
+              "RelativeToolTip": "Toll_Vending\\Domain\\Models\\VehicleInfo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-03T14:44:37.438Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CapsRule.cs",
+              "DocumentMoniker": "C:\\Users\\Noah\\Documents\\GitHub\\coding\\C#\\Uni\\Toll_Vending\\Toll_Vending\\Pricing\\Rules\\CapsRule.cs",
+              "RelativeDocumentMoniker": "Toll_Vending\\Pricing\\Rules\\CapsRule.cs",
+              "ToolTip": "C:\\Users\\Noah\\Documents\\GitHub\\coding\\C#\\Uni\\Toll_Vending\\Toll_Vending\\Pricing\\Rules\\CapsRule.cs",
+              "RelativeToolTip": "Toll_Vending\\Pricing\\Rules\\CapsRule.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-03T14:50:16.495Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "LoyaltyAndExemptionsRule.cs",
+              "DocumentMoniker": "C:\\Users\\Noah\\Documents\\GitHub\\coding\\C#\\Uni\\Toll_Vending\\Toll_Vending\\Pricing\\Rules\\LoyaltyAndExemptionsRule.cs",
+              "RelativeDocumentMoniker": "Toll_Vending\\Pricing\\Rules\\LoyaltyAndExemptionsRule.cs",
+              "ToolTip": "C:\\Users\\Noah\\Documents\\GitHub\\coding\\C#\\Uni\\Toll_Vending\\Toll_Vending\\Pricing\\Rules\\LoyaltyAndExemptionsRule.cs",
+              "RelativeToolTip": "Toll_Vending\\Pricing\\Rules\\LoyaltyAndExemptionsRule.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-03T14:49:57.379Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "BasePriceRule.cs",
+              "DocumentMoniker": "C:\\Users\\Noah\\Documents\\GitHub\\coding\\C#\\Uni\\Toll_Vending\\Toll_Vending\\Pricing\\Rules\\BasePriceRule.cs",
+              "RelativeDocumentMoniker": "Toll_Vending\\Pricing\\Rules\\BasePriceRule.cs",
+              "ToolTip": "C:\\Users\\Noah\\Documents\\GitHub\\coding\\C#\\Uni\\Toll_Vending\\Toll_Vending\\Pricing\\Rules\\BasePriceRule.cs",
+              "RelativeToolTip": "Toll_Vending\\Pricing\\Rules\\BasePriceRule.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-03T14:47:24.37Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "EmissionsRule.cs",
+              "DocumentMoniker": "C:\\Users\\Noah\\Documents\\GitHub\\coding\\C#\\Uni\\Toll_Vending\\Toll_Vending\\Pricing\\Rules\\EmissionsRule.cs",
+              "RelativeDocumentMoniker": "Toll_Vending\\Pricing\\Rules\\EmissionsRule.cs",
+              "ToolTip": "C:\\Users\\Noah\\Documents\\GitHub\\coding\\C#\\Uni\\Toll_Vending\\Toll_Vending\\Pricing\\Rules\\EmissionsRule.cs",
+              "RelativeToolTip": "Toll_Vending\\Pricing\\Rules\\EmissionsRule.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-03T14:48:15.697Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "CityAccessRules.cs",
+              "DocumentMoniker": "C:\\Users\\Noah\\Documents\\GitHub\\coding\\C#\\Uni\\Toll_Vending\\Toll_Vending\\Pricing\\Rules\\CityAccessRules.cs",
+              "RelativeDocumentMoniker": "Toll_Vending\\Pricing\\Rules\\CityAccessRules.cs",
+              "ToolTip": "C:\\Users\\Noah\\Documents\\GitHub\\coding\\C#\\Uni\\Toll_Vending\\Toll_Vending\\Pricing\\Rules\\CityAccessRules.cs",
+              "RelativeToolTip": "Toll_Vending\\Pricing\\Rules\\CityAccessRules.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-03T14:48:32.798Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Catalog.cs",
+              "DocumentMoniker": "C:\\Users\\Noah\\Documents\\GitHub\\coding\\C#\\Uni\\Toll_Vending\\Toll_Vending\\Domain\\Catalog.cs",
+              "RelativeDocumentMoniker": "Toll_Vending\\Domain\\Catalog.cs",
+              "ToolTip": "C:\\Users\\Noah\\Documents\\GitHub\\coding\\C#\\Uni\\Toll_Vending\\Toll_Vending\\Domain\\Catalog.cs",
+              "RelativeToolTip": "Toll_Vending\\Domain\\Catalog.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-03T14:45:32.323Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Segment.cs",
+              "DocumentMoniker": "C:\\Users\\Noah\\Documents\\GitHub\\coding\\C#\\Uni\\Toll_Vending\\Toll_Vending\\Domain\\Models\\Segment.cs",
+              "RelativeDocumentMoniker": "Toll_Vending\\Domain\\Models\\Segment.cs",
+              "ToolTip": "C:\\Users\\Noah\\Documents\\GitHub\\coding\\C#\\Uni\\Toll_Vending\\Toll_Vending\\Domain\\Models\\Segment.cs",
+              "RelativeToolTip": "Toll_Vending\\Domain\\Models\\Segment.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-03T14:44:20.148Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Receipt.cs",
+              "DocumentMoniker": "C:\\Users\\Noah\\Documents\\GitHub\\coding\\C#\\Uni\\Toll_Vending\\Toll_Vending\\Domain\\Models\\Receipt.cs",
+              "RelativeDocumentMoniker": "Toll_Vending\\Domain\\Models\\Receipt.cs",
+              "ToolTip": "C:\\Users\\Noah\\Documents\\GitHub\\coding\\C#\\Uni\\Toll_Vending\\Toll_Vending\\Domain\\Models\\Receipt.cs",
+              "RelativeToolTip": "Toll_Vending\\Domain\\Models\\Receipt.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-03T14:45:15.662Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "AccountState.cs",
+              "DocumentMoniker": "C:\\Users\\Noah\\Documents\\GitHub\\coding\\C#\\Uni\\Toll_Vending\\Toll_Vending\\Domain\\Models\\AccountState.cs",
+              "RelativeDocumentMoniker": "Toll_Vending\\Domain\\Models\\AccountState.cs",
+              "ToolTip": "C:\\Users\\Noah\\Documents\\GitHub\\coding\\C#\\Uni\\Toll_Vending\\Toll_Vending\\Domain\\Models\\AccountState.cs",
+              "RelativeToolTip": "Toll_Vending\\Domain\\Models\\AccountState.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-03T14:45:02.772Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "ViolationType.cs",
+              "DocumentMoniker": "C:\\Users\\Noah\\Documents\\GitHub\\coding\\C#\\Uni\\Toll_Vending\\Toll_Vending\\Domain\\Enums\\ViolationType.cs",
+              "RelativeDocumentMoniker": "Toll_Vending\\Domain\\Enums\\ViolationType.cs",
+              "ToolTip": "C:\\Users\\Noah\\Documents\\GitHub\\coding\\C#\\Uni\\Toll_Vending\\Toll_Vending\\Domain\\Enums\\ViolationType.cs",
+              "RelativeToolTip": "Toll_Vending\\Domain\\Enums\\ViolationType.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-03T14:42:46.001Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "VignetteType.cs",
+              "DocumentMoniker": "C:\\Users\\Noah\\Documents\\GitHub\\coding\\C#\\Uni\\Toll_Vending\\Toll_Vending\\Domain\\Enums\\VignetteType.cs",
+              "RelativeDocumentMoniker": "Toll_Vending\\Domain\\Enums\\VignetteType.cs",
+              "ToolTip": "C:\\Users\\Noah\\Documents\\GitHub\\coding\\C#\\Uni\\Toll_Vending\\Toll_Vending\\Domain\\Enums\\VignetteType.cs",
+              "RelativeToolTip": "Toll_Vending\\Domain\\Enums\\VignetteType.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-03T14:41:54.319Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "VehicleClass.cs",
+              "DocumentMoniker": "C:\\Users\\Noah\\Documents\\GitHub\\coding\\C#\\Uni\\Toll_Vending\\Toll_Vending\\Domain\\Enums\\VehicleClass.cs",
+              "RelativeDocumentMoniker": "Toll_Vending\\Domain\\Enums\\VehicleClass.cs",
+              "ToolTip": "C:\\Users\\Noah\\Documents\\GitHub\\coding\\C#\\Uni\\Toll_Vending\\Toll_Vending\\Domain\\Enums\\VehicleClass.cs",
+              "RelativeToolTip": "Toll_Vending\\Domain\\Enums\\VehicleClass.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-03T14:40:00.514Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "TimeBand.cs",
+              "DocumentMoniker": "C:\\Users\\Noah\\Documents\\GitHub\\coding\\C#\\Uni\\Toll_Vending\\Toll_Vending\\Domain\\Enums\\TimeBand.cs",
+              "RelativeDocumentMoniker": "Toll_Vending\\Domain\\Enums\\TimeBand.cs",
+              "ToolTip": "C:\\Users\\Noah\\Documents\\GitHub\\coding\\C#\\Uni\\Toll_Vending\\Toll_Vending\\Domain\\Enums\\TimeBand.cs",
+              "RelativeToolTip": "Toll_Vending\\Domain\\Enums\\TimeBand.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-03T14:41:20.397Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "SubscriptionType.cs",
+              "DocumentMoniker": "C:\\Users\\Noah\\Documents\\GitHub\\coding\\C#\\Uni\\Toll_Vending\\Toll_Vending\\Domain\\Enums\\SubscriptionType.cs",
+              "RelativeDocumentMoniker": "Toll_Vending\\Domain\\Enums\\SubscriptionType.cs",
+              "ToolTip": "C:\\Users\\Noah\\Documents\\GitHub\\coding\\C#\\Uni\\Toll_Vending\\Toll_Vending\\Domain\\Enums\\SubscriptionType.cs",
+              "RelativeToolTip": "Toll_Vending\\Domain\\Enums\\SubscriptionType.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-03T14:42:31.635Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "RoadCategory.cs",
+              "DocumentMoniker": "C:\\Users\\Noah\\Documents\\GitHub\\coding\\C#\\Uni\\Toll_Vending\\Toll_Vending\\Domain\\Enums\\RoadCategory.cs",
+              "RelativeDocumentMoniker": "Toll_Vending\\Domain\\Enums\\RoadCategory.cs",
+              "ToolTip": "C:\\Users\\Noah\\Documents\\GitHub\\coding\\C#\\Uni\\Toll_Vending\\Toll_Vending\\Domain\\Enums\\RoadCategory.cs",
+              "RelativeToolTip": "Toll_Vending\\Domain\\Enums\\RoadCategory.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-03T14:39:39.018Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "PaymentMethod.cs",
+              "DocumentMoniker": "C:\\Users\\Noah\\Documents\\GitHub\\coding\\C#\\Uni\\Toll_Vending\\Toll_Vending\\Domain\\Enums\\PaymentMethod.cs",
+              "RelativeDocumentMoniker": "Toll_Vending\\Domain\\Enums\\PaymentMethod.cs",
+              "ToolTip": "C:\\Users\\Noah\\Documents\\GitHub\\coding\\C#\\Uni\\Toll_Vending\\Toll_Vending\\Domain\\Enums\\PaymentMethod.cs",
+              "RelativeToolTip": "Toll_Vending\\Domain\\Enums\\PaymentMethod.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-03T14:41:38.086Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "EmissionStandard.cs",
+              "DocumentMoniker": "C:\\Users\\Noah\\Documents\\GitHub\\coding\\C#\\Uni\\Toll_Vending\\Toll_Vending\\Domain\\Enums\\EmissionStandard.cs",
+              "RelativeDocumentMoniker": "Toll_Vending\\Domain\\Enums\\EmissionStandard.cs",
+              "ToolTip": "C:\\Users\\Noah\\Documents\\GitHub\\coding\\C#\\Uni\\Toll_Vending\\Toll_Vending\\Domain\\Enums\\EmissionStandard.cs",
+              "RelativeToolTip": "Toll_Vending\\Domain\\Enums\\EmissionStandard.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-03T14:41:04.727Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

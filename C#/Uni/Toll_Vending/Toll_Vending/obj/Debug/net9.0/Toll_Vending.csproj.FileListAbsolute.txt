@@ -1,0 +1,15 @@
+C:\Users\Noah\Documents\GitHub\coding\C#\Uni\Toll_Vending\Toll_Vending\obj\Debug\net9.0\Toll_Vending.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Noah\Documents\GitHub\coding\C#\Uni\Toll_Vending\Toll_Vending\obj\Debug\net9.0\Toll_Vending.AssemblyInfoInputs.cache
+C:\Users\Noah\Documents\GitHub\coding\C#\Uni\Toll_Vending\Toll_Vending\obj\Debug\net9.0\Toll_Vending.AssemblyInfo.cs
+C:\Users\Noah\Documents\GitHub\coding\C#\Uni\Toll_Vending\Toll_Vending\obj\Debug\net9.0\Toll_Vending.csproj.CoreCompileInputs.cache
+C:\Users\Noah\Documents\GitHub\coding\C#\Uni\Toll_Vending\Toll_Vending\obj\Debug\net9.0\Toll_Vending.sourcelink.json
+C:\Users\Noah\Documents\GitHub\coding\C#\Uni\Toll_Vending\Toll_Vending\bin\Debug\net9.0\Toll_Vending.exe
+C:\Users\Noah\Documents\GitHub\coding\C#\Uni\Toll_Vending\Toll_Vending\bin\Debug\net9.0\Toll_Vending.deps.json
+C:\Users\Noah\Documents\GitHub\coding\C#\Uni\Toll_Vending\Toll_Vending\bin\Debug\net9.0\Toll_Vending.runtimeconfig.json
+C:\Users\Noah\Documents\GitHub\coding\C#\Uni\Toll_Vending\Toll_Vending\bin\Debug\net9.0\Toll_Vending.dll
+C:\Users\Noah\Documents\GitHub\coding\C#\Uni\Toll_Vending\Toll_Vending\bin\Debug\net9.0\Toll_Vending.pdb
+C:\Users\Noah\Documents\GitHub\coding\C#\Uni\Toll_Vending\Toll_Vending\obj\Debug\net9.0\Toll_Vending.dll
+C:\Users\Noah\Documents\GitHub\coding\C#\Uni\Toll_Vending\Toll_Vending\obj\Debug\net9.0\refint\Toll_Vending.dll
+C:\Users\Noah\Documents\GitHub\coding\C#\Uni\Toll_Vending\Toll_Vending\obj\Debug\net9.0\Toll_Vending.pdb
+C:\Users\Noah\Documents\GitHub\coding\C#\Uni\Toll_Vending\Toll_Vending\obj\Debug\net9.0\Toll_Vending.genruntimeconfig.cache
+C:\Users\Noah\Documents\GitHub\coding\C#\Uni\Toll_Vending\Toll_Vending\obj\Debug\net9.0\ref\Toll_Vending.dll
