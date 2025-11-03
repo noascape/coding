@@ -1,0 +1,70 @@
+C:\Users\wn00226592\OneDrive - WGS 365\DHBW\5.semester\carsten\linq_01_4089333_4445357\linq_01_4089333_4445357\bin\Debug\net9.0\pizza_delivery.exe
+C:\Users\wn00226592\OneDrive - WGS 365\DHBW\5.semester\carsten\linq_01_4089333_4445357\linq_01_4089333_4445357\bin\Debug\net9.0\pizza_delivery.deps.json
+C:\Users\wn00226592\OneDrive - WGS 365\DHBW\5.semester\carsten\linq_01_4089333_4445357\linq_01_4089333_4445357\bin\Debug\net9.0\pizza_delivery.runtimeconfig.json
+C:\Users\wn00226592\OneDrive - WGS 365\DHBW\5.semester\carsten\linq_01_4089333_4445357\linq_01_4089333_4445357\bin\Debug\net9.0\pizza_delivery.dll
+C:\Users\wn00226592\OneDrive - WGS 365\DHBW\5.semester\carsten\linq_01_4089333_4445357\linq_01_4089333_4445357\bin\Debug\net9.0\pizza_delivery.pdb
+C:\Users\wn00226592\OneDrive - WGS 365\DHBW\5.semester\carsten\linq_01_4089333_4445357\linq_01_4089333_4445357\obj\Debug\net9.0\pizza_delivery.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\wn00226592\OneDrive - WGS 365\DHBW\5.semester\carsten\linq_01_4089333_4445357\linq_01_4089333_4445357\obj\Debug\net9.0\pizza_delivery.AssemblyInfoInputs.cache
+C:\Users\wn00226592\OneDrive - WGS 365\DHBW\5.semester\carsten\linq_01_4089333_4445357\linq_01_4089333_4445357\obj\Debug\net9.0\pizza_delivery.AssemblyInfo.cs
+C:\Users\wn00226592\OneDrive - WGS 365\DHBW\5.semester\carsten\linq_01_4089333_4445357\linq_01_4089333_4445357\obj\Debug\net9.0\pizza_delivery.csproj.CoreCompileInputs.cache
+C:\Users\wn00226592\OneDrive - WGS 365\DHBW\5.semester\carsten\linq_01_4089333_4445357\linq_01_4089333_4445357\obj\Debug\net9.0\pizza_delivery.dll
+C:\Users\wn00226592\OneDrive - WGS 365\DHBW\5.semester\carsten\linq_01_4089333_4445357\linq_01_4089333_4445357\obj\Debug\net9.0\refint\pizza_delivery.dll
+C:\Users\wn00226592\OneDrive - WGS 365\DHBW\5.semester\carsten\linq_01_4089333_4445357\linq_01_4089333_4445357\obj\Debug\net9.0\pizza_delivery.pdb
+C:\Users\wn00226592\OneDrive - WGS 365\DHBW\5.semester\carsten\linq_01_4089333_4445357\linq_01_4089333_4445357\obj\Debug\net9.0\pizza_delivery.genruntimeconfig.cache
+C:\Users\wn00226592\OneDrive - WGS 365\DHBW\5.semester\carsten\linq_01_4089333_4445357\linq_01_4089333_4445357\obj\Debug\net9.0\ref\pizza_delivery.dll
+C:\Users\wn00226592\OneDrive - WGS 365\DHBW\5. Semester\carsten\linq_01_4089333_4445357\linq_01_4089333_4445357\bin\Debug\net9.0\pizza_delivery.exe
+C:\Users\wn00226592\OneDrive - WGS 365\DHBW\5. Semester\carsten\linq_01_4089333_4445357\linq_01_4089333_4445357\bin\Debug\net9.0\pizza_delivery.deps.json
+C:\Users\wn00226592\OneDrive - WGS 365\DHBW\5. Semester\carsten\linq_01_4089333_4445357\linq_01_4089333_4445357\bin\Debug\net9.0\pizza_delivery.runtimeconfig.json
+C:\Users\wn00226592\OneDrive - WGS 365\DHBW\5. Semester\carsten\linq_01_4089333_4445357\linq_01_4089333_4445357\bin\Debug\net9.0\pizza_delivery.dll
+C:\Users\wn00226592\OneDrive - WGS 365\DHBW\5. Semester\carsten\linq_01_4089333_4445357\linq_01_4089333_4445357\bin\Debug\net9.0\pizza_delivery.pdb
+C:\Users\wn00226592\OneDrive - WGS 365\DHBW\5. Semester\carsten\linq_01_4089333_4445357\linq_01_4089333_4445357\obj\Debug\net9.0\pizza_delivery.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\wn00226592\OneDrive - WGS 365\DHBW\5. Semester\carsten\linq_01_4089333_4445357\linq_01_4089333_4445357\obj\Debug\net9.0\pizza_delivery.AssemblyInfoInputs.cache
+C:\Users\wn00226592\OneDrive - WGS 365\DHBW\5. Semester\carsten\linq_01_4089333_4445357\linq_01_4089333_4445357\obj\Debug\net9.0\pizza_delivery.AssemblyInfo.cs
+C:\Users\wn00226592\OneDrive - WGS 365\DHBW\5. Semester\carsten\linq_01_4089333_4445357\linq_01_4089333_4445357\obj\Debug\net9.0\pizza_delivery.csproj.CoreCompileInputs.cache
+C:\Users\wn00226592\OneDrive - WGS 365\DHBW\5. Semester\carsten\linq_01_4089333_4445357\linq_01_4089333_4445357\obj\Debug\net9.0\pizza_delivery.dll
+C:\Users\wn00226592\OneDrive - WGS 365\DHBW\5. Semester\carsten\linq_01_4089333_4445357\linq_01_4089333_4445357\obj\Debug\net9.0\refint\pizza_delivery.dll
+C:\Users\wn00226592\OneDrive - WGS 365\DHBW\5. Semester\carsten\linq_01_4089333_4445357\linq_01_4089333_4445357\obj\Debug\net9.0\pizza_delivery.pdb
+C:\Users\wn00226592\OneDrive - WGS 365\DHBW\5. Semester\carsten\linq_01_4089333_4445357\linq_01_4089333_4445357\obj\Debug\net9.0\pizza_delivery.genruntimeconfig.cache
+C:\Users\wn00226592\OneDrive - WGS 365\DHBW\5. Semester\carsten\linq_01_4089333_4445357\linq_01_4089333_4445357\obj\Debug\net9.0\ref\pizza_delivery.dll
+C:\Users\wn00226592\OneDrive - WGS 365\DHBW\5. Semester\carsten\pizza_delivery\linq_01_4089333_4445357\bin\Debug\net9.0\pizza_delivery.exe
+C:\Users\wn00226592\OneDrive - WGS 365\DHBW\5. Semester\carsten\pizza_delivery\linq_01_4089333_4445357\bin\Debug\net9.0\pizza_delivery.deps.json
+C:\Users\wn00226592\OneDrive - WGS 365\DHBW\5. Semester\carsten\pizza_delivery\linq_01_4089333_4445357\bin\Debug\net9.0\pizza_delivery.runtimeconfig.json
+C:\Users\wn00226592\OneDrive - WGS 365\DHBW\5. Semester\carsten\pizza_delivery\linq_01_4089333_4445357\bin\Debug\net9.0\pizza_delivery.dll
+C:\Users\wn00226592\OneDrive - WGS 365\DHBW\5. Semester\carsten\pizza_delivery\linq_01_4089333_4445357\bin\Debug\net9.0\pizza_delivery.pdb
+C:\Users\wn00226592\OneDrive - WGS 365\DHBW\5. Semester\carsten\pizza_delivery\linq_01_4089333_4445357\obj\Debug\net9.0\pizza_delivery.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\wn00226592\OneDrive - WGS 365\DHBW\5. Semester\carsten\pizza_delivery\linq_01_4089333_4445357\obj\Debug\net9.0\pizza_delivery.AssemblyInfoInputs.cache
+C:\Users\wn00226592\OneDrive - WGS 365\DHBW\5. Semester\carsten\pizza_delivery\linq_01_4089333_4445357\obj\Debug\net9.0\pizza_delivery.AssemblyInfo.cs
+C:\Users\wn00226592\OneDrive - WGS 365\DHBW\5. Semester\carsten\pizza_delivery\linq_01_4089333_4445357\obj\Debug\net9.0\pizza_delivery.csproj.CoreCompileInputs.cache
+C:\Users\wn00226592\OneDrive - WGS 365\DHBW\5. Semester\carsten\pizza_delivery\linq_01_4089333_4445357\obj\Debug\net9.0\pizza_delivery.dll
+C:\Users\wn00226592\OneDrive - WGS 365\DHBW\5. Semester\carsten\pizza_delivery\linq_01_4089333_4445357\obj\Debug\net9.0\refint\pizza_delivery.dll
+C:\Users\wn00226592\OneDrive - WGS 365\DHBW\5. Semester\carsten\pizza_delivery\linq_01_4089333_4445357\obj\Debug\net9.0\pizza_delivery.pdb
+C:\Users\wn00226592\OneDrive - WGS 365\DHBW\5. Semester\carsten\pizza_delivery\linq_01_4089333_4445357\obj\Debug\net9.0\pizza_delivery.genruntimeconfig.cache
+C:\Users\wn00226592\OneDrive - WGS 365\DHBW\5. Semester\carsten\pizza_delivery\linq_01_4089333_4445357\obj\Debug\net9.0\ref\pizza_delivery.dll
+C:\Users\wn00226592\OneDrive - WGS 365\DHBW\5. Semester\carsten\linq_01_4089333_4445357\pizza_delivery\bin\Debug\net9.0\pizza_delivery.exe
+C:\Users\wn00226592\OneDrive - WGS 365\DHBW\5. Semester\carsten\linq_01_4089333_4445357\pizza_delivery\bin\Debug\net9.0\pizza_delivery.deps.json
+C:\Users\wn00226592\OneDrive - WGS 365\DHBW\5. Semester\carsten\linq_01_4089333_4445357\pizza_delivery\bin\Debug\net9.0\pizza_delivery.runtimeconfig.json
+C:\Users\wn00226592\OneDrive - WGS 365\DHBW\5. Semester\carsten\linq_01_4089333_4445357\pizza_delivery\bin\Debug\net9.0\pizza_delivery.dll
+C:\Users\wn00226592\OneDrive - WGS 365\DHBW\5. Semester\carsten\linq_01_4089333_4445357\pizza_delivery\bin\Debug\net9.0\pizza_delivery.pdb
+C:\Users\wn00226592\OneDrive - WGS 365\DHBW\5. Semester\carsten\linq_01_4089333_4445357\pizza_delivery\obj\Debug\net9.0\pizza_delivery.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\wn00226592\OneDrive - WGS 365\DHBW\5. Semester\carsten\linq_01_4089333_4445357\pizza_delivery\obj\Debug\net9.0\pizza_delivery.AssemblyInfoInputs.cache
+C:\Users\wn00226592\OneDrive - WGS 365\DHBW\5. Semester\carsten\linq_01_4089333_4445357\pizza_delivery\obj\Debug\net9.0\pizza_delivery.AssemblyInfo.cs
+C:\Users\wn00226592\OneDrive - WGS 365\DHBW\5. Semester\carsten\linq_01_4089333_4445357\pizza_delivery\obj\Debug\net9.0\pizza_delivery.csproj.CoreCompileInputs.cache
+C:\Users\wn00226592\OneDrive - WGS 365\DHBW\5. Semester\carsten\linq_01_4089333_4445357\pizza_delivery\obj\Debug\net9.0\pizza_delivery.dll
+C:\Users\wn00226592\OneDrive - WGS 365\DHBW\5. Semester\carsten\linq_01_4089333_4445357\pizza_delivery\obj\Debug\net9.0\refint\pizza_delivery.dll
+C:\Users\wn00226592\OneDrive - WGS 365\DHBW\5. Semester\carsten\linq_01_4089333_4445357\pizza_delivery\obj\Debug\net9.0\pizza_delivery.pdb
+C:\Users\wn00226592\OneDrive - WGS 365\DHBW\5. Semester\carsten\linq_01_4089333_4445357\pizza_delivery\obj\Debug\net9.0\pizza_delivery.genruntimeconfig.cache
+C:\Users\wn00226592\OneDrive - WGS 365\DHBW\5. Semester\carsten\linq_01_4089333_4445357\pizza_delivery\obj\Debug\net9.0\ref\pizza_delivery.dll
+C:\Users\Noah\OneDrive\Uni\C#\linq_01_4089333_4445357\linq_01_4089333_4445357\pizza_delivery\bin\Debug\net9.0\pizza_delivery.exe
+C:\Users\Noah\OneDrive\Uni\C#\linq_01_4089333_4445357\linq_01_4089333_4445357\pizza_delivery\bin\Debug\net9.0\pizza_delivery.deps.json
+C:\Users\Noah\OneDrive\Uni\C#\linq_01_4089333_4445357\linq_01_4089333_4445357\pizza_delivery\bin\Debug\net9.0\pizza_delivery.runtimeconfig.json
+C:\Users\Noah\OneDrive\Uni\C#\linq_01_4089333_4445357\linq_01_4089333_4445357\pizza_delivery\bin\Debug\net9.0\pizza_delivery.dll
+C:\Users\Noah\OneDrive\Uni\C#\linq_01_4089333_4445357\linq_01_4089333_4445357\pizza_delivery\bin\Debug\net9.0\pizza_delivery.pdb
+C:\Users\Noah\OneDrive\Uni\C#\linq_01_4089333_4445357\linq_01_4089333_4445357\pizza_delivery\obj\Debug\net9.0\pizza_delivery.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Noah\OneDrive\Uni\C#\linq_01_4089333_4445357\linq_01_4089333_4445357\pizza_delivery\obj\Debug\net9.0\pizza_delivery.AssemblyInfoInputs.cache
+C:\Users\Noah\OneDrive\Uni\C#\linq_01_4089333_4445357\linq_01_4089333_4445357\pizza_delivery\obj\Debug\net9.0\pizza_delivery.AssemblyInfo.cs
+C:\Users\Noah\OneDrive\Uni\C#\linq_01_4089333_4445357\linq_01_4089333_4445357\pizza_delivery\obj\Debug\net9.0\pizza_delivery.csproj.CoreCompileInputs.cache
+C:\Users\Noah\OneDrive\Uni\C#\linq_01_4089333_4445357\linq_01_4089333_4445357\pizza_delivery\obj\Debug\net9.0\pizza_delivery.dll
+C:\Users\Noah\OneDrive\Uni\C#\linq_01_4089333_4445357\linq_01_4089333_4445357\pizza_delivery\obj\Debug\net9.0\refint\pizza_delivery.dll
+C:\Users\Noah\OneDrive\Uni\C#\linq_01_4089333_4445357\linq_01_4089333_4445357\pizza_delivery\obj\Debug\net9.0\pizza_delivery.pdb
+C:\Users\Noah\OneDrive\Uni\C#\linq_01_4089333_4445357\linq_01_4089333_4445357\pizza_delivery\obj\Debug\net9.0\pizza_delivery.genruntimeconfig.cache
+C:\Users\Noah\OneDrive\Uni\C#\linq_01_4089333_4445357\linq_01_4089333_4445357\pizza_delivery\obj\Debug\net9.0\ref\pizza_delivery.dll

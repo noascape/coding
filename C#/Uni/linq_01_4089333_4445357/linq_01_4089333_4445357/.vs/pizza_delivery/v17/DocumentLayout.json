@@ -1,0 +1,309 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Noah\\OneDrive\\Uni\\C#\\linq_01_4089333_4445357\\linq_01_4089333_4445357\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{7D76398A-9E45-6FF9-89D6-9871803DB378}|pizza_delivery\\pizza_delivery.csproj|c:\\users\\noah\\onedrive\\uni\\c#\\linq_01_4089333_4445357\\linq_01_4089333_4445357\\pizza_delivery\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7D76398A-9E45-6FF9-89D6-9871803DB378}|pizza_delivery\\pizza_delivery.csproj|solutionrelative:pizza_delivery\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7D76398A-9E45-6FF9-89D6-9871803DB378}|pizza_delivery\\pizza_delivery.csproj|c:\\users\\noah\\onedrive\\uni\\c#\\linq_01_4089333_4445357\\linq_01_4089333_4445357\\pizza_delivery\\services\\orderprocessor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7D76398A-9E45-6FF9-89D6-9871803DB378}|pizza_delivery\\pizza_delivery.csproj|solutionrelative:pizza_delivery\\services\\orderprocessor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7D76398A-9E45-6FF9-89D6-9871803DB378}|pizza_delivery\\pizza_delivery.csproj|c:\\users\\noah\\onedrive\\uni\\c#\\linq_01_4089333_4445357\\linq_01_4089333_4445357\\pizza_delivery\\services\\ordermanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7D76398A-9E45-6FF9-89D6-9871803DB378}|pizza_delivery\\pizza_delivery.csproj|solutionrelative:pizza_delivery\\services\\ordermanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7D76398A-9E45-6FF9-89D6-9871803DB378}|pizza_delivery\\pizza_delivery.csproj|c:\\users\\noah\\onedrive\\uni\\c#\\linq_01_4089333_4445357\\linq_01_4089333_4445357\\pizza_delivery\\services\\orderanalysisservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7D76398A-9E45-6FF9-89D6-9871803DB378}|pizza_delivery\\pizza_delivery.csproj|solutionrelative:pizza_delivery\\services\\orderanalysisservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7D76398A-9E45-6FF9-89D6-9871803DB378}|pizza_delivery\\pizza_delivery.csproj|c:\\users\\noah\\onedrive\\uni\\c#\\linq_01_4089333_4445357\\linq_01_4089333_4445357\\pizza_delivery\\services\\iorderanalysisservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7D76398A-9E45-6FF9-89D6-9871803DB378}|pizza_delivery\\pizza_delivery.csproj|solutionrelative:pizza_delivery\\services\\iorderanalysisservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7D76398A-9E45-6FF9-89D6-9871803DB378}|pizza_delivery\\pizza_delivery.csproj|c:\\users\\noah\\onedrive\\uni\\c#\\linq_01_4089333_4445357\\linq_01_4089333_4445357\\pizza_delivery\\models\\toppingstatsdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7D76398A-9E45-6FF9-89D6-9871803DB378}|pizza_delivery\\pizza_delivery.csproj|solutionrelative:pizza_delivery\\models\\toppingstatsdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7D76398A-9E45-6FF9-89D6-9871803DB378}|pizza_delivery\\pizza_delivery.csproj|c:\\users\\noah\\onedrive\\uni\\c#\\linq_01_4089333_4445357\\linq_01_4089333_4445357\\pizza_delivery\\models\\topping.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7D76398A-9E45-6FF9-89D6-9871803DB378}|pizza_delivery\\pizza_delivery.csproj|solutionrelative:pizza_delivery\\models\\topping.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7D76398A-9E45-6FF9-89D6-9871803DB378}|pizza_delivery\\pizza_delivery.csproj|c:\\users\\noah\\onedrive\\uni\\c#\\linq_01_4089333_4445357\\linq_01_4089333_4445357\\pizza_delivery\\models\\postalcodeorderstatsdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7D76398A-9E45-6FF9-89D6-9871803DB378}|pizza_delivery\\pizza_delivery.csproj|solutionrelative:pizza_delivery\\models\\postalcodeorderstatsdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7D76398A-9E45-6FF9-89D6-9871803DB378}|pizza_delivery\\pizza_delivery.csproj|c:\\users\\noah\\onedrive\\uni\\c#\\linq_01_4089333_4445357\\linq_01_4089333_4445357\\pizza_delivery\\models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7D76398A-9E45-6FF9-89D6-9871803DB378}|pizza_delivery\\pizza_delivery.csproj|solutionrelative:pizza_delivery\\models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7D76398A-9E45-6FF9-89D6-9871803DB378}|pizza_delivery\\pizza_delivery.csproj|c:\\users\\noah\\onedrive\\uni\\c#\\linq_01_4089333_4445357\\linq_01_4089333_4445357\\pizza_delivery\\models\\driverperformancedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7D76398A-9E45-6FF9-89D6-9871803DB378}|pizza_delivery\\pizza_delivery.csproj|solutionrelative:pizza_delivery\\models\\driverperformancedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7D76398A-9E45-6FF9-89D6-9871803DB378}|pizza_delivery\\pizza_delivery.csproj|c:\\users\\noah\\onedrive\\uni\\c#\\linq_01_4089333_4445357\\linq_01_4089333_4445357\\pizza_delivery\\models\\driver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7D76398A-9E45-6FF9-89D6-9871803DB378}|pizza_delivery\\pizza_delivery.csproj|solutionrelative:pizza_delivery\\models\\driver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7D76398A-9E45-6FF9-89D6-9871803DB378}|pizza_delivery\\pizza_delivery.csproj|c:\\users\\noah\\onedrive\\uni\\c#\\linq_01_4089333_4445357\\linq_01_4089333_4445357\\pizza_delivery\\models\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7D76398A-9E45-6FF9-89D6-9871803DB378}|pizza_delivery\\pizza_delivery.csproj|solutionrelative:pizza_delivery\\models\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7D76398A-9E45-6FF9-89D6-9871803DB378}|pizza_delivery\\pizza_delivery.csproj|c:\\users\\noah\\onedrive\\uni\\c#\\linq_01_4089333_4445357\\linq_01_4089333_4445357\\pizza_delivery\\models\\activecustomerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7D76398A-9E45-6FF9-89D6-9871803DB378}|pizza_delivery\\pizza_delivery.csproj|solutionrelative:pizza_delivery\\models\\activecustomerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7D76398A-9E45-6FF9-89D6-9871803DB378}|pizza_delivery\\pizza_delivery.csproj|c:\\users\\noah\\onedrive\\uni\\c#\\linq_01_4089333_4445357\\linq_01_4089333_4445357\\pizza_delivery\\interfaces\\iorderprocessor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7D76398A-9E45-6FF9-89D6-9871803DB378}|pizza_delivery\\pizza_delivery.csproj|solutionrelative:pizza_delivery\\interfaces\\iorderprocessor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7D76398A-9E45-6FF9-89D6-9871803DB378}|pizza_delivery\\pizza_delivery.csproj|c:\\users\\noah\\onedrive\\uni\\c#\\linq_01_4089333_4445357\\linq_01_4089333_4445357\\pizza_delivery\\enums\\orderstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7D76398A-9E45-6FF9-89D6-9871803DB378}|pizza_delivery\\pizza_delivery.csproj|solutionrelative:pizza_delivery\\enums\\orderstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7D76398A-9E45-6FF9-89D6-9871803DB378}|pizza_delivery\\pizza_delivery.csproj|c:\\users\\noah\\onedrive\\uni\\c#\\linq_01_4089333_4445357\\linq_01_4089333_4445357\\pizza_delivery\\data\\sampledata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7D76398A-9E45-6FF9-89D6-9871803DB378}|pizza_delivery\\pizza_delivery.csproj|solutionrelative:pizza_delivery\\data\\sampledata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7D76398A-9E45-6FF9-89D6-9871803DB378}|pizza_delivery\\pizza_delivery.csproj|c:\\users\\noah\\onedrive\\uni\\c#\\linq_01_4089333_4445357\\linq_01_4089333_4445357\\pizza_delivery\\collections\\ordercollection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7D76398A-9E45-6FF9-89D6-9871803DB378}|pizza_delivery\\pizza_delivery.csproj|solutionrelative:pizza_delivery\\collections\\ordercollection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 13,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Order.cs",
+              "DocumentMoniker": "C:\\Users\\Noah\\OneDrive\\Uni\\C#\\linq_01_4089333_4445357\\linq_01_4089333_4445357\\pizza_delivery\\Models\\Order.cs",
+              "RelativeDocumentMoniker": "pizza_delivery\\Models\\Order.cs",
+              "ToolTip": "C:\\Users\\Noah\\OneDrive\\Uni\\C#\\linq_01_4089333_4445357\\linq_01_4089333_4445357\\pizza_delivery\\Models\\Order.cs",
+              "RelativeToolTip": "pizza_delivery\\Models\\Order.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAA3wEkAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-27T16:08:22.679Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "DriverPerformanceDTO.cs",
+              "DocumentMoniker": "C:\\Users\\Noah\\OneDrive\\Uni\\C#\\linq_01_4089333_4445357\\linq_01_4089333_4445357\\pizza_delivery\\Models\\DriverPerformanceDTO.cs",
+              "RelativeDocumentMoniker": "pizza_delivery\\Models\\DriverPerformanceDTO.cs",
+              "ToolTip": "C:\\Users\\Noah\\OneDrive\\Uni\\C#\\linq_01_4089333_4445357\\linq_01_4089333_4445357\\pizza_delivery\\Models\\DriverPerformanceDTO.cs",
+              "RelativeToolTip": "pizza_delivery\\Models\\DriverPerformanceDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-27T16:08:11.817Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Driver.cs",
+              "DocumentMoniker": "C:\\Users\\Noah\\OneDrive\\Uni\\C#\\linq_01_4089333_4445357\\linq_01_4089333_4445357\\pizza_delivery\\Models\\Driver.cs",
+              "RelativeDocumentMoniker": "pizza_delivery\\Models\\Driver.cs",
+              "ToolTip": "C:\\Users\\Noah\\OneDrive\\Uni\\C#\\linq_01_4089333_4445357\\linq_01_4089333_4445357\\pizza_delivery\\Models\\Driver.cs",
+              "RelativeToolTip": "pizza_delivery\\Models\\Driver.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-27T16:08:03.515Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Customer.cs",
+              "DocumentMoniker": "C:\\Users\\Noah\\OneDrive\\Uni\\C#\\linq_01_4089333_4445357\\linq_01_4089333_4445357\\pizza_delivery\\Models\\Customer.cs",
+              "RelativeDocumentMoniker": "pizza_delivery\\Models\\Customer.cs",
+              "ToolTip": "C:\\Users\\Noah\\OneDrive\\Uni\\C#\\linq_01_4089333_4445357\\linq_01_4089333_4445357\\pizza_delivery\\Models\\Customer.cs",
+              "RelativeToolTip": "pizza_delivery\\Models\\Customer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-27T16:07:54.627Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "ActiveCustomerDTO.cs",
+              "DocumentMoniker": "C:\\Users\\Noah\\OneDrive\\Uni\\C#\\linq_01_4089333_4445357\\linq_01_4089333_4445357\\pizza_delivery\\Models\\ActiveCustomerDTO.cs",
+              "RelativeDocumentMoniker": "pizza_delivery\\Models\\ActiveCustomerDTO.cs",
+              "ToolTip": "C:\\Users\\Noah\\OneDrive\\Uni\\C#\\linq_01_4089333_4445357\\linq_01_4089333_4445357\\pizza_delivery\\Models\\ActiveCustomerDTO.cs",
+              "RelativeToolTip": "pizza_delivery\\Models\\ActiveCustomerDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-27T16:07:42.665Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "IOrderProcessor.cs",
+              "DocumentMoniker": "C:\\Users\\Noah\\OneDrive\\Uni\\C#\\linq_01_4089333_4445357\\linq_01_4089333_4445357\\pizza_delivery\\Interfaces\\IOrderProcessor.cs",
+              "RelativeDocumentMoniker": "pizza_delivery\\Interfaces\\IOrderProcessor.cs",
+              "ToolTip": "C:\\Users\\Noah\\OneDrive\\Uni\\C#\\linq_01_4089333_4445357\\linq_01_4089333_4445357\\pizza_delivery\\Interfaces\\IOrderProcessor.cs",
+              "RelativeToolTip": "pizza_delivery\\Interfaces\\IOrderProcessor.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-27T16:07:29.676Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "OrderAnalysisService.cs",
+              "DocumentMoniker": "C:\\Users\\Noah\\OneDrive\\Uni\\C#\\linq_01_4089333_4445357\\linq_01_4089333_4445357\\pizza_delivery\\Services\\OrderAnalysisService.cs",
+              "RelativeDocumentMoniker": "pizza_delivery\\Services\\OrderAnalysisService.cs",
+              "ToolTip": "C:\\Users\\Noah\\OneDrive\\Uni\\C#\\linq_01_4089333_4445357\\linq_01_4089333_4445357\\pizza_delivery\\Services\\OrderAnalysisService.cs",
+              "RelativeToolTip": "pizza_delivery\\Services\\OrderAnalysisService.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAQwBcAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-27T15:08:44.787Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "IOrderAnalysisService.cs",
+              "DocumentMoniker": "C:\\Users\\Noah\\OneDrive\\Uni\\C#\\linq_01_4089333_4445357\\linq_01_4089333_4445357\\pizza_delivery\\Services\\IOrderAnalysisService.cs",
+              "RelativeDocumentMoniker": "pizza_delivery\\Services\\IOrderAnalysisService.cs",
+              "ToolTip": "C:\\Users\\Noah\\OneDrive\\Uni\\C#\\linq_01_4089333_4445357\\linq_01_4089333_4445357\\pizza_delivery\\Services\\IOrderAnalysisService.cs",
+              "RelativeToolTip": "pizza_delivery\\Services\\IOrderAnalysisService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-27T15:08:29.882Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ToppingStatsDTO.cs",
+              "DocumentMoniker": "C:\\Users\\Noah\\OneDrive\\Uni\\C#\\linq_01_4089333_4445357\\linq_01_4089333_4445357\\pizza_delivery\\Models\\ToppingStatsDTO.cs",
+              "RelativeDocumentMoniker": "pizza_delivery\\Models\\ToppingStatsDTO.cs",
+              "ToolTip": "C:\\Users\\Noah\\OneDrive\\Uni\\C#\\linq_01_4089333_4445357\\linq_01_4089333_4445357\\pizza_delivery\\Models\\ToppingStatsDTO.cs",
+              "RelativeToolTip": "pizza_delivery\\Models\\ToppingStatsDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-27T15:08:16.256Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Topping.cs",
+              "DocumentMoniker": "C:\\Users\\Noah\\OneDrive\\Uni\\C#\\linq_01_4089333_4445357\\linq_01_4089333_4445357\\pizza_delivery\\Models\\Topping.cs",
+              "RelativeDocumentMoniker": "pizza_delivery\\Models\\Topping.cs",
+              "ToolTip": "C:\\Users\\Noah\\OneDrive\\Uni\\C#\\linq_01_4089333_4445357\\linq_01_4089333_4445357\\pizza_delivery\\Models\\Topping.cs",
+              "RelativeToolTip": "pizza_delivery\\Models\\Topping.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-27T15:08:01.886Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "PostalCodeOrderStatsDTO.cs",
+              "DocumentMoniker": "C:\\Users\\Noah\\OneDrive\\Uni\\C#\\linq_01_4089333_4445357\\linq_01_4089333_4445357\\pizza_delivery\\Models\\PostalCodeOrderStatsDTO.cs",
+              "RelativeDocumentMoniker": "pizza_delivery\\Models\\PostalCodeOrderStatsDTO.cs",
+              "ToolTip": "C:\\Users\\Noah\\OneDrive\\Uni\\C#\\linq_01_4089333_4445357\\linq_01_4089333_4445357\\pizza_delivery\\Models\\PostalCodeOrderStatsDTO.cs",
+              "RelativeToolTip": "pizza_delivery\\Models\\PostalCodeOrderStatsDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-27T15:07:51.846Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "OrderManager.cs",
+              "DocumentMoniker": "C:\\Users\\Noah\\OneDrive\\Uni\\C#\\linq_01_4089333_4445357\\linq_01_4089333_4445357\\pizza_delivery\\Services\\OrderManager.cs",
+              "RelativeDocumentMoniker": "pizza_delivery\\Services\\OrderManager.cs",
+              "ToolTip": "C:\\Users\\Noah\\OneDrive\\Uni\\C#\\linq_01_4089333_4445357\\linq_01_4089333_4445357\\pizza_delivery\\Services\\OrderManager.cs",
+              "RelativeToolTip": "pizza_delivery\\Services\\OrderManager.cs",
+              "ViewState": "AgIAACkAAAAAAAAAAAAAwDwAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-27T16:09:40.193Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "OrderProcessor.cs",
+              "DocumentMoniker": "C:\\Users\\Noah\\OneDrive\\Uni\\C#\\linq_01_4089333_4445357\\linq_01_4089333_4445357\\pizza_delivery\\Services\\OrderProcessor.cs",
+              "RelativeDocumentMoniker": "pizza_delivery\\Services\\OrderProcessor.cs",
+              "ToolTip": "C:\\Users\\Noah\\OneDrive\\Uni\\C#\\linq_01_4089333_4445357\\linq_01_4089333_4445357\\pizza_delivery\\Services\\OrderProcessor.cs",
+              "RelativeToolTip": "pizza_delivery\\Services\\OrderProcessor.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-27T16:10:00.124Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Noah\\OneDrive\\Uni\\C#\\linq_01_4089333_4445357\\linq_01_4089333_4445357\\pizza_delivery\\Program.cs",
+              "RelativeDocumentMoniker": "pizza_delivery\\Program.cs",
+              "ToolTip": "C:\\Users\\Noah\\OneDrive\\Uni\\C#\\linq_01_4089333_4445357\\linq_01_4089333_4445357\\pizza_delivery\\Program.cs",
+              "RelativeToolTip": "pizza_delivery\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFUAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-27T13:48:43.536Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "OrderStatus.cs",
+              "DocumentMoniker": "C:\\Users\\Noah\\OneDrive\\Uni\\C#\\linq_01_4089333_4445357\\linq_01_4089333_4445357\\pizza_delivery\\Enums\\OrderStatus.cs",
+              "RelativeDocumentMoniker": "pizza_delivery\\Enums\\OrderStatus.cs",
+              "ToolTip": "C:\\Users\\Noah\\OneDrive\\Uni\\C#\\linq_01_4089333_4445357\\linq_01_4089333_4445357\\pizza_delivery\\Enums\\OrderStatus.cs",
+              "RelativeToolTip": "pizza_delivery\\Enums\\OrderStatus.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-27T16:05:37.356Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "SampleData.cs",
+              "DocumentMoniker": "C:\\Users\\Noah\\OneDrive\\Uni\\C#\\linq_01_4089333_4445357\\linq_01_4089333_4445357\\pizza_delivery\\Data\\SampleData.cs",
+              "RelativeDocumentMoniker": "pizza_delivery\\Data\\SampleData.cs",
+              "ToolTip": "C:\\Users\\Noah\\OneDrive\\Uni\\C#\\linq_01_4089333_4445357\\linq_01_4089333_4445357\\pizza_delivery\\Data\\SampleData.cs",
+              "RelativeToolTip": "pizza_delivery\\Data\\SampleData.cs",
+              "ViewState": "AgIAADQAAAAAAAAAAAAgwEcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-27T13:48:28.787Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "OrderCollection.cs",
+              "DocumentMoniker": "C:\\Users\\Noah\\OneDrive\\Uni\\C#\\linq_01_4089333_4445357\\linq_01_4089333_4445357\\pizza_delivery\\Collections\\OrderCollection.cs",
+              "RelativeDocumentMoniker": "pizza_delivery\\Collections\\OrderCollection.cs",
+              "ToolTip": "C:\\Users\\Noah\\OneDrive\\Uni\\C#\\linq_01_4089333_4445357\\linq_01_4089333_4445357\\pizza_delivery\\Collections\\OrderCollection.cs",
+              "RelativeToolTip": "pizza_delivery\\Collections\\OrderCollection.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAABOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-27T16:07:08.597Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
