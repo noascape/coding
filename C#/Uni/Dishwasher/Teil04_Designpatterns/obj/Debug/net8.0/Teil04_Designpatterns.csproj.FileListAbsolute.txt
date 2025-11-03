@@ -1,0 +1,15 @@
+C:\Users\Noah\Documents\GitHub\coding\C#\Uni\Dishwasher\Teil04_Designpatterns\bin\Debug\net8.0\Teil04_Designpatterns.exe
+C:\Users\Noah\Documents\GitHub\coding\C#\Uni\Dishwasher\Teil04_Designpatterns\bin\Debug\net8.0\Teil04_Designpatterns.deps.json
+C:\Users\Noah\Documents\GitHub\coding\C#\Uni\Dishwasher\Teil04_Designpatterns\bin\Debug\net8.0\Teil04_Designpatterns.runtimeconfig.json
+C:\Users\Noah\Documents\GitHub\coding\C#\Uni\Dishwasher\Teil04_Designpatterns\bin\Debug\net8.0\Teil04_Designpatterns.dll
+C:\Users\Noah\Documents\GitHub\coding\C#\Uni\Dishwasher\Teil04_Designpatterns\bin\Debug\net8.0\Teil04_Designpatterns.pdb
+C:\Users\Noah\Documents\GitHub\coding\C#\Uni\Dishwasher\Teil04_Designpatterns\obj\Debug\net8.0\Teil04_Designpatterns.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Noah\Documents\GitHub\coding\C#\Uni\Dishwasher\Teil04_Designpatterns\obj\Debug\net8.0\Teil04_Designpatterns.AssemblyInfoInputs.cache
+C:\Users\Noah\Documents\GitHub\coding\C#\Uni\Dishwasher\Teil04_Designpatterns\obj\Debug\net8.0\Teil04_Designpatterns.AssemblyInfo.cs
+C:\Users\Noah\Documents\GitHub\coding\C#\Uni\Dishwasher\Teil04_Designpatterns\obj\Debug\net8.0\Teil04_Designpatterns.csproj.CoreCompileInputs.cache
+C:\Users\Noah\Documents\GitHub\coding\C#\Uni\Dishwasher\Teil04_Designpatterns\obj\Debug\net8.0\Teil04_Designpatterns.sourcelink.json
+C:\Users\Noah\Documents\GitHub\coding\C#\Uni\Dishwasher\Teil04_Designpatterns\obj\Debug\net8.0\Teil04_Designpatterns.dll
+C:\Users\Noah\Documents\GitHub\coding\C#\Uni\Dishwasher\Teil04_Designpatterns\obj\Debug\net8.0\refint\Teil04_Designpatterns.dll
+C:\Users\Noah\Documents\GitHub\coding\C#\Uni\Dishwasher\Teil04_Designpatterns\obj\Debug\net8.0\Teil04_Designpatterns.pdb
+C:\Users\Noah\Documents\GitHub\coding\C#\Uni\Dishwasher\Teil04_Designpatterns\obj\Debug\net8.0\Teil04_Designpatterns.genruntimeconfig.cache
+C:\Users\Noah\Documents\GitHub\coding\C#\Uni\Dishwasher\Teil04_Designpatterns\obj\Debug\net8.0\ref\Teil04_Designpatterns.dll

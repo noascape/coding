@@ -8,19 +8,19 @@
     "net8.0": []
   },
   "packageFolders": {
-    "C:\\Users\\nheim\\.nuget\\packages\\": {}
+    "C:\\Users\\Noah\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\nheim\\Documents\\GitHub\\coding\\C#\\Uni\\Dishwasher\\Teil01_Attributes\\Teil01_Attributes.csproj",
+      "projectUniqueName": "C:\\Users\\Noah\\Documents\\GitHub\\coding\\C#\\Uni\\Dishwasher\\Teil01_Attributes\\Teil01_Attributes.csproj",
       "projectName": "Teil01_Attributes",
-      "projectPath": "C:\\Users\\nheim\\Documents\\GitHub\\coding\\C#\\Uni\\Dishwasher\\Teil01_Attributes\\Teil01_Attributes.csproj",
-      "packagesPath": "C:\\Users\\nheim\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\nheim\\Documents\\GitHub\\coding\\C#\\Uni\\Dishwasher\\Teil01_Attributes\\obj\\",
+      "projectPath": "C:\\Users\\Noah\\Documents\\GitHub\\coding\\C#\\Uni\\Dishwasher\\Teil01_Attributes\\Teil01_Attributes.csproj",
+      "packagesPath": "C:\\Users\\Noah\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Noah\\Documents\\GitHub\\coding\\C#\\Uni\\Dishwasher\\Teil01_Attributes\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\nheim\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Noah\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

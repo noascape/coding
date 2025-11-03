@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "Teil04_Designpatterns/1.0.0": {
+        "runtime": {
+          "Teil04_Designpatterns.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Teil04_Designpatterns/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

@@ -8,19 +8,19 @@
     "net8.0": []
   },
   "packageFolders": {
-    "C:\\Users\\nheim\\.nuget\\packages\\": {}
+    "C:\\Users\\Noah\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\nheim\\Documents\\GitHub\\coding\\C#\\Uni\\Dishwasher\\Teil03_Overloading_Inheritance_Overriding\\Teil03_Overloading_Inheritance_Overriding.csproj",
+      "projectUniqueName": "C:\\Users\\Noah\\Documents\\GitHub\\coding\\C#\\Uni\\Dishwasher\\Teil03_Overloading_Inheritance_Overriding\\Teil03_Overloading_Inheritance_Overriding.csproj",
       "projectName": "Teil03_Overloading_Inheritance_Overriding",
-      "projectPath": "C:\\Users\\nheim\\Documents\\GitHub\\coding\\C#\\Uni\\Dishwasher\\Teil03_Overloading_Inheritance_Overriding\\Teil03_Overloading_Inheritance_Overriding.csproj",
-      "packagesPath": "C:\\Users\\nheim\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\nheim\\Documents\\GitHub\\coding\\C#\\Uni\\Dishwasher\\Teil03_Overloading_Inheritance_Overriding\\obj\\",
+      "projectPath": "C:\\Users\\Noah\\Documents\\GitHub\\coding\\C#\\Uni\\Dishwasher\\Teil03_Overloading_Inheritance_Overriding\\Teil03_Overloading_Inheritance_Overriding.csproj",
+      "packagesPath": "C:\\Users\\Noah\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Noah\\Documents\\GitHub\\coding\\C#\\Uni\\Dishwasher\\Teil03_Overloading_Inheritance_Overriding\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\nheim\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Noah\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
