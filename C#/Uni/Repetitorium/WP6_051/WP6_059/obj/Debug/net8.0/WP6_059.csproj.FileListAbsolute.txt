@@ -1,0 +1,15 @@
+C:\Users\nheim\Documents\GitHub\coding\C#\Uni\Repetitorium\WP6_051\WP6_059\bin\Debug\net8.0\WP6_059.exe
+C:\Users\nheim\Documents\GitHub\coding\C#\Uni\Repetitorium\WP6_051\WP6_059\bin\Debug\net8.0\WP6_059.deps.json
+C:\Users\nheim\Documents\GitHub\coding\C#\Uni\Repetitorium\WP6_051\WP6_059\bin\Debug\net8.0\WP6_059.runtimeconfig.json
+C:\Users\nheim\Documents\GitHub\coding\C#\Uni\Repetitorium\WP6_051\WP6_059\bin\Debug\net8.0\WP6_059.dll
+C:\Users\nheim\Documents\GitHub\coding\C#\Uni\Repetitorium\WP6_051\WP6_059\bin\Debug\net8.0\WP6_059.pdb
+C:\Users\nheim\Documents\GitHub\coding\C#\Uni\Repetitorium\WP6_051\WP6_059\obj\Debug\net8.0\WP6_059.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\nheim\Documents\GitHub\coding\C#\Uni\Repetitorium\WP6_051\WP6_059\obj\Debug\net8.0\WP6_059.AssemblyInfoInputs.cache
+C:\Users\nheim\Documents\GitHub\coding\C#\Uni\Repetitorium\WP6_051\WP6_059\obj\Debug\net8.0\WP6_059.AssemblyInfo.cs
+C:\Users\nheim\Documents\GitHub\coding\C#\Uni\Repetitorium\WP6_051\WP6_059\obj\Debug\net8.0\WP6_059.csproj.CoreCompileInputs.cache
+C:\Users\nheim\Documents\GitHub\coding\C#\Uni\Repetitorium\WP6_051\WP6_059\obj\Debug\net8.0\WP6_059.sourcelink.json
+C:\Users\nheim\Documents\GitHub\coding\C#\Uni\Repetitorium\WP6_051\WP6_059\obj\Debug\net8.0\WP6_059.dll
+C:\Users\nheim\Documents\GitHub\coding\C#\Uni\Repetitorium\WP6_051\WP6_059\obj\Debug\net8.0\refint\WP6_059.dll
+C:\Users\nheim\Documents\GitHub\coding\C#\Uni\Repetitorium\WP6_051\WP6_059\obj\Debug\net8.0\WP6_059.pdb
+C:\Users\nheim\Documents\GitHub\coding\C#\Uni\Repetitorium\WP6_051\WP6_059\obj\Debug\net8.0\WP6_059.genruntimeconfig.cache
+C:\Users\nheim\Documents\GitHub\coding\C#\Uni\Repetitorium\WP6_051\WP6_059\obj\Debug\net8.0\ref\WP6_059.dll

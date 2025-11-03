@@ -1,0 +1,343 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\nheim\\Documents\\GitHub\\coding\\C#\\Uni\\Dishwasher\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{FF51CF03-4FD2-4FDB-A29E-3F7CFB44CBD0}|Teil03_Overloading_Inheritance_Overriding\\Teil03_Overloading_Inheritance_Overriding.csproj|c:\\users\\nheim\\documents\\github\\coding\\c#\\uni\\dishwasher\\teil03_overloading_inheritance_overriding\\models\\dishwasher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FF51CF03-4FD2-4FDB-A29E-3F7CFB44CBD0}|Teil03_Overloading_Inheritance_Overriding\\Teil03_Overloading_Inheritance_Overriding.csproj|solutionrelative:teil03_overloading_inheritance_overriding\\models\\dishwasher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FF51CF03-4FD2-4FDB-A29E-3F7CFB44CBD0}|Teil03_Overloading_Inheritance_Overriding\\Teil03_Overloading_Inheritance_Overriding.csproj|c:\\users\\nheim\\documents\\github\\coding\\c#\\uni\\dishwasher\\teil03_overloading_inheritance_overriding\\models\\kitchenappliance.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FF51CF03-4FD2-4FDB-A29E-3F7CFB44CBD0}|Teil03_Overloading_Inheritance_Overriding\\Teil03_Overloading_Inheritance_Overriding.csproj|solutionrelative:teil03_overloading_inheritance_overriding\\models\\kitchenappliance.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FF51CF03-4FD2-4FDB-A29E-3F7CFB44CBD0}|Teil03_Overloading_Inheritance_Overriding\\Teil03_Overloading_Inheritance_Overriding.csproj|c:\\users\\nheim\\documents\\github\\coding\\c#\\uni\\dishwasher\\teil03_overloading_inheritance_overriding\\enums\\dishwashertype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FF51CF03-4FD2-4FDB-A29E-3F7CFB44CBD0}|Teil03_Overloading_Inheritance_Overriding\\Teil03_Overloading_Inheritance_Overriding.csproj|solutionrelative:teil03_overloading_inheritance_overriding\\enums\\dishwashertype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FF51CF03-4FD2-4FDB-A29E-3F7CFB44CBD0}|Teil03_Overloading_Inheritance_Overriding\\Teil03_Overloading_Inheritance_Overriding.csproj|c:\\users\\nheim\\documents\\github\\coding\\c#\\uni\\dishwasher\\teil03_overloading_inheritance_overriding\\enums\\appliancestatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FF51CF03-4FD2-4FDB-A29E-3F7CFB44CBD0}|Teil03_Overloading_Inheritance_Overriding\\Teil03_Overloading_Inheritance_Overriding.csproj|solutionrelative:teil03_overloading_inheritance_overriding\\enums\\appliancestatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FF51CF03-4FD2-4FDB-A29E-3F7CFB44CBD0}|Teil03_Overloading_Inheritance_Overriding\\Teil03_Overloading_Inheritance_Overriding.csproj|c:\\users\\nheim\\documents\\github\\coding\\c#\\uni\\dishwasher\\teil03_overloading_inheritance_overriding\\enums\\appliancecolor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FF51CF03-4FD2-4FDB-A29E-3F7CFB44CBD0}|Teil03_Overloading_Inheritance_Overriding\\Teil03_Overloading_Inheritance_Overriding.csproj|solutionrelative:teil03_overloading_inheritance_overriding\\enums\\appliancecolor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FF51CF03-4FD2-4FDB-A29E-3F7CFB44CBD0}|Teil03_Overloading_Inheritance_Overriding\\Teil03_Overloading_Inheritance_Overriding.csproj|c:\\users\\nheim\\documents\\github\\coding\\c#\\uni\\dishwasher\\teil03_overloading_inheritance_overriding\\enums\\energyrating.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FF51CF03-4FD2-4FDB-A29E-3F7CFB44CBD0}|Teil03_Overloading_Inheritance_Overriding\\Teil03_Overloading_Inheritance_Overriding.csproj|solutionrelative:teil03_overloading_inheritance_overriding\\enums\\energyrating.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FF51CF03-4FD2-4FDB-A29E-3F7CFB44CBD0}|Teil03_Overloading_Inheritance_Overriding\\Teil03_Overloading_Inheritance_Overriding.csproj|c:\\users\\nheim\\documents\\github\\coding\\c#\\uni\\dishwasher\\teil03_overloading_inheritance_overriding\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FF51CF03-4FD2-4FDB-A29E-3F7CFB44CBD0}|Teil03_Overloading_Inheritance_Overriding\\Teil03_Overloading_Inheritance_Overriding.csproj|solutionrelative:teil03_overloading_inheritance_overriding\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FF51CF03-4FD2-4FDB-A29E-3F7CFB44CBD0}|Teil03_Overloading_Inheritance_Overriding\\Teil03_Overloading_Inheritance_Overriding.csproj|c:\\users\\nheim\\documents\\github\\coding\\c#\\uni\\dishwasher\\teil03_overloading_inheritance_overriding\\teil03_overloading_inheritance_overriding.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{FF51CF03-4FD2-4FDB-A29E-3F7CFB44CBD0}|Teil03_Overloading_Inheritance_Overriding\\Teil03_Overloading_Inheritance_Overriding.csproj|solutionrelative:teil03_overloading_inheritance_overriding\\teil03_overloading_inheritance_overriding.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C1C43BC0-F2D5-4C49-9E40-045F7EC09FA1}|Teil02_Methods\\Teil02_Methods.csproj|c:\\users\\nheim\\documents\\github\\coding\\c#\\uni\\dishwasher\\teil02_methods\\models\\dishwasher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C1C43BC0-F2D5-4C49-9E40-045F7EC09FA1}|Teil02_Methods\\Teil02_Methods.csproj|solutionrelative:teil02_methods\\models\\dishwasher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C1C43BC0-F2D5-4C49-9E40-045F7EC09FA1}|Teil02_Methods\\Teil02_Methods.csproj|c:\\users\\nheim\\documents\\github\\coding\\c#\\uni\\dishwasher\\teil02_methods\\enums\\energyrating.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C1C43BC0-F2D5-4C49-9E40-045F7EC09FA1}|Teil02_Methods\\Teil02_Methods.csproj|solutionrelative:teil02_methods\\enums\\energyrating.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C1C43BC0-F2D5-4C49-9E40-045F7EC09FA1}|Teil02_Methods\\Teil02_Methods.csproj|c:\\users\\nheim\\documents\\github\\coding\\c#\\uni\\dishwasher\\teil02_methods\\enums\\dishwasherstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C1C43BC0-F2D5-4C49-9E40-045F7EC09FA1}|Teil02_Methods\\Teil02_Methods.csproj|solutionrelative:teil02_methods\\enums\\dishwasherstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C1C43BC0-F2D5-4C49-9E40-045F7EC09FA1}|Teil02_Methods\\Teil02_Methods.csproj|c:\\users\\nheim\\documents\\github\\coding\\c#\\uni\\dishwasher\\teil02_methods\\enums\\dishwashertype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C1C43BC0-F2D5-4C49-9E40-045F7EC09FA1}|Teil02_Methods\\Teil02_Methods.csproj|solutionrelative:teil02_methods\\enums\\dishwashertype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C1C43BC0-F2D5-4C49-9E40-045F7EC09FA1}|Teil02_Methods\\Teil02_Methods.csproj|c:\\users\\nheim\\documents\\github\\coding\\c#\\uni\\dishwasher\\teil02_methods\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C1C43BC0-F2D5-4C49-9E40-045F7EC09FA1}|Teil02_Methods\\Teil02_Methods.csproj|solutionrelative:teil02_methods\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{782789CD-5AA1-490C-8431-C7B6DAE35ECF}|Teil01_Attributes\\Teil01_Attributes.csproj|c:\\users\\nheim\\documents\\github\\coding\\c#\\uni\\dishwasher\\teil01_attributes\\teil01_attributes.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{782789CD-5AA1-490C-8431-C7B6DAE35ECF}|Teil01_Attributes\\Teil01_Attributes.csproj|solutionrelative:teil01_attributes\\teil01_attributes.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{782789CD-5AA1-490C-8431-C7B6DAE35ECF}|Teil01_Attributes\\Teil01_Attributes.csproj|c:\\users\\nheim\\documents\\github\\coding\\c#\\uni\\dishwasher\\teil01_attributes\\models\\dishwasher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{782789CD-5AA1-490C-8431-C7B6DAE35ECF}|Teil01_Attributes\\Teil01_Attributes.csproj|solutionrelative:teil01_attributes\\models\\dishwasher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{782789CD-5AA1-490C-8431-C7B6DAE35ECF}|Teil01_Attributes\\Teil01_Attributes.csproj|c:\\users\\nheim\\documents\\github\\coding\\c#\\uni\\dishwasher\\teil01_attributes\\enums\\energyrating.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{782789CD-5AA1-490C-8431-C7B6DAE35ECF}|Teil01_Attributes\\Teil01_Attributes.csproj|solutionrelative:teil01_attributes\\enums\\energyrating.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{782789CD-5AA1-490C-8431-C7B6DAE35ECF}|Teil01_Attributes\\Teil01_Attributes.csproj|c:\\users\\nheim\\documents\\github\\coding\\c#\\uni\\dishwasher\\teil01_attributes\\enums\\dishwasherstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{782789CD-5AA1-490C-8431-C7B6DAE35ECF}|Teil01_Attributes\\Teil01_Attributes.csproj|solutionrelative:teil01_attributes\\enums\\dishwasherstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{782789CD-5AA1-490C-8431-C7B6DAE35ECF}|Teil01_Attributes\\Teil01_Attributes.csproj|c:\\users\\nheim\\documents\\github\\coding\\c#\\uni\\dishwasher\\teil01_attributes\\enums\\dishwashertype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{782789CD-5AA1-490C-8431-C7B6DAE35ECF}|Teil01_Attributes\\Teil01_Attributes.csproj|solutionrelative:teil01_attributes\\enums\\dishwashertype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{782789CD-5AA1-490C-8431-C7B6DAE35ECF}|Teil01_Attributes\\Teil01_Attributes.csproj|c:\\users\\nheim\\documents\\github\\coding\\c#\\uni\\dishwasher\\teil01_attributes\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{782789CD-5AA1-490C-8431-C7B6DAE35ECF}|Teil01_Attributes\\Teil01_Attributes.csproj|solutionrelative:teil01_attributes\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Dishwasher.cs",
+              "DocumentMoniker": "C:\\Users\\nheim\\Documents\\GitHub\\coding\\C#\\Uni\\Dishwasher\\Teil03_Overloading_Inheritance_Overriding\\Models\\Dishwasher.cs",
+              "RelativeDocumentMoniker": "Teil03_Overloading_Inheritance_Overriding\\Models\\Dishwasher.cs",
+              "ToolTip": "C:\\Users\\nheim\\Documents\\GitHub\\coding\\C#\\Uni\\Dishwasher\\Teil03_Overloading_Inheritance_Overriding\\Models\\Dishwasher.cs",
+              "RelativeToolTip": "Teil03_Overloading_Inheritance_Overriding\\Models\\Dishwasher.cs",
+              "ViewState": "AgIAAFcAAAAAAAAAAAAqwHUAAABBAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-27T12:22:32.9Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "KitchenAppliance.cs",
+              "DocumentMoniker": "C:\\Users\\nheim\\Documents\\GitHub\\coding\\C#\\Uni\\Dishwasher\\Teil03_Overloading_Inheritance_Overriding\\Models\\KitchenAppliance.cs",
+              "RelativeDocumentMoniker": "Teil03_Overloading_Inheritance_Overriding\\Models\\KitchenAppliance.cs",
+              "ToolTip": "C:\\Users\\nheim\\Documents\\GitHub\\coding\\C#\\Uni\\Dishwasher\\Teil03_Overloading_Inheritance_Overriding\\Models\\KitchenAppliance.cs",
+              "RelativeToolTip": "Teil03_Overloading_Inheritance_Overriding\\Models\\KitchenAppliance.cs",
+              "ViewState": "AgIAADgAAAAAAAAAAAAqwFgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-27T12:22:06.684Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "DishwasherType.cs",
+              "DocumentMoniker": "C:\\Users\\nheim\\Documents\\GitHub\\coding\\C#\\Uni\\Dishwasher\\Teil03_Overloading_Inheritance_Overriding\\Enums\\DishwasherType.cs",
+              "RelativeDocumentMoniker": "Teil03_Overloading_Inheritance_Overriding\\Enums\\DishwasherType.cs",
+              "ToolTip": "C:\\Users\\nheim\\Documents\\GitHub\\coding\\C#\\Uni\\Dishwasher\\Teil03_Overloading_Inheritance_Overriding\\Enums\\DishwasherType.cs",
+              "RelativeToolTip": "Teil03_Overloading_Inheritance_Overriding\\Enums\\DishwasherType.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-27T12:21:43.749Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ApplianceStatus.cs",
+              "DocumentMoniker": "C:\\Users\\nheim\\Documents\\GitHub\\coding\\C#\\Uni\\Dishwasher\\Teil03_Overloading_Inheritance_Overriding\\Enums\\ApplianceStatus.cs",
+              "RelativeDocumentMoniker": "Teil03_Overloading_Inheritance_Overriding\\Enums\\ApplianceStatus.cs",
+              "ToolTip": "C:\\Users\\nheim\\Documents\\GitHub\\coding\\C#\\Uni\\Dishwasher\\Teil03_Overloading_Inheritance_Overriding\\Enums\\ApplianceStatus.cs",
+              "RelativeToolTip": "Teil03_Overloading_Inheritance_Overriding\\Enums\\ApplianceStatus.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-27T12:21:13.882Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ApplianceColor.cs",
+              "DocumentMoniker": "C:\\Users\\nheim\\Documents\\GitHub\\coding\\C#\\Uni\\Dishwasher\\Teil03_Overloading_Inheritance_Overriding\\Enums\\ApplianceColor.cs",
+              "RelativeDocumentMoniker": "Teil03_Overloading_Inheritance_Overriding\\Enums\\ApplianceColor.cs",
+              "ToolTip": "C:\\Users\\nheim\\Documents\\GitHub\\coding\\C#\\Uni\\Dishwasher\\Teil03_Overloading_Inheritance_Overriding\\Enums\\ApplianceColor.cs",
+              "RelativeToolTip": "Teil03_Overloading_Inheritance_Overriding\\Enums\\ApplianceColor.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-27T12:21:00.043Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "EnergyRating.cs",
+              "DocumentMoniker": "C:\\Users\\nheim\\Documents\\GitHub\\coding\\C#\\Uni\\Dishwasher\\Teil03_Overloading_Inheritance_Overriding\\Enums\\EnergyRating.cs",
+              "RelativeDocumentMoniker": "Teil03_Overloading_Inheritance_Overriding\\Enums\\EnergyRating.cs",
+              "ToolTip": "C:\\Users\\nheim\\Documents\\GitHub\\coding\\C#\\Uni\\Dishwasher\\Teil03_Overloading_Inheritance_Overriding\\Enums\\EnergyRating.cs",
+              "RelativeToolTip": "Teil03_Overloading_Inheritance_Overriding\\Enums\\EnergyRating.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-27T12:20:44.918Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Teil03_Overloading_Inheritance_Overriding",
+              "DocumentMoniker": "C:\\Users\\nheim\\Documents\\GitHub\\coding\\C#\\Uni\\Dishwasher\\Teil03_Overloading_Inheritance_Overriding\\Teil03_Overloading_Inheritance_Overriding.csproj",
+              "RelativeDocumentMoniker": "Teil03_Overloading_Inheritance_Overriding\\Teil03_Overloading_Inheritance_Overriding.csproj",
+              "ToolTip": "C:\\Users\\nheim\\Documents\\GitHub\\coding\\C#\\Uni\\Dishwasher\\Teil03_Overloading_Inheritance_Overriding\\Teil03_Overloading_Inheritance_Overriding.csproj",
+              "RelativeToolTip": "Teil03_Overloading_Inheritance_Overriding\\Teil03_Overloading_Inheritance_Overriding.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-10-27T12:19:55.509Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Dishwasher.cs",
+              "DocumentMoniker": "C:\\Users\\nheim\\Documents\\GitHub\\coding\\C#\\Uni\\Dishwasher\\Teil02_Methods\\Models\\Dishwasher.cs",
+              "RelativeDocumentMoniker": "Teil02_Methods\\Models\\Dishwasher.cs",
+              "ToolTip": "C:\\Users\\nheim\\Documents\\GitHub\\coding\\C#\\Uni\\Dishwasher\\Teil02_Methods\\Models\\Dishwasher.cs",
+              "RelativeToolTip": "Teil02_Methods\\Models\\Dishwasher.cs",
+              "ViewState": "AgIAAGUAAAAAAAAAAAAqwHkAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-27T12:19:40.81Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "DishwasherStatus.cs",
+              "DocumentMoniker": "C:\\Users\\nheim\\Documents\\GitHub\\coding\\C#\\Uni\\Dishwasher\\Teil02_Methods\\Enums\\DishwasherStatus.cs",
+              "RelativeDocumentMoniker": "Teil02_Methods\\Enums\\DishwasherStatus.cs",
+              "ToolTip": "C:\\Users\\nheim\\Documents\\GitHub\\coding\\C#\\Uni\\Dishwasher\\Teil02_Methods\\Enums\\DishwasherStatus.cs",
+              "RelativeToolTip": "Teil02_Methods\\Enums\\DishwasherStatus.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-27T12:18:57.638Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "DishwasherType.cs",
+              "DocumentMoniker": "C:\\Users\\nheim\\Documents\\GitHub\\coding\\C#\\Uni\\Dishwasher\\Teil02_Methods\\Enums\\DishwasherType.cs",
+              "RelativeDocumentMoniker": "Teil02_Methods\\Enums\\DishwasherType.cs",
+              "ToolTip": "C:\\Users\\nheim\\Documents\\GitHub\\coding\\C#\\Uni\\Dishwasher\\Teil02_Methods\\Enums\\DishwasherType.cs",
+              "RelativeToolTip": "Teil02_Methods\\Enums\\DishwasherType.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-27T12:18:37.017Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Dishwasher.cs",
+              "DocumentMoniker": "C:\\Users\\nheim\\Documents\\GitHub\\coding\\C#\\Uni\\Dishwasher\\Teil01_Attributes\\Models\\Dishwasher.cs",
+              "RelativeDocumentMoniker": "Teil01_Attributes\\Models\\Dishwasher.cs",
+              "ToolTip": "C:\\Users\\nheim\\Documents\\GitHub\\coding\\C#\\Uni\\Dishwasher\\Teil01_Attributes\\Models\\Dishwasher.cs",
+              "RelativeToolTip": "Teil01_Attributes\\Models\\Dishwasher.cs",
+              "ViewState": "AgIAADEAAAAAAAAAAAAqwFEAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-27T12:13:01.125Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "EnergyRating.cs",
+              "DocumentMoniker": "C:\\Users\\nheim\\Documents\\GitHub\\coding\\C#\\Uni\\Dishwasher\\Teil01_Attributes\\Enums\\EnergyRating.cs",
+              "RelativeDocumentMoniker": "Teil01_Attributes\\Enums\\EnergyRating.cs",
+              "ToolTip": "C:\\Users\\nheim\\Documents\\GitHub\\coding\\C#\\Uni\\Dishwasher\\Teil01_Attributes\\Enums\\EnergyRating.cs",
+              "RelativeToolTip": "Teil01_Attributes\\Enums\\EnergyRating.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-27T12:12:17.233Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "DishwasherStatus.cs",
+              "DocumentMoniker": "C:\\Users\\nheim\\Documents\\GitHub\\coding\\C#\\Uni\\Dishwasher\\Teil01_Attributes\\Enums\\DishwasherStatus.cs",
+              "RelativeDocumentMoniker": "Teil01_Attributes\\Enums\\DishwasherStatus.cs",
+              "ToolTip": "C:\\Users\\nheim\\Documents\\GitHub\\coding\\C#\\Uni\\Dishwasher\\Teil01_Attributes\\Enums\\DishwasherStatus.cs",
+              "RelativeToolTip": "Teil01_Attributes\\Enums\\DishwasherStatus.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-27T12:11:52.48Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "DishwasherType.cs",
+              "DocumentMoniker": "C:\\Users\\nheim\\Documents\\GitHub\\coding\\C#\\Uni\\Dishwasher\\Teil01_Attributes\\Enums\\DishwasherType.cs",
+              "RelativeDocumentMoniker": "Teil01_Attributes\\Enums\\DishwasherType.cs",
+              "ToolTip": "C:\\Users\\nheim\\Documents\\GitHub\\coding\\C#\\Uni\\Dishwasher\\Teil01_Attributes\\Enums\\DishwasherType.cs",
+              "RelativeToolTip": "Teil01_Attributes\\Enums\\DishwasherType.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-27T12:11:36.258Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\nheim\\Documents\\GitHub\\coding\\C#\\Uni\\Dishwasher\\Teil03_Overloading_Inheritance_Overriding\\Program.cs",
+              "RelativeDocumentMoniker": "Teil03_Overloading_Inheritance_Overriding\\Program.cs",
+              "ToolTip": "C:\\Users\\nheim\\Documents\\GitHub\\coding\\C#\\Uni\\Dishwasher\\Teil03_Overloading_Inheritance_Overriding\\Program.cs",
+              "RelativeToolTip": "Teil03_Overloading_Inheritance_Overriding\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAB9AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-27T10:16:53.94Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "EnergyRating.cs",
+              "DocumentMoniker": "C:\\Users\\nheim\\Documents\\GitHub\\coding\\C#\\Uni\\Dishwasher\\Teil02_Methods\\Enums\\EnergyRating.cs",
+              "RelativeDocumentMoniker": "Teil02_Methods\\Enums\\EnergyRating.cs",
+              "ToolTip": "C:\\Users\\nheim\\Documents\\GitHub\\coding\\C#\\Uni\\Dishwasher\\Teil02_Methods\\Enums\\EnergyRating.cs",
+              "RelativeToolTip": "Teil02_Methods\\Enums\\EnergyRating.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-27T12:19:12.754Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Teil01_Attributes",
+              "DocumentMoniker": "C:\\Users\\nheim\\Documents\\GitHub\\coding\\C#\\Uni\\Dishwasher\\Teil01_Attributes\\Teil01_Attributes.csproj",
+              "RelativeDocumentMoniker": "Teil01_Attributes\\Teil01_Attributes.csproj",
+              "ToolTip": "C:\\Users\\nheim\\Documents\\GitHub\\coding\\C#\\Uni\\Dishwasher\\Teil01_Attributes\\Teil01_Attributes.csproj",
+              "RelativeToolTip": "Teil01_Attributes\\Teil01_Attributes.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-10-27T12:10:54.936Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\nheim\\Documents\\GitHub\\coding\\C#\\Uni\\Dishwasher\\Teil02_Methods\\Program.cs",
+              "RelativeDocumentMoniker": "Teil02_Methods\\Program.cs",
+              "ToolTip": "C:\\Users\\nheim\\Documents\\GitHub\\coding\\C#\\Uni\\Dishwasher\\Teil02_Methods\\Program.cs",
+              "RelativeToolTip": "Teil02_Methods\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-27T09:59:12.235Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\nheim\\Documents\\GitHub\\coding\\C#\\Uni\\Dishwasher\\Teil01_Attributes\\Program.cs",
+              "RelativeDocumentMoniker": "Teil01_Attributes\\Program.cs",
+              "ToolTip": "C:\\Users\\nheim\\Documents\\GitHub\\coding\\C#\\Uni\\Dishwasher\\Teil01_Attributes\\Program.cs",
+              "RelativeToolTip": "Teil01_Attributes\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-27T09:17:17.904Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

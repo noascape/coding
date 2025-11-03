@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "Teil01_Attributes/1.0.0": {
+        "runtime": {
+          "Teil01_Attributes.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Teil01_Attributes/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

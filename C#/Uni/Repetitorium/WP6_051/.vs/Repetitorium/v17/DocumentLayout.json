@@ -1,0 +1,547 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\nheim\\Documents\\GitHub\\coding\\C#\\Uni\\Repetitorium\\WP6_051\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{DA4587E2-C01D-4957-A5BE-653B31B07E78}|WP6_051\\WP6_051.csproj|c:\\users\\nheim\\documents\\github\\coding\\c#\\uni\\repetitorium\\wp6_051\\wp6_051\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DA4587E2-C01D-4957-A5BE-653B31B07E78}|WP6_051\\WP6_051.csproj|solutionrelative:wp6_051\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{560E450C-0C60-4F0C-89F6-7AE7679E0B0F}|WP6_060\\WP6_060.csproj|c:\\users\\nheim\\documents\\github\\coding\\c#\\uni\\repetitorium\\wp6_051\\wp6_060\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{560E450C-0C60-4F0C-89F6-7AE7679E0B0F}|WP6_060\\WP6_060.csproj|solutionrelative:wp6_060\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{560E450C-0C60-4F0C-89F6-7AE7679E0B0F}|WP6_060\\WP6_060.csproj|c:\\users\\nheim\\documents\\github\\coding\\c#\\uni\\repetitorium\\wp6_051\\wp6_060\\models\\purchase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{560E450C-0C60-4F0C-89F6-7AE7679E0B0F}|WP6_060\\WP6_060.csproj|solutionrelative:wp6_060\\models\\purchase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1301A480-A48C-4243-A776-B8542A8BA9FE}|WP6_059\\WP6_059.csproj|c:\\users\\nheim\\documents\\github\\coding\\c#\\uni\\repetitorium\\wp6_051\\wp6_059\\services\\timeofdayhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1301A480-A48C-4243-A776-B8542A8BA9FE}|WP6_059\\WP6_059.csproj|solutionrelative:wp6_059\\services\\timeofdayhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1301A480-A48C-4243-A776-B8542A8BA9FE}|WP6_059\\WP6_059.csproj|c:\\users\\nheim\\documents\\github\\coding\\c#\\uni\\repetitorium\\wp6_051\\wp6_059\\enums\\timeofday.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1301A480-A48C-4243-A776-B8542A8BA9FE}|WP6_059\\WP6_059.csproj|solutionrelative:wp6_059\\enums\\timeofday.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1301A480-A48C-4243-A776-B8542A8BA9FE}|WP6_059\\WP6_059.csproj|c:\\users\\nheim\\documents\\github\\coding\\c#\\uni\\repetitorium\\wp6_051\\wp6_059\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1301A480-A48C-4243-A776-B8542A8BA9FE}|WP6_059\\WP6_059.csproj|solutionrelative:wp6_059\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51101386-D415-4BE8-AF5F-973EF71E6E18}|WP6_058\\WP6_058.csproj|c:\\users\\nheim\\documents\\github\\coding\\c#\\uni\\repetitorium\\wp6_051\\wp6_058\\structs\\orderid.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{51101386-D415-4BE8-AF5F-973EF71E6E18}|WP6_058\\WP6_058.csproj|solutionrelative:wp6_058\\structs\\orderid.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51101386-D415-4BE8-AF5F-973EF71E6E18}|WP6_058\\WP6_058.csproj|c:\\users\\nheim\\documents\\github\\coding\\c#\\uni\\repetitorium\\wp6_051\\wp6_058\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{51101386-D415-4BE8-AF5F-973EF71E6E18}|WP6_058\\WP6_058.csproj|solutionrelative:wp6_058\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{75B4322D-9804-4A60-9F50-3F56ABD47157}|WP6_057\\WP6_057.csproj|c:\\users\\nheim\\documents\\github\\coding\\c#\\uni\\repetitorium\\wp6_051\\wp6_057\\services\\orderqueueprocessor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{75B4322D-9804-4A60-9F50-3F56ABD47157}|WP6_057\\WP6_057.csproj|solutionrelative:wp6_057\\services\\orderqueueprocessor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{75B4322D-9804-4A60-9F50-3F56ABD47157}|WP6_057\\WP6_057.csproj|c:\\users\\nheim\\documents\\github\\coding\\c#\\uni\\repetitorium\\wp6_051\\wp6_057\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{75B4322D-9804-4A60-9F50-3F56ABD47157}|WP6_057\\WP6_057.csproj|solutionrelative:wp6_057\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{75B4322D-9804-4A60-9F50-3F56ABD47157}|WP6_057\\WP6_057.csproj|c:\\users\\nheim\\documents\\github\\coding\\c#\\uni\\repetitorium\\wp6_051\\wp6_057\\models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{75B4322D-9804-4A60-9F50-3F56ABD47157}|WP6_057\\WP6_057.csproj|solutionrelative:wp6_057\\models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{75B4322D-9804-4A60-9F50-3F56ABD47157}|WP6_057\\WP6_057.csproj|c:\\users\\nheim\\documents\\github\\coding\\c#\\uni\\repetitorium\\wp6_051\\wp6_057\\models\\orderitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{75B4322D-9804-4A60-9F50-3F56ABD47157}|WP6_057\\WP6_057.csproj|solutionrelative:wp6_057\\models\\orderitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{31D33C8D-9343-49E9-8715-575D15476B43}|WP6_056\\WP6_056.csproj|c:\\users\\nheim\\documents\\github\\coding\\c#\\uni\\repetitorium\\wp6_051\\wp6_056\\models\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{31D33C8D-9343-49E9-8715-575D15476B43}|WP6_056\\WP6_056.csproj|solutionrelative:wp6_056\\models\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{31D33C8D-9343-49E9-8715-575D15476B43}|WP6_056\\WP6_056.csproj|c:\\users\\nheim\\documents\\github\\coding\\c#\\uni\\repetitorium\\wp6_051\\wp6_056\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{31D33C8D-9343-49E9-8715-575D15476B43}|WP6_056\\WP6_056.csproj|solutionrelative:wp6_056\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EE3FB736-11E4-46F1-8D66-B176C8EF3779}|WP6_055\\WP6_055.csproj|c:\\users\\nheim\\documents\\github\\coding\\c#\\uni\\repetitorium\\wp6_051\\wp6_055\\services\\texttrimmer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EE3FB736-11E4-46F1-8D66-B176C8EF3779}|WP6_055\\WP6_055.csproj|solutionrelative:wp6_055\\services\\texttrimmer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EE3FB736-11E4-46F1-8D66-B176C8EF3779}|WP6_055\\WP6_055.csproj|c:\\users\\nheim\\documents\\github\\coding\\c#\\uni\\repetitorium\\wp6_051\\wp6_055\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EE3FB736-11E4-46F1-8D66-B176C8EF3779}|WP6_055\\WP6_055.csproj|solutionrelative:wp6_055\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1AF8A54E-6E9A-4B2E-955D-E3892C8C8A20}|WP6_054\\WP6_054.csproj|c:\\users\\nheim\\documents\\github\\coding\\c#\\uni\\repetitorium\\wp6_051\\wp6_054\\models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1AF8A54E-6E9A-4B2E-955D-E3892C8C8A20}|WP6_054\\WP6_054.csproj|solutionrelative:wp6_054\\models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1AF8A54E-6E9A-4B2E-955D-E3892C8C8A20}|WP6_054\\WP6_054.csproj|c:\\users\\nheim\\documents\\github\\coding\\c#\\uni\\repetitorium\\wp6_051\\wp6_054\\models\\orderitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1AF8A54E-6E9A-4B2E-955D-E3892C8C8A20}|WP6_054\\WP6_054.csproj|solutionrelative:wp6_054\\models\\orderitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1AF8A54E-6E9A-4B2E-955D-E3892C8C8A20}|WP6_054\\WP6_054.csproj|c:\\users\\nheim\\documents\\github\\coding\\c#\\uni\\repetitorium\\wp6_051\\wp6_054\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1AF8A54E-6E9A-4B2E-955D-E3892C8C8A20}|WP6_054\\WP6_054.csproj|solutionrelative:wp6_054\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0C45EA94-F25A-42A2-A246-5140DE18756F}|WP6_053\\WP6_053.csproj|c:\\users\\nheim\\documents\\github\\coding\\c#\\uni\\repetitorium\\wp6_051\\wp6_053\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0C45EA94-F25A-42A2-A246-5140DE18756F}|WP6_053\\WP6_053.csproj|solutionrelative:wp6_053\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0C45EA94-F25A-42A2-A246-5140DE18756F}|WP6_053\\WP6_053.csproj|c:\\users\\nheim\\documents\\github\\coding\\c#\\uni\\repetitorium\\wp6_051\\wp6_053\\services\\inventorytools.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0C45EA94-F25A-42A2-A246-5140DE18756F}|WP6_053\\WP6_053.csproj|solutionrelative:wp6_053\\services\\inventorytools.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C004B177-5467-43B6-8AB4-E347B9E63CA6}|WP6_052\\WP6_052.csproj|c:\\users\\nheim\\documents\\github\\coding\\c#\\uni\\repetitorium\\wp6_051\\wp6_052\\services\\businessdaycalculator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C004B177-5467-43B6-8AB4-E347B9E63CA6}|WP6_052\\WP6_052.csproj|solutionrelative:wp6_052\\services\\businessdaycalculator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C004B177-5467-43B6-8AB4-E347B9E63CA6}|WP6_052\\WP6_052.csproj|c:\\users\\nheim\\documents\\github\\coding\\c#\\uni\\repetitorium\\wp6_051\\wp6_052\\enums\\daykind.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C004B177-5467-43B6-8AB4-E347B9E63CA6}|WP6_052\\WP6_052.csproj|solutionrelative:wp6_052\\enums\\daykind.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C004B177-5467-43B6-8AB4-E347B9E63CA6}|WP6_052\\WP6_052.csproj|c:\\users\\nheim\\documents\\github\\coding\\c#\\uni\\repetitorium\\wp6_051\\wp6_052\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C004B177-5467-43B6-8AB4-E347B9E63CA6}|WP6_052\\WP6_052.csproj|solutionrelative:wp6_052\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DA4587E2-C01D-4957-A5BE-653B31B07E78}|WP6_051\\WP6_051.csproj|c:\\users\\nheim\\documents\\github\\coding\\c#\\uni\\repetitorium\\wp6_051\\wp6_051\\models\\physicalproduct.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DA4587E2-C01D-4957-A5BE-653B31B07E78}|WP6_051\\WP6_051.csproj|solutionrelative:wp6_051\\models\\physicalproduct.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DA4587E2-C01D-4957-A5BE-653B31B07E78}|WP6_051\\WP6_051.csproj|c:\\users\\nheim\\documents\\github\\coding\\c#\\uni\\repetitorium\\wp6_051\\wp6_051\\enums\\productkind.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DA4587E2-C01D-4957-A5BE-653B31B07E78}|WP6_051\\WP6_051.csproj|solutionrelative:wp6_051\\enums\\productkind.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DA4587E2-C01D-4957-A5BE-653B31B07E78}|WP6_051\\WP6_051.csproj|c:\\users\\nheim\\documents\\github\\coding\\c#\\uni\\repetitorium\\wp6_051\\wp6_051\\models\\digitalproduct.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DA4587E2-C01D-4957-A5BE-653B31B07E78}|WP6_051\\WP6_051.csproj|solutionrelative:wp6_051\\models\\digitalproduct.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DA4587E2-C01D-4957-A5BE-653B31B07E78}|WP6_051\\WP6_051.csproj|c:\\users\\nheim\\documents\\github\\coding\\c#\\uni\\repetitorium\\wp6_051\\wp6_051\\models\\serviceproduct.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DA4587E2-C01D-4957-A5BE-653B31B07E78}|WP6_051\\WP6_051.csproj|solutionrelative:wp6_051\\models\\serviceproduct.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DA4587E2-C01D-4957-A5BE-653B31B07E78}|WP6_051\\WP6_051.csproj|c:\\users\\nheim\\documents\\github\\coding\\c#\\uni\\repetitorium\\wp6_051\\wp6_051\\models\\productbase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DA4587E2-C01D-4957-A5BE-653B31B07E78}|WP6_051\\WP6_051.csproj|solutionrelative:wp6_051\\models\\productbase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DA4587E2-C01D-4957-A5BE-653B31B07E78}|WP6_051\\WP6_051.csproj|c:\\users\\nheim\\documents\\github\\coding\\c#\\uni\\repetitorium\\wp6_051\\wp6_051\\interfaces\\iorderable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DA4587E2-C01D-4957-A5BE-653B31B07E78}|WP6_051\\WP6_051.csproj|solutionrelative:wp6_051\\interfaces\\iorderable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DA4587E2-C01D-4957-A5BE-653B31B07E78}|WP6_051\\WP6_051.csproj|c:\\users\\nheim\\documents\\github\\coding\\c#\\uni\\repetitorium\\wp6_051\\wp6_051\\wp6_051.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{DA4587E2-C01D-4957-A5BE-653B31B07E78}|WP6_051\\WP6_051.csproj|solutionrelative:wp6_051\\wp6_051.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 10,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Purchase.cs",
+              "DocumentMoniker": "C:\\Users\\nheim\\Documents\\GitHub\\coding\\C#\\Uni\\Repetitorium\\WP6_051\\WP6_060\\Models\\Purchase.cs",
+              "RelativeDocumentMoniker": "WP6_060\\Models\\Purchase.cs",
+              "ToolTip": "C:\\Users\\nheim\\Documents\\GitHub\\coding\\C#\\Uni\\Repetitorium\\WP6_051\\WP6_060\\Models\\Purchase.cs",
+              "RelativeToolTip": "WP6_060\\Models\\Purchase.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-27T12:07:15.195Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\nheim\\Documents\\GitHub\\coding\\C#\\Uni\\Repetitorium\\WP6_051\\WP6_060\\Program.cs",
+              "RelativeDocumentMoniker": "WP6_060\\Program.cs",
+              "ToolTip": "C:\\Users\\nheim\\Documents\\GitHub\\coding\\C#\\Uni\\Repetitorium\\WP6_051\\WP6_060\\Program.cs",
+              "RelativeToolTip": "WP6_060\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-27T12:06:35.655Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "TimeOfDay.cs",
+              "DocumentMoniker": "C:\\Users\\nheim\\Documents\\GitHub\\coding\\C#\\Uni\\Repetitorium\\WP6_051\\WP6_059\\Enums\\TimeOfDay.cs",
+              "RelativeDocumentMoniker": "WP6_059\\Enums\\TimeOfDay.cs",
+              "ToolTip": "C:\\Users\\nheim\\Documents\\GitHub\\coding\\C#\\Uni\\Repetitorium\\WP6_051\\WP6_059\\Enums\\TimeOfDay.cs",
+              "RelativeToolTip": "WP6_059\\Enums\\TimeOfDay.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-27T12:05:23.493Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\nheim\\Documents\\GitHub\\coding\\C#\\Uni\\Repetitorium\\WP6_051\\WP6_059\\Program.cs",
+              "RelativeDocumentMoniker": "WP6_059\\Program.cs",
+              "ToolTip": "C:\\Users\\nheim\\Documents\\GitHub\\coding\\C#\\Uni\\Repetitorium\\WP6_051\\WP6_059\\Program.cs",
+              "RelativeToolTip": "WP6_059\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-27T12:04:33.742Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "OrderID.cs",
+              "DocumentMoniker": "C:\\Users\\nheim\\Documents\\GitHub\\coding\\C#\\Uni\\Repetitorium\\WP6_051\\WP6_058\\Structs\\OrderID.cs",
+              "RelativeDocumentMoniker": "WP6_058\\Structs\\OrderID.cs",
+              "ToolTip": "C:\\Users\\nheim\\Documents\\GitHub\\coding\\C#\\Uni\\Repetitorium\\WP6_051\\WP6_058\\Structs\\OrderID.cs",
+              "RelativeToolTip": "WP6_058\\Structs\\OrderID.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAxwAgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-27T12:03:44.031Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\nheim\\Documents\\GitHub\\coding\\C#\\Uni\\Repetitorium\\WP6_051\\WP6_058\\Program.cs",
+              "RelativeDocumentMoniker": "WP6_058\\Program.cs",
+              "ToolTip": "C:\\Users\\nheim\\Documents\\GitHub\\coding\\C#\\Uni\\Repetitorium\\WP6_051\\WP6_058\\Program.cs",
+              "RelativeToolTip": "WP6_058\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-27T12:03:06.863Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "OrderQueueProcessor.cs",
+              "DocumentMoniker": "C:\\Users\\nheim\\Documents\\GitHub\\coding\\C#\\Uni\\Repetitorium\\WP6_051\\WP6_057\\Services\\OrderQueueProcessor.cs",
+              "RelativeDocumentMoniker": "WP6_057\\Services\\OrderQueueProcessor.cs",
+              "ToolTip": "C:\\Users\\nheim\\Documents\\GitHub\\coding\\C#\\Uni\\Repetitorium\\WP6_051\\WP6_057\\Services\\OrderQueueProcessor.cs",
+              "RelativeToolTip": "WP6_057\\Services\\OrderQueueProcessor.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-27T12:00:49.686Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Order.cs",
+              "DocumentMoniker": "C:\\Users\\nheim\\Documents\\GitHub\\coding\\C#\\Uni\\Repetitorium\\WP6_051\\WP6_057\\Models\\Order.cs",
+              "RelativeDocumentMoniker": "WP6_057\\Models\\Order.cs",
+              "ToolTip": "C:\\Users\\nheim\\Documents\\GitHub\\coding\\C#\\Uni\\Repetitorium\\WP6_051\\WP6_057\\Models\\Order.cs",
+              "RelativeToolTip": "WP6_057\\Models\\Order.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-27T10:58:44.643Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "OrderItem.cs",
+              "DocumentMoniker": "C:\\Users\\nheim\\Documents\\GitHub\\coding\\C#\\Uni\\Repetitorium\\WP6_051\\WP6_057\\Models\\OrderItem.cs",
+              "RelativeDocumentMoniker": "WP6_057\\Models\\OrderItem.cs",
+              "ToolTip": "C:\\Users\\nheim\\Documents\\GitHub\\coding\\C#\\Uni\\Repetitorium\\WP6_051\\WP6_057\\Models\\OrderItem.cs",
+              "RelativeToolTip": "WP6_057\\Models\\OrderItem.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-27T10:58:22.562Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\nheim\\Documents\\GitHub\\coding\\C#\\Uni\\Repetitorium\\WP6_051\\WP6_057\\Program.cs",
+              "RelativeDocumentMoniker": "WP6_057\\Program.cs",
+              "ToolTip": "C:\\Users\\nheim\\Documents\\GitHub\\coding\\C#\\Uni\\Repetitorium\\WP6_051\\WP6_057\\Program.cs",
+              "RelativeToolTip": "WP6_057\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-27T10:57:25.924Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\nheim\\Documents\\GitHub\\coding\\C#\\Uni\\Repetitorium\\WP6_051\\WP6_051\\Program.cs",
+              "RelativeDocumentMoniker": "WP6_051\\Program.cs",
+              "ToolTip": "C:\\Users\\nheim\\Documents\\GitHub\\coding\\C#\\Uni\\Repetitorium\\WP6_051\\WP6_051\\Program.cs",
+              "RelativeToolTip": "WP6_051\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-27T10:36:34.536Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "TimeOfDayHelper.cs",
+              "DocumentMoniker": "C:\\Users\\nheim\\Documents\\GitHub\\coding\\C#\\Uni\\Repetitorium\\WP6_051\\WP6_059\\Services\\TimeOfDayHelper.cs",
+              "RelativeDocumentMoniker": "WP6_059\\Services\\TimeOfDayHelper.cs",
+              "ToolTip": "C:\\Users\\nheim\\Documents\\GitHub\\coding\\C#\\Uni\\Repetitorium\\WP6_051\\WP6_059\\Services\\TimeOfDayHelper.cs",
+              "RelativeToolTip": "WP6_059\\Services\\TimeOfDayHelper.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-27T12:05:54.108Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Customer.cs",
+              "DocumentMoniker": "C:\\Users\\nheim\\Documents\\GitHub\\coding\\C#\\Uni\\Repetitorium\\WP6_051\\WP6_056\\Models\\Customer.cs",
+              "RelativeDocumentMoniker": "WP6_056\\Models\\Customer.cs",
+              "ToolTip": "C:\\Users\\nheim\\Documents\\GitHub\\coding\\C#\\Uni\\Repetitorium\\WP6_051\\WP6_056\\Models\\Customer.cs",
+              "RelativeToolTip": "WP6_056\\Models\\Customer.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAAwBUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-27T10:56:44.357Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\nheim\\Documents\\GitHub\\coding\\C#\\Uni\\Repetitorium\\WP6_051\\WP6_056\\Program.cs",
+              "RelativeDocumentMoniker": "WP6_056\\Program.cs",
+              "ToolTip": "C:\\Users\\nheim\\Documents\\GitHub\\coding\\C#\\Uni\\Repetitorium\\WP6_051\\WP6_056\\Program.cs",
+              "RelativeToolTip": "WP6_056\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-27T10:55:57.307Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "TextTrimmer.cs",
+              "DocumentMoniker": "C:\\Users\\nheim\\Documents\\GitHub\\coding\\C#\\Uni\\Repetitorium\\WP6_051\\WP6_055\\Services\\TextTrimmer.cs",
+              "RelativeDocumentMoniker": "WP6_055\\Services\\TextTrimmer.cs",
+              "ToolTip": "C:\\Users\\nheim\\Documents\\GitHub\\coding\\C#\\Uni\\Repetitorium\\WP6_051\\WP6_055\\Services\\TextTrimmer.cs",
+              "RelativeToolTip": "WP6_055\\Services\\TextTrimmer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-27T10:55:06.227Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\nheim\\Documents\\GitHub\\coding\\C#\\Uni\\Repetitorium\\WP6_051\\WP6_055\\Program.cs",
+              "RelativeDocumentMoniker": "WP6_055\\Program.cs",
+              "ToolTip": "C:\\Users\\nheim\\Documents\\GitHub\\coding\\C#\\Uni\\Repetitorium\\WP6_051\\WP6_055\\Program.cs",
+              "RelativeToolTip": "WP6_055\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-27T10:54:35.391Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Order.cs",
+              "DocumentMoniker": "C:\\Users\\nheim\\Documents\\GitHub\\coding\\C#\\Uni\\Repetitorium\\WP6_051\\WP6_054\\Models\\Order.cs",
+              "RelativeDocumentMoniker": "WP6_054\\Models\\Order.cs",
+              "ToolTip": "C:\\Users\\nheim\\Documents\\GitHub\\coding\\C#\\Uni\\Repetitorium\\WP6_051\\WP6_054\\Models\\Order.cs",
+              "RelativeToolTip": "WP6_054\\Models\\Order.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAQwAsAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-27T10:53:54.402Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "OrderItem.cs",
+              "DocumentMoniker": "C:\\Users\\nheim\\Documents\\GitHub\\coding\\C#\\Uni\\Repetitorium\\WP6_051\\WP6_054\\Models\\OrderItem.cs",
+              "RelativeDocumentMoniker": "WP6_054\\Models\\OrderItem.cs",
+              "ToolTip": "C:\\Users\\nheim\\Documents\\GitHub\\coding\\C#\\Uni\\Repetitorium\\WP6_051\\WP6_054\\Models\\OrderItem.cs",
+              "RelativeToolTip": "WP6_054\\Models\\OrderItem.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-27T10:53:31.212Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\nheim\\Documents\\GitHub\\coding\\C#\\Uni\\Repetitorium\\WP6_051\\WP6_054\\Program.cs",
+              "RelativeDocumentMoniker": "WP6_054\\Program.cs",
+              "ToolTip": "C:\\Users\\nheim\\Documents\\GitHub\\coding\\C#\\Uni\\Repetitorium\\WP6_051\\WP6_054\\Program.cs",
+              "RelativeToolTip": "WP6_054\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-27T10:52:58.976Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "InventoryTools.cs",
+              "DocumentMoniker": "C:\\Users\\nheim\\Documents\\GitHub\\coding\\C#\\Uni\\Repetitorium\\WP6_051\\WP6_053\\Services\\InventoryTools.cs",
+              "RelativeDocumentMoniker": "WP6_053\\Services\\InventoryTools.cs",
+              "ToolTip": "C:\\Users\\nheim\\Documents\\GitHub\\coding\\C#\\Uni\\Repetitorium\\WP6_051\\WP6_053\\Services\\InventoryTools.cs",
+              "RelativeToolTip": "WP6_053\\Services\\InventoryTools.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-27T10:52:07.814Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\nheim\\Documents\\GitHub\\coding\\C#\\Uni\\Repetitorium\\WP6_051\\WP6_053\\Program.cs",
+              "RelativeDocumentMoniker": "WP6_053\\Program.cs",
+              "ToolTip": "C:\\Users\\nheim\\Documents\\GitHub\\coding\\C#\\Uni\\Repetitorium\\WP6_051\\WP6_053\\Program.cs",
+              "RelativeToolTip": "WP6_053\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-27T10:51:16.361Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "BusinessDayCalculator.cs",
+              "DocumentMoniker": "C:\\Users\\nheim\\Documents\\GitHub\\coding\\C#\\Uni\\Repetitorium\\WP6_051\\WP6_052\\Services\\BusinessDayCalculator.cs",
+              "RelativeDocumentMoniker": "WP6_052\\Services\\BusinessDayCalculator.cs",
+              "ToolTip": "C:\\Users\\nheim\\Documents\\GitHub\\coding\\C#\\Uni\\Repetitorium\\WP6_051\\WP6_052\\Services\\BusinessDayCalculator.cs",
+              "RelativeToolTip": "WP6_052\\Services\\BusinessDayCalculator.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAQwB0AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-27T10:50:23.016Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "DayKind.cs",
+              "DocumentMoniker": "C:\\Users\\nheim\\Documents\\GitHub\\coding\\C#\\Uni\\Repetitorium\\WP6_051\\WP6_052\\Enums\\DayKind.cs",
+              "RelativeDocumentMoniker": "WP6_052\\Enums\\DayKind.cs",
+              "ToolTip": "C:\\Users\\nheim\\Documents\\GitHub\\coding\\C#\\Uni\\Repetitorium\\WP6_051\\WP6_052\\Enums\\DayKind.cs",
+              "RelativeToolTip": "WP6_052\\Enums\\DayKind.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-27T10:49:36.654Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\nheim\\Documents\\GitHub\\coding\\C#\\Uni\\Repetitorium\\WP6_051\\WP6_052\\Program.cs",
+              "RelativeDocumentMoniker": "WP6_052\\Program.cs",
+              "ToolTip": "C:\\Users\\nheim\\Documents\\GitHub\\coding\\C#\\Uni\\Repetitorium\\WP6_051\\WP6_052\\Program.cs",
+              "RelativeToolTip": "WP6_052\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-27T10:48:19.524Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "ProductKind.cs",
+              "DocumentMoniker": "C:\\Users\\nheim\\Documents\\GitHub\\coding\\C#\\Uni\\Repetitorium\\WP6_051\\WP6_051\\Enums\\ProductKind.cs",
+              "RelativeDocumentMoniker": "WP6_051\\Enums\\ProductKind.cs",
+              "ToolTip": "C:\\Users\\nheim\\Documents\\GitHub\\coding\\C#\\Uni\\Repetitorium\\WP6_051\\WP6_051\\Enums\\ProductKind.cs",
+              "RelativeToolTip": "WP6_051\\Enums\\ProductKind.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-27T10:47:20.597Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "ServiceProduct.cs",
+              "DocumentMoniker": "C:\\Users\\nheim\\Documents\\GitHub\\coding\\C#\\Uni\\Repetitorium\\WP6_051\\WP6_051\\Models\\ServiceProduct.cs",
+              "RelativeDocumentMoniker": "WP6_051\\Models\\ServiceProduct.cs",
+              "ToolTip": "C:\\Users\\nheim\\Documents\\GitHub\\coding\\C#\\Uni\\Repetitorium\\WP6_051\\WP6_051\\Models\\ServiceProduct.cs",
+              "RelativeToolTip": "WP6_051\\Models\\ServiceProduct.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-27T10:46:23.916Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "DigitalProduct.cs",
+              "DocumentMoniker": "C:\\Users\\nheim\\Documents\\GitHub\\coding\\C#\\Uni\\Repetitorium\\WP6_051\\WP6_051\\Models\\DigitalProduct.cs",
+              "RelativeDocumentMoniker": "WP6_051\\Models\\DigitalProduct.cs",
+              "ToolTip": "C:\\Users\\nheim\\Documents\\GitHub\\coding\\C#\\Uni\\Repetitorium\\WP6_051\\WP6_051\\Models\\DigitalProduct.cs",
+              "RelativeToolTip": "WP6_051\\Models\\DigitalProduct.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-27T10:46:00.538Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "PhysicalProduct.cs",
+              "DocumentMoniker": "C:\\Users\\nheim\\Documents\\GitHub\\coding\\C#\\Uni\\Repetitorium\\WP6_051\\WP6_051\\Models\\PhysicalProduct.cs",
+              "RelativeDocumentMoniker": "WP6_051\\Models\\PhysicalProduct.cs",
+              "ToolTip": "C:\\Users\\nheim\\Documents\\GitHub\\coding\\C#\\Uni\\Repetitorium\\WP6_051\\WP6_051\\Models\\PhysicalProduct.cs",
+              "RelativeToolTip": "WP6_051\\Models\\PhysicalProduct.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-27T10:45:37.794Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "ProductBase.cs",
+              "DocumentMoniker": "C:\\Users\\nheim\\Documents\\GitHub\\coding\\C#\\Uni\\Repetitorium\\WP6_051\\WP6_051\\Models\\ProductBase.cs",
+              "RelativeDocumentMoniker": "WP6_051\\Models\\ProductBase.cs",
+              "ToolTip": "C:\\Users\\nheim\\Documents\\GitHub\\coding\\C#\\Uni\\Repetitorium\\WP6_051\\WP6_051\\Models\\ProductBase.cs",
+              "RelativeToolTip": "WP6_051\\Models\\ProductBase.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-27T10:45:08.13Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "IOrderable.cs",
+              "DocumentMoniker": "C:\\Users\\nheim\\Documents\\GitHub\\coding\\C#\\Uni\\Repetitorium\\WP6_051\\WP6_051\\Interfaces\\IOrderable.cs",
+              "RelativeDocumentMoniker": "WP6_051\\Interfaces\\IOrderable.cs",
+              "ToolTip": "C:\\Users\\nheim\\Documents\\GitHub\\coding\\C#\\Uni\\Repetitorium\\WP6_051\\WP6_051\\Interfaces\\IOrderable.cs",
+              "RelativeToolTip": "WP6_051\\Interfaces\\IOrderable.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-27T10:39:19.982Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "WP6_051",
+              "DocumentMoniker": "C:\\Users\\nheim\\Documents\\GitHub\\coding\\C#\\Uni\\Repetitorium\\WP6_051\\WP6_051\\WP6_051.csproj",
+              "RelativeDocumentMoniker": "WP6_051\\WP6_051.csproj",
+              "ToolTip": "C:\\Users\\nheim\\Documents\\GitHub\\coding\\C#\\Uni\\Repetitorium\\WP6_051\\WP6_051\\WP6_051.csproj",
+              "RelativeToolTip": "WP6_051\\WP6_051.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-10-27T10:37:53.418Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

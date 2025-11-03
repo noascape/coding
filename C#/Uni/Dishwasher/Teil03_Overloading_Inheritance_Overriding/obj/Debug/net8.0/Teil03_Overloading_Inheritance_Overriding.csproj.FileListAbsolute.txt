@@ -1,0 +1,15 @@
+C:\Users\nheim\Documents\GitHub\coding\C#\Uni\Dishwasher\Teil03_Overloading_Inheritance_Overriding\bin\Debug\net8.0\Teil03_Overloading_Inheritance_Overriding.exe
+C:\Users\nheim\Documents\GitHub\coding\C#\Uni\Dishwasher\Teil03_Overloading_Inheritance_Overriding\bin\Debug\net8.0\Teil03_Overloading_Inheritance_Overriding.deps.json
+C:\Users\nheim\Documents\GitHub\coding\C#\Uni\Dishwasher\Teil03_Overloading_Inheritance_Overriding\bin\Debug\net8.0\Teil03_Overloading_Inheritance_Overriding.runtimeconfig.json
+C:\Users\nheim\Documents\GitHub\coding\C#\Uni\Dishwasher\Teil03_Overloading_Inheritance_Overriding\bin\Debug\net8.0\Teil03_Overloading_Inheritance_Overriding.dll
+C:\Users\nheim\Documents\GitHub\coding\C#\Uni\Dishwasher\Teil03_Overloading_Inheritance_Overriding\bin\Debug\net8.0\Teil03_Overloading_Inheritance_Overriding.pdb
+C:\Users\nheim\Documents\GitHub\coding\C#\Uni\Dishwasher\Teil03_Overloading_Inheritance_Overriding\obj\Debug\net8.0\Teil03_Overloading_Inheritance_Overriding.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\nheim\Documents\GitHub\coding\C#\Uni\Dishwasher\Teil03_Overloading_Inheritance_Overriding\obj\Debug\net8.0\Teil03_Overloading_Inheritance_Overriding.AssemblyInfoInputs.cache
+C:\Users\nheim\Documents\GitHub\coding\C#\Uni\Dishwasher\Teil03_Overloading_Inheritance_Overriding\obj\Debug\net8.0\Teil03_Overloading_Inheritance_Overriding.AssemblyInfo.cs
+C:\Users\nheim\Documents\GitHub\coding\C#\Uni\Dishwasher\Teil03_Overloading_Inheritance_Overriding\obj\Debug\net8.0\Teil03_Overloading_Inheritance_Overriding.csproj.CoreCompileInputs.cache
+C:\Users\nheim\Documents\GitHub\coding\C#\Uni\Dishwasher\Teil03_Overloading_Inheritance_Overriding\obj\Debug\net8.0\Teil03_Overloading_Inheritance_Overriding.sourcelink.json
+C:\Users\nheim\Documents\GitHub\coding\C#\Uni\Dishwasher\Teil03_Overloading_Inheritance_Overriding\obj\Debug\net8.0\Teil03_Overloading_Inheritance_Overriding.dll
+C:\Users\nheim\Documents\GitHub\coding\C#\Uni\Dishwasher\Teil03_Overloading_Inheritance_Overriding\obj\Debug\net8.0\refint\Teil03_Overloading_Inheritance_Overriding.dll
+C:\Users\nheim\Documents\GitHub\coding\C#\Uni\Dishwasher\Teil03_Overloading_Inheritance_Overriding\obj\Debug\net8.0\Teil03_Overloading_Inheritance_Overriding.pdb
+C:\Users\nheim\Documents\GitHub\coding\C#\Uni\Dishwasher\Teil03_Overloading_Inheritance_Overriding\obj\Debug\net8.0\Teil03_Overloading_Inheritance_Overriding.genruntimeconfig.cache
+C:\Users\nheim\Documents\GitHub\coding\C#\Uni\Dishwasher\Teil03_Overloading_Inheritance_Overriding\obj\Debug\net8.0\ref\Teil03_Overloading_Inheritance_Overriding.dll

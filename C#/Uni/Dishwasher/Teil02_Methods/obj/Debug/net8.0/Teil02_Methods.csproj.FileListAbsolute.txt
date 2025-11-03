@@ -1,0 +1,15 @@
+C:\Users\nheim\Documents\GitHub\coding\C#\Uni\Dishwasher\Teil02_Methods\obj\Debug\net8.0\Teil02_Methods.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\nheim\Documents\GitHub\coding\C#\Uni\Dishwasher\Teil02_Methods\obj\Debug\net8.0\Teil02_Methods.AssemblyInfoInputs.cache
+C:\Users\nheim\Documents\GitHub\coding\C#\Uni\Dishwasher\Teil02_Methods\obj\Debug\net8.0\Teil02_Methods.AssemblyInfo.cs
+C:\Users\nheim\Documents\GitHub\coding\C#\Uni\Dishwasher\Teil02_Methods\obj\Debug\net8.0\Teil02_Methods.csproj.CoreCompileInputs.cache
+C:\Users\nheim\Documents\GitHub\coding\C#\Uni\Dishwasher\Teil02_Methods\obj\Debug\net8.0\Teil02_Methods.sourcelink.json
+C:\Users\nheim\Documents\GitHub\coding\C#\Uni\Dishwasher\Teil02_Methods\bin\Debug\net8.0\Teil02_Methods.exe
+C:\Users\nheim\Documents\GitHub\coding\C#\Uni\Dishwasher\Teil02_Methods\bin\Debug\net8.0\Teil02_Methods.deps.json
+C:\Users\nheim\Documents\GitHub\coding\C#\Uni\Dishwasher\Teil02_Methods\bin\Debug\net8.0\Teil02_Methods.runtimeconfig.json
+C:\Users\nheim\Documents\GitHub\coding\C#\Uni\Dishwasher\Teil02_Methods\bin\Debug\net8.0\Teil02_Methods.dll
+C:\Users\nheim\Documents\GitHub\coding\C#\Uni\Dishwasher\Teil02_Methods\bin\Debug\net8.0\Teil02_Methods.pdb
+C:\Users\nheim\Documents\GitHub\coding\C#\Uni\Dishwasher\Teil02_Methods\obj\Debug\net8.0\Teil02_Methods.dll
+C:\Users\nheim\Documents\GitHub\coding\C#\Uni\Dishwasher\Teil02_Methods\obj\Debug\net8.0\refint\Teil02_Methods.dll
+C:\Users\nheim\Documents\GitHub\coding\C#\Uni\Dishwasher\Teil02_Methods\obj\Debug\net8.0\Teil02_Methods.pdb
+C:\Users\nheim\Documents\GitHub\coding\C#\Uni\Dishwasher\Teil02_Methods\obj\Debug\net8.0\Teil02_Methods.genruntimeconfig.cache
+C:\Users\nheim\Documents\GitHub\coding\C#\Uni\Dishwasher\Teil02_Methods\obj\Debug\net8.0\ref\Teil02_Methods.dll

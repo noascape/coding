@@ -1,0 +1,15 @@
+C:\Users\nheim\Documents\GitHub\coding\C#\Uni\Dishwasher\Teil01_Attributes\bin\Debug\net8.0\Teil01_Attributes.exe
+C:\Users\nheim\Documents\GitHub\coding\C#\Uni\Dishwasher\Teil01_Attributes\bin\Debug\net8.0\Teil01_Attributes.deps.json
+C:\Users\nheim\Documents\GitHub\coding\C#\Uni\Dishwasher\Teil01_Attributes\bin\Debug\net8.0\Teil01_Attributes.runtimeconfig.json
+C:\Users\nheim\Documents\GitHub\coding\C#\Uni\Dishwasher\Teil01_Attributes\bin\Debug\net8.0\Teil01_Attributes.dll
+C:\Users\nheim\Documents\GitHub\coding\C#\Uni\Dishwasher\Teil01_Attributes\bin\Debug\net8.0\Teil01_Attributes.pdb
+C:\Users\nheim\Documents\GitHub\coding\C#\Uni\Dishwasher\Teil01_Attributes\obj\Debug\net8.0\Teil01_Attributes.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\nheim\Documents\GitHub\coding\C#\Uni\Dishwasher\Teil01_Attributes\obj\Debug\net8.0\Teil01_Attributes.AssemblyInfoInputs.cache
+C:\Users\nheim\Documents\GitHub\coding\C#\Uni\Dishwasher\Teil01_Attributes\obj\Debug\net8.0\Teil01_Attributes.AssemblyInfo.cs
+C:\Users\nheim\Documents\GitHub\coding\C#\Uni\Dishwasher\Teil01_Attributes\obj\Debug\net8.0\Teil01_Attributes.csproj.CoreCompileInputs.cache
+C:\Users\nheim\Documents\GitHub\coding\C#\Uni\Dishwasher\Teil01_Attributes\obj\Debug\net8.0\Teil01_Attributes.sourcelink.json
+C:\Users\nheim\Documents\GitHub\coding\C#\Uni\Dishwasher\Teil01_Attributes\obj\Debug\net8.0\Teil01_Attributes.dll
+C:\Users\nheim\Documents\GitHub\coding\C#\Uni\Dishwasher\Teil01_Attributes\obj\Debug\net8.0\refint\Teil01_Attributes.dll
+C:\Users\nheim\Documents\GitHub\coding\C#\Uni\Dishwasher\Teil01_Attributes\obj\Debug\net8.0\Teil01_Attributes.pdb
+C:\Users\nheim\Documents\GitHub\coding\C#\Uni\Dishwasher\Teil01_Attributes\obj\Debug\net8.0\Teil01_Attributes.genruntimeconfig.cache
+C:\Users\nheim\Documents\GitHub\coding\C#\Uni\Dishwasher\Teil01_Attributes\obj\Debug\net8.0\ref\Teil01_Attributes.dll

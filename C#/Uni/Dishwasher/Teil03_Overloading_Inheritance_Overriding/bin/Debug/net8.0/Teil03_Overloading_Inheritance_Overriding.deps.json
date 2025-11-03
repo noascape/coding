@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "Teil03_Overloading_Inheritance_Overriding/1.0.0": {
+        "runtime": {
+          "Teil03_Overloading_Inheritance_Overriding.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Teil03_Overloading_Inheritance_Overriding/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
