@@ -9,9 +9,9 @@ from openpyxl.utils import get_column_letter
 from openpyxl.formatting.rule import FormulaRule
 from openpyxl.styles import PatternFill
 
-desired_columns = ["Nr", "Beschreibung", "Beschreibung2", "Produktgruppencode", "Inventurgruppencode", "Lagerort_24", "Bestand Datum_23", "Bestand Datum_24", "Bestandsveränderung", "Basiseinheit", "Nettogewicht kg/ Einheit_23", "Nettogewicht kg/ Einheit_24", "Nettogewicht kg_23", "Nettogewicht kg_24", "Bewertungspreis € / Einheit_23", "Bewertungspreis € / Einheit_24", "Relative Bewertungspreisveränderung", "Bewertungspreis €_23", "Bewertungspreis €_24", "Absolute Bewertungspreisveränderung"]
+desired_columns = ["Nr", "Beschreibung", "Beschreibung2", "Produktgruppencode", "Inventurgruppencode", "Lagerort_25", "Bestand Datum_24", "Bestand Datum_25", "Bestandsveränderung", "Basiseinheit", "Nettogewicht kg / Einheit_24", "Nettogewicht kg / Einheit_25", "Nettogewicht kg_24", "Nettogewicht kg_25", "Bewertungspreis € / Einheit_24", "Bewertungspreis € / Einheit_25", "Relative Bewertungspreisveränderung", "Bewertungspreis €_24", "Bewertungspreis €_25", "Absolute Bewertungspreisveränderung"]
 
-#Datei-Auswahl
+# Datei-Auswahl
 def select_excel_file(prompt: str) -> str:
     root = tk.Tk(); root.withdraw()
     path = filedialog.askopenfilename(
@@ -26,35 +26,35 @@ def select_excel_file(prompt: str) -> str:
 
 def merge_excels(file1: str, file2: str, output_path: str):
     # Einlesen mit deutschem Zahlenformat
-    cols1 = ["Nr", "Beschreibung_23", "Beschreibung2_23", "Produktgruppencode_23", "Inventurgruppencode_23", "Bestand Datum_23", "Basiseinheit_23", "Nettogewicht kg/ Einheit_23", "Nettogewicht kg_23", "Bewertungspreis € / Einheit_23", "Bewertungspreis €_23"]
-    cols2 = ["Nr", "Beschreibung_24", "Beschreibung2_24", "Produktgruppencode_24", "Inventurgruppencode_24", "Lagerort_24", "Bestand Datum_24", "Basiseinheit_24", "Nettogewicht kg/ Einheit_24", "Nettogewicht kg_24", "Bewertungspreis € / Einheit_24", "Bewertungspreis €_24"]
-    ds1 = pd.read_excel(file1, skiprows=4, header=None, names=cols1, thousands='.', decimal=',')
-    ds2 = pd.read_excel(file2, skiprows=3, header=None, names=cols2, thousands='.', decimal=',')
+    cols1 = ["Nr", "Beschreibung_24", "Beschreibung2_24", "Produktgruppencode_24", "Inventurgruppencode_24", "Lagerort_24", "Bestand Datum_24", "Basiseinheit_24", "Nettogewicht kg / Einheit_24", "Nettogewicht kg_24", "Bewertungspreis € / Einheit_24", "Bewertungspreis €_24"]
+    cols2 = ["Nr", "Beschreibung_25", "Beschreibung2_25", "Produktgruppencode_25", "Inventurgruppencode_25", "Lagerort_25", "Bestand Datum_25", "Basiseinheit_25", "Nettogewicht kg / Einheit_25", "Nettogewicht kg_25", "Bewertungspreis € / Einheit_25", "Bewertungspreis €_25"]
+    ds1 = pd.read_excel(file1, skiprows=3, header=None, names=cols1, thousands='.', decimal=',')
+    ds2 = pd.read_excel(file2, skiprows=4, header=None, names=cols2, thousands='.', decimal=',') # Header in Zeile 4
     df = pd.merge(ds1, ds2, on="Nr", how="outer")
 
     # Textspalten zusammenführen
-    df["Beschreibung"] = df["Beschreibung_24"].combine_first(df["Beschreibung_23"])
-    df["Beschreibung2"] = df["Beschreibung2_24"].combine_first(df["Beschreibung2_23"])
-    df["Produktgruppencode"] = df["Produktgruppencode_24"].combine_first(df["Produktgruppencode_23"])
-    df["Inventurgruppencode"] = df["Inventurgruppencode_24"].combine_first(df["Inventurgruppencode_23"])
-    df["Basiseinheit"] = df["Basiseinheit_24"].combine_first(df["Basiseinheit_23"])
-    df.drop(columns=["Beschreibung_23","Beschreibung_24", "Beschreibung2_23","Beschreibung2_24", "Produktgruppencode_23","Produktgruppencode_24", "Inventurgruppencode_23","Inventurgruppencode_24", "Basiseinheit_23","Basiseinheit_24"], inplace=True)
+    df["Beschreibung"] = df["Beschreibung_25"].combine_first(df["Beschreibung_24"])
+    df["Beschreibung2"] = df["Beschreibung2_25"].combine_first(df["Beschreibung2_24"])
+    df["Produktgruppencode"] = df["Produktgruppencode_25"].combine_first(df["Produktgruppencode_24"])
+    df["Inventurgruppencode"] = df["Inventurgruppencode_25"].combine_first(df["Inventurgruppencode_24"])
+    df["Basiseinheit"] = df["Basiseinheit_25"].combine_first(df["Basiseinheit_24"])
+    df.drop(columns=["Beschreibung_24","Beschreibung_25", "Beschreibung2_24","Beschreibung2_25", "Produktgruppencode_24","Produktgruppencode_25", "Inventurgruppencode_24","Inventurgruppencode_25", "Lagerort_24", "Basiseinheit_24","Basiseinheit_25"], inplace=True)
 
     # Custom Spalten (nach Nr gruppiert für die korrekten Berechnungen) 
     sum_23 = df.groupby("Nr")[[
-        "Bewertungspreis € / Einheit_23",
-        "Bewertungspreis €_23",
-        "Bestand Datum_23"
-    ]].transform(lambda x: x.sum(min_count=1))
-    sum_24 = df.groupby("Nr")[[
         "Bewertungspreis € / Einheit_24",
         "Bewertungspreis €_24",
         "Bestand Datum_24"
     ]].transform(lambda x: x.sum(min_count=1))
+    sum_24 = df.groupby("Nr")[[
+        "Bewertungspreis € / Einheit_25",
+        "Bewertungspreis €_25",
+        "Bestand Datum_25"
+    ]].transform(lambda x: x.sum(min_count=1))
 
-    df["Relative Bewertungspreisveränderung"] = (sum_24["Bewertungspreis € / Einheit_24"] - sum_23["Bewertungspreis € / Einheit_23"]) / sum_23["Bewertungspreis € / Einheit_23"]
-    df["Absolute Bewertungspreisveränderung"] = (sum_24["Bewertungspreis €_24"] - sum_23["Bewertungspreis €_23"])
-    df["Bestandsveränderung"] = (sum_24["Bestand Datum_24"] - sum_23["Bestand Datum_23"])
+    df["Relative Bewertungspreisveränderung"] = (sum_24["Bewertungspreis € / Einheit_25"] - sum_23["Bewertungspreis € / Einheit_24"]) / sum_23["Bewertungspreis € / Einheit_24"]
+    df["Absolute Bewertungspreisveränderung"] = (sum_24["Bewertungspreis €_25"] - sum_23["Bewertungspreis €_24"])
+    df["Bestandsveränderung"] = (sum_24["Bestand Datum_25"] - sum_23["Bestand Datum_24"])
 
     # Unendlichkeiten und NaNs ersetzen ohne inplace chaining
     rel = df["Relative Bewertungspreisveränderung"].replace([np.inf, -np.inf], np.nan)
@@ -163,8 +163,8 @@ def merge_excels(file1: str, file2: str, output_path: str):
 
 if __name__ == "__main__":
     try:
-        f1 = select_excel_file("Wähle den ersten Excel-Datensatz (z.B. von 2023)")
-        f2 = select_excel_file("Wähle den zweiten Excel-Datensatz (z.B. von 2024)")
+        f1 = select_excel_file("Wähle den ersten Excel-Datensatz (z.B. von 2024)")
+        f2 = select_excel_file("Wähle den zweiten Excel-Datensatz (z.B. von 2025)")
         default_out = os.path.join(os.getcwd(), "Zusammengeführt.xlsx")
         out = filedialog.asksaveasfilename(
             title="Speichere den zusammengeführten Datensatz",
