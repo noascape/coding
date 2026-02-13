@@ -71,24 +71,6 @@ local function ExploreFixedNpcSpotsForBothPlayers(_range)
     end
 end
 
-local function EnsureKeyNpcVisibilityForBothPlayers(_range)
-    local names = {
-        "Leader_Celle",
-        "Leader_Wismar",
-        "Waechter_1",
-        "Waechter_2",
-    }
-
-    for _, name in ipairs(names) do
-        EnsureNpcMarkerOn(name)
-        ExploreNpcForBothPlayers(name, _range)
-    end
-
-    -- Zusätzlicher Koordinaten-Fallback, falls eine Named-Entity auf einem Client
-    -- noch nicht aufgelöst wurde.
-    ExploreFixedNpcSpotsForBothPlayers(_range)
-end
-
 --------------------------------------------------------------------------------
 -- Game start
 --------------------------------------------------------------------------------
@@ -337,11 +319,13 @@ function FirstMapAction()
     EnsureNpcMarkerOn("Bischof_Likirchen")
 
     -- Bereiche um wichtige NPCs aufdecken (kleiner Radius)
-    EnsureKeyNpcVisibilityForBothPlayers(15)
-
-    -- Sicherheitsnetz: kurzzeitig wiederholen (für spät gespawnte/aufgelöste Entities)
-    InitialNpcVisibilityTries = 0
-    StartSimpleJob("Job_EnsureInitialNpcVisibility")
+    ExploreNpcForBothPlayers("Leader_Celle",       15)
+    ExploreNpcForBothPlayers("Leader_Wismar",      15)
+    ExploreNpcForBothPlayers("Waechter_1",         15)
+    ExploreNpcForBothPlayers("Waechter_2",         15)
+    
+    -- Fallback: feste Aufdeckungspunkte zusätzlich setzen
+    ExploreFixedNpcSpotsForBothPlayers(15)
 
     -- optional: Minimap-Pulse (aktuell auskommentiert, weil zu lang)
     -- GUI.CreateMinimapPulse(35697.5, 37076.1, 0)   -- Celle
