@@ -27,19 +27,35 @@ local function EnsureRevealSpotForPlayer(_pid, _spotKey, _x, _y, _range)
     return id
 end
 
-local function EnsureInitialSpotsVisible(_range)
-    local spots = {
-        { key = "celle",    x = 35697.5, y = 37076.1 },
-        { key = "wismar",   x = 41059.4, y = 61382.0 },
-        { key = "w1",       x = 22347.6, y = 51611.2 },
-        { key = "w2",       x = 50436.9, y = 48387.3 },
-    }
-
-    for pid = 1, 2 do
-        for _, s in ipairs(spots) do
-            EnsureRevealSpotForPlayer(pid, s.key, s.x, s.y, _range)
-        end
+-- Lokaler Human-Player (nur 1 oder 2)
+local function GetLocalHumanPid()
+    local pid = GUI.GetPlayerID()
+    if pid == 1 or pid == 2 then
+        return pid
     end
+    return nil
+end
+
+local function EnsureInitialNpcVisibility_Local(_range)
+    local pid = GetLocalHumanPid()
+    if not pid then
+        return
+    end
+
+    -- persistente Reveal-Entities NUR für den lokalen Spieler
+    EnsureRevealSpotForPlayer(pid, "celle",  35697.5, 37076.1, _range)
+    EnsureRevealSpotForPlayer(pid, "wismar", 41059.4, 61382.0, _range)
+    EnsureRevealSpotForPlayer(pid, "w1",     22347.6, 51611.2, _range)
+    EnsureRevealSpotForPlayer(pid, "w2",     50436.9, 48387.3, _range)
+
+    -- Marker sind oft client-lokal -> pro Client setzen
+    EnsureNpcMarkerOn("Leader_Celle")
+    EnsureNpcMarkerOn("Leader_Wismar")
+    EnsureNpcMarkerOn("Waechter_1")
+    EnsureNpcMarkerOn("Waechter_2")
+    EnsureNpcMarkerOn("Leader_Bergbewohner")
+    EnsureNpcMarkerOn("Bischof_Likirchen")
+    EnsureNpcMarkerOn("Hauptmann_Likirchen")
 end
 
 -- Versucht Marker zu setzen (falls Entity erst später existiert)
@@ -50,32 +66,6 @@ local function EnsureInitialNpcMarkers()
     EnsureNpcMarkerOn("Waechter_2")
 end
 
--- Job: wiederholt Reveal + Marker, bis alle NPCs existieren (oder Timeout)
-function Job_EnsureInitialNpcVisibility()
-    InitialNpcVisibilityTries = (InitialNpcVisibilityTries or 0) + 1
-
-    -- Sichtbarkeit unabhängig von Named Entities
-    EnsureInitialSpotsVisible(20)        -- 15 geht auch, 20 ist etwas toleranter
-    EnsureInitialNpcMarkers()
-
-    local allExist =
-        IsExisting("Leader_Celle") and
-        IsExisting("Leader_Wismar") and
-        IsExisting("Waechter_1") and
-        IsExisting("Waechter_2")
-
-    -- wenn alles da ist, können wir stoppen
-    if allExist then
-        return true
-    end
-
-    -- Timeout nach ~30 Sekunden (bei ~10 Turns/Sekunde)
-    if InitialNpcVisibilityTries >= 300 then
-        return true
-    end
-
-    return false
-end
 local function ExploreAreaForPlayer(_pid, _x, _y, _range)
     -- Falls vorhanden, direkte Engine-Funktion nutzen (synchron und sofort)
     if Logic.ExploreArea then
@@ -86,6 +76,18 @@ local function ExploreAreaForPlayer(_pid, _x, _y, _range)
     -- Fallback: Unsichtbare Script-Entity mit Aufdeckradius
     local id = Logic.CreateEntity(Entities.XD_ScriptEntity, _x, _y, 0, _pid)
     Logic.SetEntityExplorationRange(id, _range)
+end
+
+function Job_EnsureInitialNpcVisibility()
+    InitialNpcVisibilityTries = (InitialNpcVisibilityTries or 0) + 1
+
+    EnsureInitialNpcVisibility_Local(25) -- 20-30 ist meist gut
+
+    -- Stop nach ~30 Sekunden
+    if InitialNpcVisibilityTries >= 300 then
+        return true
+    end
+    return false
 end
 
 -- Score-Wrapper: verhindert Fehler beim Beenden, wenn Score.Player nicht initialisiert ist
@@ -385,13 +387,13 @@ function FirstMapAction()
     EnsureNpcMarkerOn("Bischof_Likirchen")
 
     -- Bereiche um wichtige NPCs aufdecken (kleiner Radius)
-    ExploreNpcForBothPlayers("Leader_Celle",       15)
-    ExploreNpcForBothPlayers("Leader_Wismar",      15)
-    ExploreNpcForBothPlayers("Waechter_1",         15)
-    ExploreNpcForBothPlayers("Waechter_2",         15)
+    -- ExploreNpcForBothPlayers("Leader_Celle",       15)
+    -- ExploreNpcForBothPlayers("Leader_Wismar",      15)
+    -- ExploreNpcForBothPlayers("Waechter_1",         15)
+    -- ExploreNpcForBothPlayers("Waechter_2",         15)
     
     -- Fallback: feste Aufdeckungspunkte zusätzlich setzen
-    ExploreFixedNpcSpotsForBothPlayers(15)
+    -- ExploreFixedNpcSpotsForBothPlayers(15)
 
     -- optional: Minimap-Pulse (aktuell auskommentiert, weil zu lang)
     -- GUI.CreateMinimapPulse(35697.5, 37076.1, 0)   -- Celle
