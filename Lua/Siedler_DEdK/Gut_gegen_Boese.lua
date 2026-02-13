@@ -14,9 +14,14 @@ local function EnsureNpcMarkerOn(_name)
 end
 
 local function ExploreAreaForPlayer(_pid, _x, _y, _range)
-    -- Unsichtbare Script-Entity für diesen Spieler erstellen
+    -- Falls vorhanden, direkte Engine-Funktion nutzen (synchron und sofort)
+    if Logic.ExploreArea then
+        Logic.ExploreArea(_pid, _x, _y, _range)
+        return
+    end
+
+    -- Fallback: Unsichtbare Script-Entity mit Aufdeckradius
     local id = Logic.CreateEntity(Entities.XD_ScriptEntity, _x, _y, 0, _pid)
-    -- Sichtweite / Aufdeckradius setzen
     Logic.SetEntityExplorationRange(id, _range)
 end
 
@@ -39,12 +44,7 @@ local function InitScoreSafeWrapper()
     end
 end
 
-local function ExploreAreaForPlayer(_pid, _x, _y, _range)
-    local id = Logic.CreateEntity(Entities.XD_ScriptEntity, _x, _y, 0, _pid)
-    Logic.SetEntityExplorationRange(id, _range)
-end
-
--- An einer Position für beide KI-Verbündeten (3 und 4) aufdecken
+-- An einer Position für beide menschlichen Spieler aufdecken
 local function ExploreNpcForBothPlayers(_name, _range)
     if not IsExisting(_name) then
         return
@@ -53,6 +53,40 @@ local function ExploreNpcForBothPlayers(_name, _range)
     for pid = 1, 2 do
         ExploreAreaForPlayer(pid, pos.X, pos.Y, _range)
     end
+end
+
+-- Fallback über feste Koordinaten (falls Named-Entity auf einem Client verzögert verfügbar ist)
+local function ExploreFixedNpcSpotsForBothPlayers(_range)
+    local spots = {
+        { 35697.5, 37076.1 }, -- Celle
+        { 41059.4, 61382.0 }, -- Wismar
+        { 22347.6, 51611.2 }, -- Wächter 1
+        { 50436.9, 48387.3 }, -- Wächter 2
+    }
+
+    for pid = 1, 2 do
+        for _, spot in ipairs(spots) do
+            ExploreAreaForPlayer(pid, spot[1], spot[2], _range)
+        end
+    end
+end
+
+local function EnsureKeyNpcVisibilityForBothPlayers(_range)
+    local names = {
+        "Leader_Celle",
+        "Leader_Wismar",
+        "Waechter_1",
+        "Waechter_2",
+    }
+
+    for _, name in ipairs(names) do
+        EnsureNpcMarkerOn(name)
+        ExploreNpcForBothPlayers(name, _range)
+    end
+
+    -- Zusätzlicher Koordinaten-Fallback, falls eine Named-Entity auf einem Client
+    -- noch nicht aufgelöst wurde.
+    ExploreFixedNpcSpotsForBothPlayers(_range)
 end
 
 --------------------------------------------------------------------------------
@@ -303,24 +337,28 @@ function FirstMapAction()
     EnsureNpcMarkerOn("Bischof_Likirchen")
 
     -- Bereiche um wichtige NPCs aufdecken (kleiner Radius)
-    ExploreNpcForBothPlayers("Leader_Celle",       15)
-    ExploreNpcForBothPlayers("Leader_Wismar",      15)
-    ExploreNpcForBothPlayers("Waechter_1",         15)
-    ExploreNpcForBothPlayers("Waechter_2",         15)
-    
+    EnsureKeyNpcVisibilityForBothPlayers(15)
 
-    -- for pid = 1, 2 do
-     --   ExploreAreaForPlayer(pid, 35697.5, 37076.1, 15)   -- Celle
-      --  ExploreAreaForPlayer(pid, 41059.4, 61382.0, 15)   -- Wismar
-       --  ExploreAreaForPlayer(pid, 22347.6, 51611.2, 15)   -- Wächter 1
-      --  ExploreAreaForPlayer(pid, 50436.9, 48387.3, 15)   -- Wächter 2
-    --end
+    -- Sicherheitsnetz: kurzzeitig wiederholen (für spät gespawnte/aufgelöste Entities)
+    InitialNpcVisibilityTries = 0
+    StartSimpleJob("Job_EnsureInitialNpcVisibility")
 
     -- optional: Minimap-Pulse (aktuell auskommentiert, weil zu lang)
     -- GUI.CreateMinimapPulse(35697.5, 37076.1, 0)   -- Celle
     -- GUI.CreateMinimapPulse(41059.4, 61382.0, 0)   -- Wismar
     -- GUI.CreateMinimapPulse(22347.6, 51611.2, 0)   -- Wächter 1
     -- GUI.CreateMinimapPulse(50436.9, 48387.3, 0)   -- Wächter 2
+end
+
+function Job_EnsureInitialNpcVisibility()
+    InitialNpcVisibilityTries = (InitialNpcVisibilityTries or 0) + 1
+    EnsureKeyNpcVisibilityForBothPlayers(15)
+
+    -- ~30 Sekunden bei 10 Turns/Sekunde
+    if InitialNpcVisibilityTries >= 300 then
+        return true
+    end
+    return false
 end
 
 function DefeatJobP1()
