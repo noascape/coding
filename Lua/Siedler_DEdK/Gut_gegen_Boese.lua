@@ -14,9 +14,14 @@ local function EnsureNpcMarkerOn(_name)
 end
 
 local function ExploreAreaForPlayer(_pid, _x, _y, _range)
-    -- Unsichtbare Script-Entity für diesen Spieler erstellen
+    -- Falls vorhanden, direkte Engine-Funktion nutzen (synchron und sofort)
+    if Logic.ExploreArea then
+        Logic.ExploreArea(_pid, _x, _y, _range)
+        return
+    end
+
+    -- Fallback: Unsichtbare Script-Entity mit Aufdeckradius
     local id = Logic.CreateEntity(Entities.XD_ScriptEntity, _x, _y, 0, _pid)
-    -- Sichtweite / Aufdeckradius setzen
     Logic.SetEntityExplorationRange(id, _range)
 end
 
@@ -327,6 +332,17 @@ function FirstMapAction()
     -- GUI.CreateMinimapPulse(41059.4, 61382.0, 0)   -- Wismar
     -- GUI.CreateMinimapPulse(22347.6, 51611.2, 0)   -- Wächter 1
     -- GUI.CreateMinimapPulse(50436.9, 48387.3, 0)   -- Wächter 2
+end
+
+function Job_EnsureInitialNpcVisibility()
+    InitialNpcVisibilityTries = (InitialNpcVisibilityTries or 0) + 1
+    EnsureKeyNpcVisibilityForBothPlayers(15)
+
+    -- ~30 Sekunden bei 10 Turns/Sekunde
+    if InitialNpcVisibilityTries >= 300 then
+        return true
+    end
+    return false
 end
 
 function DefeatJobP1()
