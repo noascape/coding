@@ -13,6 +13,69 @@ local function EnsureNpcMarkerOn(_name)
     end
 end
 
+-- Persistente Reveal-Entities, damit die Spots sicher sichtbar bleiben
+local function EnsureRevealSpotForPlayer(_pid, _spotKey, _x, _y, _range)
+    local name = "reveal_" .. _spotKey .. "_p" .. tostring(_pid)
+
+    if IsExisting(name) then
+        return GetEntityId(name)
+    end
+
+    local id = Logic.CreateEntity(Entities.XD_ScriptEntity, _x, _y, 0, _pid)
+    Logic.SetEntityExplorationRange(id, _range)
+    SetEntityName(id, name)
+    return id
+end
+
+local function EnsureInitialSpotsVisible(_range)
+    local spots = {
+        { key = "celle",    x = 35697.5, y = 37076.1 },
+        { key = "wismar",   x = 41059.4, y = 61382.0 },
+        { key = "w1",       x = 22347.6, y = 51611.2 },
+        { key = "w2",       x = 50436.9, y = 48387.3 },
+    }
+
+    for pid = 1, 2 do
+        for _, s in ipairs(spots) do
+            EnsureRevealSpotForPlayer(pid, s.key, s.x, s.y, _range)
+        end
+    end
+end
+
+-- Versucht Marker zu setzen (falls Entity erst später existiert)
+local function EnsureInitialNpcMarkers()
+    EnsureNpcMarkerOn("Leader_Celle")
+    EnsureNpcMarkerOn("Leader_Wismar")
+    EnsureNpcMarkerOn("Waechter_1")
+    EnsureNpcMarkerOn("Waechter_2")
+end
+
+-- Job: wiederholt Reveal + Marker, bis alle NPCs existieren (oder Timeout)
+function Job_EnsureInitialNpcVisibility()
+    InitialNpcVisibilityTries = (InitialNpcVisibilityTries or 0) + 1
+
+    -- Sichtbarkeit unabhängig von Named Entities
+    EnsureInitialSpotsVisible(20)        -- 15 geht auch, 20 ist etwas toleranter
+    EnsureInitialNpcMarkers()
+
+    local allExist =
+        IsExisting("Leader_Celle") and
+        IsExisting("Leader_Wismar") and
+        IsExisting("Waechter_1") and
+        IsExisting("Waechter_2")
+
+    -- wenn alles da ist, können wir stoppen
+    if allExist then
+        return true
+    end
+
+    -- Timeout nach ~30 Sekunden (bei ~10 Turns/Sekunde)
+    if InitialNpcVisibilityTries >= 300 then
+        return true
+    end
+
+    return false
+end
 local function ExploreAreaForPlayer(_pid, _x, _y, _range)
     -- Falls vorhanden, direkte Engine-Funktion nutzen (synchron und sofort)
     if Logic.ExploreArea then
@@ -309,6 +372,9 @@ function FirstMapAction()
     -- Intro-Briefing
     StartIntroBriefing()
 
+    -- Retry-Job für Visibility
+    StartSimpleJob("Job_EnsureInitialNpcVisibility")
+
     -- NPC-Marker aktivieren
     EnsureNpcMarkerOn("Leader_Wismar")
     EnsureNpcMarkerOn("Leader_Celle")
@@ -332,17 +398,6 @@ function FirstMapAction()
     -- GUI.CreateMinimapPulse(41059.4, 61382.0, 0)   -- Wismar
     -- GUI.CreateMinimapPulse(22347.6, 51611.2, 0)   -- Wächter 1
     -- GUI.CreateMinimapPulse(50436.9, 48387.3, 0)   -- Wächter 2
-end
-
-function Job_EnsureInitialNpcVisibility()
-    InitialNpcVisibilityTries = (InitialNpcVisibilityTries or 0) + 1
-    EnsureKeyNpcVisibilityForBothPlayers(15)
-
-    -- ~30 Sekunden bei 10 Turns/Sekunde
-    if InitialNpcVisibilityTries >= 300 then
-        return true
-    end
-    return false
 end
 
 function DefeatJobP1()
