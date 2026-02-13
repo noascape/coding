@@ -39,12 +39,7 @@ local function InitScoreSafeWrapper()
     end
 end
 
-local function ExploreAreaForPlayer(_pid, _x, _y, _range)
-    local id = Logic.CreateEntity(Entities.XD_ScriptEntity, _x, _y, 0, _pid)
-    Logic.SetEntityExplorationRange(id, _range)
-end
-
--- An einer Position für beide KI-Verbündeten (3 und 4) aufdecken
+-- An einer Position für beide menschlichen Spieler aufdecken
 local function ExploreNpcForBothPlayers(_name, _range)
     if not IsExisting(_name) then
         return
@@ -52,6 +47,22 @@ local function ExploreNpcForBothPlayers(_name, _range)
     local pos = GetPosition(_name)
     for pid = 1, 2 do
         ExploreAreaForPlayer(pid, pos.X, pos.Y, _range)
+    end
+end
+
+-- Fallback über feste Koordinaten (falls Named-Entity auf einem Client verzögert verfügbar ist)
+local function ExploreFixedNpcSpotsForBothPlayers(_range)
+    local spots = {
+        { 35697.5, 37076.1 }, -- Celle
+        { 41059.4, 61382.0 }, -- Wismar
+        { 22347.6, 51611.2 }, -- Wächter 1
+        { 50436.9, 48387.3 }, -- Wächter 2
+    }
+
+    for pid = 1, 2 do
+        for _, spot in ipairs(spots) do
+            ExploreAreaForPlayer(pid, spot[1], spot[2], _range)
+        end
     end
 end
 
@@ -308,13 +319,8 @@ function FirstMapAction()
     ExploreNpcForBothPlayers("Waechter_1",         15)
     ExploreNpcForBothPlayers("Waechter_2",         15)
     
-
-    -- for pid = 1, 2 do
-     --   ExploreAreaForPlayer(pid, 35697.5, 37076.1, 15)   -- Celle
-      --  ExploreAreaForPlayer(pid, 41059.4, 61382.0, 15)   -- Wismar
-       --  ExploreAreaForPlayer(pid, 22347.6, 51611.2, 15)   -- Wächter 1
-      --  ExploreAreaForPlayer(pid, 50436.9, 48387.3, 15)   -- Wächter 2
-    --end
+    -- Fallback: feste Aufdeckungspunkte zusätzlich setzen
+    ExploreFixedNpcSpotsForBothPlayers(15)
 
     -- optional: Minimap-Pulse (aktuell auskommentiert, weil zu lang)
     -- GUI.CreateMinimapPulse(35697.5, 37076.1, 0)   -- Celle
