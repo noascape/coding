@@ -632,7 +632,10 @@ local function GetHeroPlayerId(_HeroId)
     if not _HeroId or _HeroId == 0 then
         return nil
     end
-    local pid = GetPlayer(_HeroId)   -- Comfort-Funktion
+    -- MP-sicher: für spielentscheidende Logik direkt Engine-Funktion nutzen.
+    -- Comfort.GetPlayer kann in Callback-Kontexten je nach Setup lokal/GUI-
+    -- abhängiges Verhalten zeigen und so zu abweichendem Zustand führen.
+    local pid = Logic.EntityGetPlayer(_HeroId)
     if not pid or pid < 1 or pid > 8 then
         return nil
     end
