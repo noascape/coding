@@ -8,6 +8,8 @@ queue_data = queue.Queue()
 for i in range(10):
     queue_data.put(i)
 
+
+
 def consumer(name):
     for _ in range(6):
         try:
