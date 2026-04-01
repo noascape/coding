@@ -13,7 +13,8 @@ def consumer(name):
     while not queue_data.empty():
         value = queue_data.get()
         print(f"{name} verbraucht {value}")
-        time.sleep(random.random() * 0.01)
+        time.sleep(random.random() * 0.5)
+
 
 
 with ThreadPoolExecutor(max_workers=3) as executor:
