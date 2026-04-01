@@ -17,6 +17,8 @@ def consumer(name):
         except queue.Empty:
             print(f"{name}: nichts mehr zu holen")
 
+
+
 with ThreadPoolExecutor(max_workers=3) as executor:
     for i in range(3):
         executor.submit(consumer, f"C{i}")
