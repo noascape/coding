@@ -5,22 +5,17 @@ import random
 
 queue_data = queue.Queue()
 
-for i in range(10):
-    queue_data.put(i)
-
+for number in range(10):
+    queue_data.put(number)
 
 
 def consumer(name):
-    for _ in range(6):
-        try:
-            value = queue_data.get(timeout=0.1)  
-            print(f"{name} verbraucht {value}")
-            time.sleep(random.random() * 0.01)
-        except queue.Empty:
-            print(f"{name}: nichts mehr zu holen")
-
+    while not queue_data.empty():
+        value = queue_data.get()
+        print(f"{name} verbraucht {value}")
+        time.sleep(random.random() * 0.01)
 
 
 with ThreadPoolExecutor(max_workers=3) as executor:
-    for i in range(3):
-        executor.submit(consumer, f"C{i}")
+    for thread_number in range(3):
+        executor.submit(consumer, f"C{thread_number}")
