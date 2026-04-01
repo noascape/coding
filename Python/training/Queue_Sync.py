@@ -19,4 +19,4 @@ def consumer(name):
 
 with ThreadPoolExecutor(max_workers=3) as executor:
     for thread_number in range(3):
-        executor.submit(consumer, f"C{thread_number}")
+        executor.submit(consumer, f"Thread-{thread_number}")
