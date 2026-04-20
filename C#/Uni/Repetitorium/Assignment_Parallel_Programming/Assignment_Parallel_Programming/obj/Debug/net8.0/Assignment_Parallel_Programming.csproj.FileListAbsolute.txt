@@ -1,0 +1,15 @@
+C:\Users\nheim\Documents\GitHub\coding\C#\Uni\Repetitorium\Assignment_Parallel_Programming\Assignment_Parallel_Programming\bin\Debug\net8.0\Assignment_Parallel_Programming.exe
+C:\Users\nheim\Documents\GitHub\coding\C#\Uni\Repetitorium\Assignment_Parallel_Programming\Assignment_Parallel_Programming\bin\Debug\net8.0\Assignment_Parallel_Programming.deps.json
+C:\Users\nheim\Documents\GitHub\coding\C#\Uni\Repetitorium\Assignment_Parallel_Programming\Assignment_Parallel_Programming\bin\Debug\net8.0\Assignment_Parallel_Programming.runtimeconfig.json
+C:\Users\nheim\Documents\GitHub\coding\C#\Uni\Repetitorium\Assignment_Parallel_Programming\Assignment_Parallel_Programming\bin\Debug\net8.0\Assignment_Parallel_Programming.dll
+C:\Users\nheim\Documents\GitHub\coding\C#\Uni\Repetitorium\Assignment_Parallel_Programming\Assignment_Parallel_Programming\bin\Debug\net8.0\Assignment_Parallel_Programming.pdb
+C:\Users\nheim\Documents\GitHub\coding\C#\Uni\Repetitorium\Assignment_Parallel_Programming\Assignment_Parallel_Programming\obj\Debug\net8.0\Assignment_Parallel_Programming.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\nheim\Documents\GitHub\coding\C#\Uni\Repetitorium\Assignment_Parallel_Programming\Assignment_Parallel_Programming\obj\Debug\net8.0\Assignment_Parallel_Programming.AssemblyInfoInputs.cache
+C:\Users\nheim\Documents\GitHub\coding\C#\Uni\Repetitorium\Assignment_Parallel_Programming\Assignment_Parallel_Programming\obj\Debug\net8.0\Assignment_Parallel_Programming.AssemblyInfo.cs
+C:\Users\nheim\Documents\GitHub\coding\C#\Uni\Repetitorium\Assignment_Parallel_Programming\Assignment_Parallel_Programming\obj\Debug\net8.0\Assignment_Parallel_Programming.csproj.CoreCompileInputs.cache
+C:\Users\nheim\Documents\GitHub\coding\C#\Uni\Repetitorium\Assignment_Parallel_Programming\Assignment_Parallel_Programming\obj\Debug\net8.0\Assignment_Parallel_Programming.sourcelink.json
+C:\Users\nheim\Documents\GitHub\coding\C#\Uni\Repetitorium\Assignment_Parallel_Programming\Assignment_Parallel_Programming\obj\Debug\net8.0\Assignment_Parallel_Programming.dll
+C:\Users\nheim\Documents\GitHub\coding\C#\Uni\Repetitorium\Assignment_Parallel_Programming\Assignment_Parallel_Programming\obj\Debug\net8.0\refint\Assignment_Parallel_Programming.dll
+C:\Users\nheim\Documents\GitHub\coding\C#\Uni\Repetitorium\Assignment_Parallel_Programming\Assignment_Parallel_Programming\obj\Debug\net8.0\Assignment_Parallel_Programming.pdb
+C:\Users\nheim\Documents\GitHub\coding\C#\Uni\Repetitorium\Assignment_Parallel_Programming\Assignment_Parallel_Programming\obj\Debug\net8.0\Assignment_Parallel_Programming.genruntimeconfig.cache
+C:\Users\nheim\Documents\GitHub\coding\C#\Uni\Repetitorium\Assignment_Parallel_Programming\Assignment_Parallel_Programming\obj\Debug\net8.0\ref\Assignment_Parallel_Programming.dll
