@@ -17,12 +17,52 @@ except Exception:
 
 
 DEFAULT_EXTENSIONS: Set[str] = {
-    ".py", ".java", ".js", ".ts", ".jsx", ".tsx", ".css", ".scss", ".sass",
-    ".html", ".htm", ".xml", ".json", ".yml", ".yaml", ".md", ".txt",
-    ".c", ".h", ".cpp", ".hpp", ".cs", ".php", ".rb", ".go", ".rs",
-    ".kt", ".kts", ".swift", ".sql", ".sh", ".bat", ".ps1", ".vue",
-    ".ini", ".toml", ".env", ".gradle", ".properties", ".dart", ".lua",
-    ".pl", ".r", ".m", ".tex"
+    ".py", ".pyw", ".pyi", ".ipynb",
+    ".java", ".kt", ".kts", ".groovy", ".scala",
+    ".gradle", ".properties",
+    ".js", ".mjs", ".cjs",
+    ".ts", ".tsx", ".jsx",
+    ".vue", ".svelte", ".astro",
+    ".html", ".htm", ".css", ".scss", ".sass", ".less",
+    ".dart",
+    ".c", ".h", ".cpp", ".cc", ".cxx", ".hpp", ".hh", ".hxx",
+    ".cs",
+    ".php", ".rb", ".go", ".rs", ".swift",
+    ".lua", ".pl", ".pm", ".r", ".m", ".mm",
+    ".vb", ".fs", ".fsx", ".clj", ".cljs",
+    ".erl", ".ex", ".exs", ".hs", ".lhs",
+    ".nim", ".zig",
+    ".sh", ".bash", ".zsh", ".fish",
+    ".bat", ".cmd", ".ps1", ".psm1",
+    ".json", ".jsonc", ".json5",
+    ".xml", ".yaml", ".yml",
+    ".toml", ".ini", ".cfg", ".conf", ".config",
+    ".env", ".properties",
+    ".csv", ".tsv",
+    ".sql", ".dbml",
+    ".md", ".markdown", ".txt", ".rst", ".tex",
+    ".adoc", ".asciidoc",
+    ".pom", ".lock",
+    ".dockerfile", ".containerfile",
+    ".gitignore", ".gitattributes", ".editorconfig",
+    ".npmrc", ".yarnrc", ".prettierrc", ".eslintrc",
+    ".babelrc", ".browserslistrc",
+    ".tf", ".tfvars",
+    ".hcl",
+    ".puml", ".plantuml", ".drawio", ".mermaid", ".mmd",
+    ".log", ".diff", ".patch",
+    ".proto", ".graphql", ".gql",
+    ".sol", ".wasm",
+}
+
+DEFAULT_FILENAMES: Set[str] = {
+    "dockerfile", "containerfile",
+    "makefile", "rakefile", "gemfile", "podfile",
+    "package-lock.json", "yarn.lock", "pnpm-lock.yaml",
+    "requirements.txt", "pyproject.toml", "poetry.lock",
+    "pom.xml", "build.gradle", "build.gradle.kts",
+    ".gitignore", ".gitattributes", ".editorconfig",
+    ".env", ".env.example", ".env.local",
 }
 
 IGNORED_DIRS = {
@@ -32,7 +72,6 @@ IGNORED_DIRS = {
 
 
 def parse_dnd_files(raw_data: str) -> List[str]:
-    """Parst die von tkinterdnd2 gelieferten Pfade sauber, auch bei Leerzeichen."""
     paths = []
     current = ""
     in_braces = False
@@ -78,7 +117,7 @@ class CodeConverterApp:
     def _build_ui(self) -> None:
         top_info = (
             "Dateien oder Ordner hier hineinziehen. Unterstützte Code-/Textdateien werden gesammelt "
-            "und als Fließtext im Format 'Dateiname:\nInhalt' ausgegeben."
+            "und als Fließtext im Format 'Dateiname:\\nInhalt' ausgegeben."
         )
         tk.Label(self.root, text=top_info, wraplength=1000, justify="left", anchor="w").pack(
             fill="x", padx=12, pady=(12, 6)
@@ -109,7 +148,7 @@ class CodeConverterApp:
         tk.Button(controls, text="Dateien auswählen", command=self.add_files).pack(side="left", padx=(0, 8))
         tk.Button(controls, text="Ordner auswählen", command=self.add_folder).pack(side="left", padx=(0, 8))
         tk.Button(controls, text="Liste leeren", command=self.clear_paths).pack(side="left", padx=(0, 8))
-        tk.Button(controls, text="Konvertieren", command=self.convert, bg="#4CAF50", fg="white", font=("Segoe UI", 10, "bold"), activebackground="#45a049").pack(side="left", padx=(0, 8))
+        tk.Button(controls, text="Konvertieren", command=self.convert, bg="#4CAF50", fg="white").pack(side="left", padx=(0, 8))
         tk.Button(controls, text="In Zwischenablage kopieren", command=self.copy_output).pack(side="left")
 
         ext_frame = tk.LabelFrame(self.root, text="Erlaubte Dateiendungen (kommagetrennt)")
@@ -134,7 +173,6 @@ class CodeConverterApp:
         raw = self.ext_var.get().strip()
         if not raw:
             self.extensions = set(DEFAULT_EXTENSIONS)
-            self.ext_var.set(", ".join(sorted(self.extensions)))
             return
 
         cleaned = set()
@@ -148,6 +186,11 @@ class CodeConverterApp:
 
         self.extensions = cleaned or set(DEFAULT_EXTENSIONS)
 
+    def is_allowed_file(self, file_path: Path) -> bool:
+        name = file_path.name.lower()
+        suffix = file_path.suffix.lower()
+        return suffix in self.extensions or name in DEFAULT_FILENAMES
+
     def refresh_list(self) -> None:
         self.path_list.delete(0, tk.END)
         for path in self.selected_paths:
@@ -156,10 +199,7 @@ class CodeConverterApp:
     def add_unique_paths(self, paths: Iterable[Path]) -> None:
         existing = {p.resolve() for p in self.selected_paths if p.exists()}
         for path in paths:
-            try:
-                resolved = path.resolve()
-            except Exception:
-                resolved = path
+            resolved = path.resolve()
             if resolved not in existing:
                 self.selected_paths.append(path)
                 existing.add(resolved)
@@ -181,8 +221,7 @@ class CodeConverterApp:
         self.output_text.delete("1.0", tk.END)
 
     def on_drop(self, event) -> None:
-        raw = event.data
-        dropped = parse_dnd_files(raw)
+        dropped = parse_dnd_files(event.data)
         self.add_unique_paths(Path(p) for p in dropped)
 
     def collect_files(self) -> List[Path]:
@@ -194,7 +233,7 @@ class CodeConverterApp:
                 continue
 
             if source.is_file():
-                if source.suffix.lower() in self.extensions:
+                if self.is_allowed_file(source):
                     collected.append(source)
                 continue
 
@@ -202,11 +241,10 @@ class CodeConverterApp:
                 dirs[:] = [d for d in dirs if d not in IGNORED_DIRS]
                 for file_name in files:
                     file_path = Path(root) / file_name
-                    if file_path.suffix.lower() in self.extensions:
+                    if self.is_allowed_file(file_path):
                         collected.append(file_path)
 
-        unique_sorted = sorted({p.resolve() for p in collected}, key=lambda p: str(p).lower())
-        return unique_sorted
+        return sorted({p.resolve() for p in collected}, key=lambda p: str(p).lower())
 
     def build_output(self, files: List[Path]) -> str:
         blocks = []
@@ -214,67 +252,30 @@ class CodeConverterApp:
         for file_path in files:
             try:
                 content = file_path.read_text(encoding="utf-8")
-            except UnicodeDecodeError:
-                try:
-                    content = file_path.read_text(encoding="latin-1")
-                except Exception as exc:
-                    content = f"[Datei konnte nicht gelesen werden: {exc}]"
-            except Exception as exc:
-                content = f"[Datei konnte nicht gelesen werden: {exc}]"
+            except Exception:
+                content = "[Datei konnte nicht gelesen werden]"
 
-            block = f"{file_path.resolve()}:\n{content}"
-            blocks.append(block)
+            blocks.append(f"{file_path}:\n{content}")
 
         return "\n\n\n".join(blocks)
 
     def convert(self) -> None:
-        if not self.selected_paths:
-            messagebox.showwarning("Hinweis", "Bitte zuerst Dateien oder Ordner hinzufügen.")
-            return
-
         files = self.collect_files()
         if not files:
-            messagebox.showinfo(
-                "Keine passenden Dateien",
-                "Es wurden keine Dateien mit den aktuell eingestellten Endungen gefunden."
-            )
+            messagebox.showinfo("Keine Dateien", "Keine passenden Dateien gefunden.")
             return
 
         result = self.build_output(files)
         self.output_text.delete("1.0", tk.END)
         self.output_text.insert("1.0", result)
 
-    # Optional: Wird aktuell nicht verwendet
-    def save_output(self) -> None:
-        text = self.output_text.get("1.0", tk.END).strip()
-        if not text:
-            messagebox.showwarning("Hinweis", "Es gibt noch keine Ausgabe zum Speichern.")
-            return
-
-        save_path = filedialog.asksaveasfilename(
-            title="Ausgabe speichern",
-            defaultextension=".txt",
-            filetypes=[("Textdatei", "*.txt"), ("Markdown", "*.md"), ("Alle Dateien", "*.*")]
-        )
-        if not save_path:
-            return
-
-        try:
-            Path(save_path).write_text(text, encoding="utf-8")
-            messagebox.showinfo("Gespeichert", f"Datei gespeichert unter:\n{save_path}")
-        except Exception as exc:
-            messagebox.showerror("Fehler", f"Speichern fehlgeschlagen:\n{exc}")
-
     def copy_output(self) -> None:
         text = self.output_text.get("1.0", tk.END).strip()
-        if not text:
-            messagebox.showwarning("Hinweis", "Es gibt noch keine Ausgabe zum Kopieren.")
-            return
-
-        self.root.clipboard_clear()
-        self.root.clipboard_append(text)
-        self.root.update()
-        messagebox.showinfo("Kopiert", "Die Ausgabe wurde in die Zwischenablage kopiert.")
+        if text:
+            self.root.clipboard_clear()
+            self.root.clipboard_append(text)
+            self.root.update()
+            messagebox.showinfo("Kopiert", "In Zwischenablage kopiert.")
 
 
 def main() -> None:
